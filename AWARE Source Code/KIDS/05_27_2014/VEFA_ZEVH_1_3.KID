@@ -1,0 +1,1656 @@
+KIDS Distribution saved on May 27, 2014@22:55:10
+VEFA ALERT TEST PROGRAMS
+**KIDS**:VEFA ZEVH 1.3^
+
+**INSTALL NAME**
+VEFA ZEVH 1.3
+"BLD",8865,0)
+VEFA ZEVH 1.3^^0^3140527^n
+"BLD",8865,4,0)
+^9.64PA^^
+"BLD",8865,6.3)
+6
+"BLD",8865,"KRN",0)
+^9.67PA^779.2^20
+"BLD",8865,"KRN",.4,0)
+.4
+"BLD",8865,"KRN",.401,0)
+.401
+"BLD",8865,"KRN",.402,0)
+.402
+"BLD",8865,"KRN",.403,0)
+.403
+"BLD",8865,"KRN",.5,0)
+.5
+"BLD",8865,"KRN",.84,0)
+.84
+"BLD",8865,"KRN",3.6,0)
+3.6
+"BLD",8865,"KRN",3.8,0)
+3.8
+"BLD",8865,"KRN",9.2,0)
+9.2
+"BLD",8865,"KRN",9.8,0)
+9.8
+"BLD",8865,"KRN",9.8,"NM",0)
+^9.68A^5^5
+"BLD",8865,"KRN",9.8,"NM",1,0)
+LRZORD^^0^B65736758
+"BLD",8865,"KRN",9.8,"NM",2,0)
+LRZORD1^^0^B25312131
+"BLD",8865,"KRN",9.8,"NM",3,0)
+LRZOE^^0^B25859095
+"BLD",8865,"KRN",9.8,"NM",4,0)
+LRZOE2^^0^B13493436
+"BLD",8865,"KRN",9.8,"NM",5,0)
+RADZVEFA^^0^B35603018
+"BLD",8865,"KRN",9.8,"NM","B","LRZOE",3)
+
+"BLD",8865,"KRN",9.8,"NM","B","LRZOE2",4)
+
+"BLD",8865,"KRN",9.8,"NM","B","LRZORD",1)
+
+"BLD",8865,"KRN",9.8,"NM","B","LRZORD1",2)
+
+"BLD",8865,"KRN",9.8,"NM","B","RADZVEFA",5)
+
+"BLD",8865,"KRN",19,0)
+19
+"BLD",8865,"KRN",19,"NM",0)
+^9.68A^2^2
+"BLD",8865,"KRN",19,"NM",1,0)
+ZZVEHU LAB DATA ENTRY^^0
+"BLD",8865,"KRN",19,"NM",2,0)
+VEFA ENTER IMAGING ALERT^^0
+"BLD",8865,"KRN",19,"NM","B","VEFA ENTER IMAGING ALERT",2)
+
+"BLD",8865,"KRN",19,"NM","B","ZZVEHU LAB DATA ENTRY",1)
+
+"BLD",8865,"KRN",19.1,0)
+19.1
+"BLD",8865,"KRN",101,0)
+101
+"BLD",8865,"KRN",409.61,0)
+409.61
+"BLD",8865,"KRN",771,0)
+771
+"BLD",8865,"KRN",779.2,0)
+779.2
+"BLD",8865,"KRN",870,0)
+870
+"BLD",8865,"KRN",8989.51,0)
+8989.51
+"BLD",8865,"KRN",8989.52,0)
+8989.52
+"BLD",8865,"KRN",8994,0)
+8994
+"BLD",8865,"KRN","B",.4,.4)
+
+"BLD",8865,"KRN","B",.401,.401)
+
+"BLD",8865,"KRN","B",.402,.402)
+
+"BLD",8865,"KRN","B",.403,.403)
+
+"BLD",8865,"KRN","B",.5,.5)
+
+"BLD",8865,"KRN","B",.84,.84)
+
+"BLD",8865,"KRN","B",3.6,3.6)
+
+"BLD",8865,"KRN","B",3.8,3.8)
+
+"BLD",8865,"KRN","B",9.2,9.2)
+
+"BLD",8865,"KRN","B",9.8,9.8)
+
+"BLD",8865,"KRN","B",19,19)
+
+"BLD",8865,"KRN","B",19.1,19.1)
+
+"BLD",8865,"KRN","B",101,101)
+
+"BLD",8865,"KRN","B",409.61,409.61)
+
+"BLD",8865,"KRN","B",771,771)
+
+"BLD",8865,"KRN","B",779.2,779.2)
+
+"BLD",8865,"KRN","B",870,870)
+
+"BLD",8865,"KRN","B",8989.51,8989.51)
+
+"BLD",8865,"KRN","B",8989.52,8989.52)
+
+"BLD",8865,"KRN","B",8994,8994)
+
+"KRN",19,13440,-1)
+0^1
+"KRN",19,13440,0)
+ZZVEHU LAB DATA ENTRY^Enter lab data for VEHU patients^^R^^^^^^^^
+"KRN",19,13440,1,0)
+^^2^2^3061214^
+"KRN",19,13440,1,1,0)
+This option can be used to enter lab data on a group of patients in
+"KRN",19,13440,1,2,0)
+the usual VEHU range of patients. 
+"KRN",19,13440,25)
+VEHU^LRZORD
+"KRN",19,13440,99.1)
+63227,59951
+"KRN",19,13440,"U")
+ENTER LAB DATA FOR VEHU PATIEN
+"KRN",19,14287,-1)
+0^2
+"KRN",19,14287,0)
+VEFA ENTER IMAGING ALERT^Critical Abnormal Imaging Results Alert^^R^^^^^^^^
+"KRN",19,14287,25)
+IMAGEGEN^RADZVEFA
+"KRN",19,14287,99.1)
+63249,45219
+"KRN",19,14287,"U")
+CRITICAL ABNORMAL IMAGING RESU
+"MBREQ")
+0
+"ORD",18,19)
+19;18;;;OPT^XPDTA;OPTF1^XPDIA;OPTE1^XPDIA;OPTF2^XPDIA;;OPTDEL^XPDIA
+"ORD",18,19,0)
+OPTION
+"QUES","XPF1",0)
+Y
+"QUES","XPF1","??")
+^D REP^XPDH
+"QUES","XPF1","A")
+Shall I write over your |FLAG| File
+"QUES","XPF1","B")
+YES
+"QUES","XPF1","M")
+D XPF1^XPDIQ
+"QUES","XPF2",0)
+Y
+"QUES","XPF2","??")
+^D DTA^XPDH
+"QUES","XPF2","A")
+Want my data |FLAG| yours
+"QUES","XPF2","B")
+YES
+"QUES","XPF2","M")
+D XPF2^XPDIQ
+"QUES","XPI1",0)
+YO
+"QUES","XPI1","??")
+^D INHIBIT^XPDH
+"QUES","XPI1","A")
+Want KIDS to INHIBIT LOGONs during the install
+"QUES","XPI1","B")
+NO
+"QUES","XPI1","M")
+D XPI1^XPDIQ
+"QUES","XPM1",0)
+PO^VA(200,:EM
+"QUES","XPM1","??")
+^D MG^XPDH
+"QUES","XPM1","A")
+Enter the Coordinator for Mail Group '|FLAG|'
+"QUES","XPM1","B")
+
+"QUES","XPM1","M")
+D XPM1^XPDIQ
+"QUES","XPO1",0)
+Y
+"QUES","XPO1","??")
+^D MENU^XPDH
+"QUES","XPO1","A")
+Want KIDS to Rebuild Menu Trees Upon Completion of Install
+"QUES","XPO1","B")
+NO
+"QUES","XPO1","M")
+D XPO1^XPDIQ
+"QUES","XPZ1",0)
+Y
+"QUES","XPZ1","??")
+^D OPT^XPDH
+"QUES","XPZ1","A")
+Want to DISABLE Scheduled Options, Menu Options, and Protocols
+"QUES","XPZ1","B")
+NO
+"QUES","XPZ1","M")
+D XPZ1^XPDIQ
+"QUES","XPZ2",0)
+Y
+"QUES","XPZ2","??")
+^D RTN^XPDH
+"QUES","XPZ2","A")
+Want to MOVE routines to other CPUs
+"QUES","XPZ2","B")
+NO
+"QUES","XPZ2","M")
+D XPZ2^XPDIQ
+"RTN")
+5
+"RTN","LRZOE")
+0^3^B25859095
+"RTN","LRZOE",1,0)
+LRZOE ;DALOI/CJS/FHS-LAB ORDER ENTRY AND ACCESSION ;12/6/06 17:45
+"RTN","LRZOE",2,0)
+ ;;5.2;LAB SERVICE;**100,121,201,221,263,286**;Sep 27, 1994;Build 6
+"RTN","LRZOE",3,0)
+ K LRORIFN,LRNATURE,LREND,LRORDRR
+"RTN","LRZOE",4,0)
+ S LRLWC="WC"
+"RTN","LRZOE",5,0)
+ D ^LRPARAM
+"RTN","LRZOE",6,0)
+ I $G(LREND) S LREND=0 Q
+"RTN","LRZOE",7,0)
+L5 ;
+"RTN","LRZOE",8,0)
+NEXT ;from LROE1
+"RTN","LRZOE",9,0)
+ K DIR
+"RTN","LRZOE",10,0)
+ I $D(LROESTAT) D:$P(LRPARAM,U,14) ^LRCAPV I $G(LREND) K LRLONG,LRPANEL Q
+"RTN","LRZOE",11,0)
+ S (LRODT,X,DT)=$$DT^XLFDT(),LRODT0=$$FMTE^XLFDT(DT,5)
+"RTN","LRZOE",12,0)
+ I '$D(^LRO(69,DT,1,0)) S ^LRO(69,DT,0)=DT,^LRO(69,DT,1,0)="^69.01PA^^",^LRO(69,"B",DT,DT)=""
+"RTN","LRZOE",13,0)
+ I $D(^LAB(69.9,1,"RO")),+$H'=+$P(^("RO"),U) D
+"RTN","LRZOE",14,0)
+ . W $C(7),!,"ROLLOVER ",$S($P(^("RO"),U,2):"IS RUNNING.",1:"HAS NOT RUN.")," ACCESSIONING SHOULDN'T BE DONE NOW.",$C(7),!
+"RTN","LRZOE",15,0)
+ . S DIR("A")="  Are you sure you want to continue",DIR(0)="Y",DIR("B")="No"
+"RTN","LRZOE",16,0)
+ I $T D ^DIR G END:$D(DIRUT) I Y'=1 W !,"OK, try later." Q
+"RTN","LRZOE",17,0)
+ S X="T-7",%DT="" D ^%DT S LRTM7=+Y
+"RTN","LRZOE",18,0)
+ ;W @IOF
+"RTN","LRZOE",19,0)
+ K DIC,LRSND,LRSN
+"RTN","LRZOE",20,0)
+ S (LRORD,LRZORD)=$O(^TMP("LRVEHU",$J,0)) Q:'LRORD  ;; JFR
+"RTN","LRZOE",21,0)
+ W:0 @IOF S M9=0 G QUICK^LROE1:LRORD=""
+"RTN","LRZOE",22,0)
+ S:LRORD?.N LRORD=+LRORD IF LRORD'?.N D QMSG G NEXT
+"RTN","LRZOE",23,0)
+ I '$D(^LRO(69,"C",LRORD)) W !!?10,"No order exist with that number ",$C(7),! G NEXT
+"RTN","LRZOE",24,0)
+ S (LRCHK,LRNONE)=1,(M9,LRODT)=0
+"RTN","LRZOE",25,0)
+ F  S LRODT=+$O(^LRO(69,"C",LRORD,LRODT)) Q:LRODT<1  D
+"RTN","LRZOE",26,0)
+ . S DA=0 F  S DA=$O(^LRO(69,"C",LRORD,LRODT,DA)) Q:DA<1  S LRCHK=LRCHK-1 S:LRNONE'=2 LRNONE=0 D LROE2
+"RTN","LRZOE",27,0)
+ I LRNONE=2 W !,"The order has already been",$S(LRCHK<1:" partially",1:"")," accessioned." H 1
+"RTN","LRZOE",28,0)
+ I LRNONE=1 W !,"No order exists with that number." H 1 G NEXT
+"RTN","LRZOE",29,0)
+ I '$$GOT(LRORD,LRODT) G NEXT
+"RTN","LRZOE",30,0)
+ L +^LRO(69,"C",LRORD):1
+"RTN","LRZOE",31,0)
+ I '$T W !?5,"Someone else is editing this Order",!!,$C(7) G NEXT
+"RTN","LRZOE",32,0)
+ K %DT
+"RTN","LRZOE",33,0)
+ S LRSTATUS="C",%DT("B")=""
+"RTN","LRZOE",34,0)
+ D TIME K %DT
+"RTN","LRZOE",35,0)
+ D:$G(LRCDT)<1 UNL69 G NEXT:LRCDT<1
+"RTN","LRZOE",36,0)
+ S LRTIM=+LRCDT
+"RTN","LRZOE",37,0)
+ ;S:'$P(^LRO(69,LRODT,1,LRSN,0),U,8) $P(^(0),U,8)=LRTIM
+"RTN","LRZOE",38,0)
+ S LRUN=$P(LRCDT,U,2) K LRCDT,LRSN
+"RTN","LRZOE",39,0)
+MORE I M9>1 K DIR S DIR("A")="Do you have the entire order",DIR(0)="Y" D ^DIR K DIR S:Y=1 M9=0
+"RTN","LRZOE",40,0)
+ I $D(DIRUT) D UNL69 G NEXT
+"RTN","LRZOE",41,0)
+ S (LRODT,LRSND)=0
+"RTN","LRZOE",42,0)
+ F  S LRODT=$O(^LRO(69,"C",LRORD,LRODT)) Q:LRODT<1  D
+"RTN","LRZOE",43,0)
+ . S LRSND=0
+"RTN","LRZOE",44,0)
+ . F  S LRSND=$O(^LRO(69,"C",LRORD,LRODT,LRSND)) Q:LRSND<1  D
+"RTN","LRZOE",45,0)
+ . . S LRSN(LRSND)=LRSND,LRSN=LRSND
+"RTN","LRZOE",46,0)
+ . . K LRAA D Q15^LRZOE2 K LRSN
+"RTN","LRZOE",47,0)
+ D TASK,UNL69
+"RTN","LRZOE",48,0)
+ Q
+"RTN","LRZOE",49,0)
+ ;
+"RTN","LRZOE",50,0)
+LROE2 ;
+"RTN","LRZOE",51,0)
+ I $D(^LRO(69,LRODT,1,DA,1)),$P(^(1),U,4)="C" S LRNONE=2,LRCHK=LRCHK+1
+"RTN","LRZOE",52,0)
+ K LRSN
+"RTN","LRZOE",53,0)
+ S (LRSN,LRSN(DA))=+DA
+"RTN","LRZOE",54,0)
+ I '$D(^LRO(69,LRODT,1,LRSN,0)) Q
+"RTN","LRZOE",55,0)
+ S M9=$G(M9)+1,LRZX=^LRO(69,LRODT,1,LRSN,0),LRDFN=+LRZX,LRDPF=$P(^LR(LRDFN,0),U,2),DFN=$P(^(0),U,3) D PT^LRX S LRWRDS=LRWRD ;W !,PNM,?30,SSN 
+"RTN","LRZOE",56,0)
+ ;W ?45,"Requesting location: ",$P(LRZX,U,7) S Y=$P(LRZX,U,5) D DD^LRX W !,"Date/Time Ordered: ",Y,?45,"By: ",$S($D(^VA(200,+$P(LRZX,U,2),0)):$P(^(0),U),1:"")
+"RTN","LRZOE",57,0)
+ S LRSVSN=LRSN D ORDER^LRZOS S LRSN=LRSVSN ; JFR 
+"RTN","LRZOE",58,0)
+ Q
+"RTN","LRZOE",59,0)
+ ;
+"RTN","LRZOE",60,0)
+ ;
+"RTN","LRZOE",61,0)
+QMSG W !,"Enter the order entry number assigned when the test was ordered."
+"RTN","LRZOE",62,0)
+ W:'$D(LRLONG) !,"If the test has not been ordered, type the RETURN key to order the test."
+"RTN","LRZOE",63,0)
+ W !,"To exit, type the ""^"" key and RETURN key."
+"RTN","LRZOE",64,0)
+ Q
+"RTN","LRZOE",65,0)
+ ;
+"RTN","LRZOE",66,0)
+ ;
+"RTN","LRZOE",67,0)
+YN R X:DTIME S:'$T DTOUT=1 Q:X=""!(X["N")!(X["Y")
+"RTN","LRZOE",68,0)
+ W !,"Answer 'Y' or 'N': " G YN
+"RTN","LRZOE",69,0)
+ ;
+"RTN","LRZOE",70,0)
+ ;
+"RTN","LRZOE",71,0)
+EN ;
+"RTN","LRZOE",72,0)
+LROEN S LRNCWL=1
+"RTN","LRZOE",73,0)
+ D LRZOE,END K LRNCWL
+"RTN","LRZOE",74,0)
+ Q
+"RTN","LRZOE",75,0)
+ ;
+"RTN","LRZOE",76,0)
+ ;
+"RTN","LRZOE",77,0)
+EN01 ; ENTER ORDER # THEN ENTER DATA
+"RTN","LRZOE",78,0)
+STAT ;
+"RTN","LRZOE",79,0)
+ D ^LRPARAM
+"RTN","LRZOE",80,0)
+ I '$D(LRLABKY) W !!?10,"You do not have the proper security Keys",! Q
+"RTN","LRZOE",81,0)
+ ;
+"RTN","LRZOE",82,0)
+ ; Select peforming laboratory
+"RTN","LRZOE",83,0)
+ ;S X=$$SELPL^LRVERA(DUZ(2))
+"RTN","LRZOE",84,0)
+ S X=DUZ(2)
+"RTN","LRZOE",85,0)
+ I X<1 D END Q
+"RTN","LRZOE",86,0)
+ I X'=DUZ(2) N LRPL S LRPL=X
+"RTN","LRZOE",87,0)
+ ;
+"RTN","LRZOE",88,0)
+ S LRLONG="",LRPANEL=0,LROESTAT=""
+"RTN","LRZOE",89,0)
+ S %H=$H-60 D YMD^LRX S LRTM60=9999999-X
+"RTN","LRZOE",90,0)
+ D LRZOE K LRTM60,LRLONG,LREND,LROESTAT
+"RTN","LRZOE",91,0)
+ D END
+"RTN","LRZOE",92,0)
+ Q
+"RTN","LRZOE",93,0)
+ ;
+"RTN","LRZOE",94,0)
+ ;
+"RTN","LRZOE",95,0)
+TIME ;from LROE1, LRORD1
+"RTN","LRZOE",96,0)
+ S %DT="ST" ;W !,"Collection Date@Time: ",$S($D(%DT("B")):%DT("B"),1:"NOW"),"//" R X:DTIME I '$T!(X="^") S LRCDT=-1 Q
+"RTN","LRZOE",97,0)
+ ;S:X="" X=$S($D(%DT("B")):%DT("B"),1:"N")
+"RTN","LRZOE",98,0)
+ S X=$G(^TMP("LRVEHU",$J,"COLL")) ; JFR   stuff collection time
+"RTN","LRZOE",99,0)
+ I X["@U",$P(X,"@U",2)="" S X=$P(X,"@U",1) D ^%DT G TIME:Y<1 S LRCDT=+Y_"^1" Q
+"RTN","LRZOE",100,0)
+ S:X="U" LRCDT=DT_"^1"
+"RTN","LRZOE",101,0)
+ I X'="U" D ^%DT D:X'["?" TIME1 G TIME:X["?" S LRCDT=+Y_"^" G TIME:Y'["."
+"RTN","LRZOE",102,0)
+ Q
+"RTN","LRZOE",103,0)
+ ;
+"RTN","LRZOE",104,0)
+TIME1 S X1=X,Y1=Y D TIME2 S X=X1,Y=Y1 K X1,Y1
+"RTN","LRZOE",105,0)
+ Q
+"RTN","LRZOE",106,0)
+ ;
+"RTN","LRZOE",107,0)
+TIME2 S X="N",%DT="ST" D ^%DT Q:Y1'>Y  F  W !,"You have specified a collection time in the future.  Are you sure" S %=2 D YN^DICN Q:%  W !,"Answer 'Y'es or 'N'o."
+"RTN","LRZOE",108,0)
+ S:%'=1 X="?" S X1=X
+"RTN","LRZOE",109,0)
+ Q
+"RTN","LRZOE",110,0)
+ ;
+"RTN","LRZOE",111,0)
+ ;
+"RTN","LRZOE",112,0)
+TASK ;
+"RTN","LRZOE",113,0)
+ K LRLABLIO
+"RTN","LRZOE",114,0)
+ I $D(LRLABLIO),$D(LRLBL) S ZTRTN="ENT^LRLABLD",ZTDTH=$H,ZTDESC="LAB LABELS",ZTIO=LRLABLIO,ZTSAVE("LRLBL(")="" D ^%ZTLOAD
+"RTN","LRZOE",115,0)
+ K LRLBL
+"RTN","LRZOE",116,0)
+ I $D(LRCSQ),'$O(^XTMP("LRCAP",LRCSQ,DUZ,0)) K ^XTMP("LRCAP",LRCSQ,DUZ),LRCSQ
+"RTN","LRZOE",117,0)
+ I $D(LRCSQ),$P($G(^LRO(68,+LRAA,0)),U,16) D STD^LRCAPV
+"RTN","LRZOE",118,0)
+ D STOP^LRCAPV K LRCOM,LRSPCDSC,LRCCOM,LRTCOM
+"RTN","LRZOE",119,0)
+ Q
+"RTN","LRZOE",120,0)
+ ;
+"RTN","LRZOE",121,0)
+ ;
+"RTN","LRZOE",122,0)
+END K DIR,DIRUT,GOT
+"RTN","LRZOE",123,0)
+ D ^LRORDK,LROEND^LRORDK,STOP^LRCAPV
+"RTN","LRZOE",124,0)
+ Q
+"RTN","LRZOE",125,0)
+ ;
+"RTN","LRZOE",126,0)
+ ;
+"RTN","LRZOE",127,0)
+GOT(ORD,ODT) ;See if all tests have been canceled
+"RTN","LRZOE",128,0)
+ N I,SN,ODT
+"RTN","LRZOE",129,0)
+ S (GOT,ODT,SN)=0
+"RTN","LRZOE",130,0)
+ F  S ODT=$O(^LRO(69,"C",ORD,ODT)) Q:ODT<1  D
+"RTN","LRZOE",131,0)
+ . S SN=0 F  S SN=$O(^LRO(69,"C",ORD,ODT,SN)) Q:SN<1!(GOT)  D
+"RTN","LRZOE",132,0)
+ . . Q:'$D(^LRO(69,ODT,1,SN,0))
+"RTN","LRZOE",133,0)
+ . . S I=0 F  S I=$O(^LRO(69,ODT,1,SN,2,I)) Q:I<1  I $D(^(I,0)),'$P(^(0),"^",11) S GOT=1 Q
+"RTN","LRZOE",134,0)
+ Q GOT
+"RTN","LRZOE",135,0)
+ ;
+"RTN","LRZOE",136,0)
+ ;
+"RTN","LRZOE",137,0)
+UNL69 ;
+"RTN","LRZOE",138,0)
+ L -^LRO(69,"C",+$G(LRORD))
+"RTN","LRZOE",139,0)
+ Q
+"RTN","LRZOE2")
+0^4^B13493436
+"RTN","LRZOE2",1,0)
+LRZOE2 ;DALISC/FHS - CONTINUED MORE ORDER ENTRY ; 12/7/06 09:27
+"RTN","LRZOE2",2,0)
+ ;;5.2;LAB SERVICE;**121**;Sep 27, 1994;Build 6
+"RTN","LRZOE2",3,0)
+ ;Formerly apart of LROE1
+"RTN","LRZOE2",4,0)
+Q15 ;from LROE1
+"RTN","LRZOE2",5,0)
+ Q:'$D(^LRO(69,LRODT,1,LRSN,0))
+"RTN","LRZOE2",6,0)
+ I $D(^LRO(69,LRODT,1,LRSN,1)),$P(^(1),"^",4)="U" W !,"This specimen has already been marked as UNCOLLECTED. Are you sure" S %=2 D YN^DICN Q:%'=1  S ^(1)=LRTIM_"^^"_DUZ,DA=LRSN,DA(1)=LRODT,DIE="^LRO(69,"_DA(1)_",1,",DR=16 D ^DIE
+"RTN","LRZOE2",7,0)
+ I M9>1 D LRSPEC^LROE1 S S1=$S($D(^LAB(61,+LRSPEC,0)):$P(^(0),U),1:""),S2=$P(^LAB(62,LRSAMP,0),U),S4=$P(^(0),U,3),S3=S1_$S(S1'=S2:"  "_S2,1:"") W !,"Do you have the  ",S3,"  ",S4 K S1,S2,S3,S4 S %=2 D YN^DICN G Q15:%=0 Q:%'=1
+"RTN","LRZOE2",8,0)
+ S DA=DT,LRDFN=+^LRO(69,LRODT,1,LRSN,0),LRDPF=+$P(^LR(LRDFN,0),U,2)
+"RTN","LRZOE2",9,0)
+ IF '$D(^LRO(69,LRODT,1,LRSN,1)) S LRSTATUS="C",DA=LRODT I '$D(LRSND) D P15^LROE1 Q:LRCDT<1
+"RTN","LRZOE2",10,0)
+ I $D(LRSND),$P(^LRO(69,LRODT,1,LRSN,0),U,4)="LC",$D(^(1)) S LRLLOC=$P(^(0),U,7),LROLLOC=$P(^(0),U,9),LRNT=$S($D(LRNT):LRNT,$D(LRTIM):LRTIM,$D(LRCDT):+LRCDT,1:"") D P15^LRPHITEM G PH
+"RTN","LRZOE2",11,0)
+ I $D(LRSND) N COMB S COMB=$P($G(^LRO(69,LRODT,1,LRSN,1)),"^",7) S ^LRO(69,LRODT,1,LRSN,1)=LRTIM_"^"_LRUN_"^"_DUZ_"^"_LRSTATUS_"^^^"_COMB_"^"_DUZ(2) S:LRSTATUS="C" ^LRO(69,"AA",+$G(^LRO(69,LRODT,1,LRSN,.1)),LRODT_"|"_LRSN)=""
+"RTN","LRZOE2",12,0)
+PH G Q16:LRORD D ORDER^LROW2 G Q16A
+"RTN","LRZOE2",13,0)
+Q16 S J=0 D CHECK^LROW2 I J D BAD^LROW2
+"RTN","LRZOE2",14,0)
+Q16A I $D(LRLONG),$D(LRSND) S LRSN=LRSND,^TMP("LROE",$J,"LRORD")=LRORD_U_LRODT_U_LRTIM_U_PNM_U_SSN
+"RTN","LRZOE2",15,0)
+ K DR S LRTSTS=0
+"RTN","LRZOE2",16,0)
+ S LRSN=0 F  S LRSN=$O(LRSN(LRSN)) Q:'LRSN  D Q17
+"RTN","LRZOE2",17,0)
+ I $D(LRLONG),$D(LRSND) S LRSN=LRSND D LROE S X=^TMP("LROE",$J,"LRORD"),LRORD=+X,LRODT=$P(X,"^",2),LRTIM=$P(X,"^",3),LRLONG="",PNM=$P(X,"^",4),SSN=$P(X,"^",5)
+"RTN","LRZOE2",18,0)
+ Q
+"RTN","LRZOE2",19,0)
+Q17 S I=$O(^LRO(69,LRODT,1,LRSN,6,0)),J=$O(^(1)) S:'$D(IOM) IOM=80 K LRSPCDSC S:J LRSPCDSC=^(J,0) S:I DA=LRSN,DA(1)=LRODT,DR=6,DIC="^LRO(69,"_LRODT_",1," D EN^DIQ:I D LRSPEC^LROE1
+"RTN","LRZOE2",20,0)
+ D OLD^LRORDST K ^TMP("LR",$J,"TMP")
+"RTN","LRZOE2",21,0)
+ S $P(^LRO(69,LRODT,1,LRSN,1),U,4)="C",$P(^LRO(69,LRODT,1,LRSN,1),U,8)=DUZ(2),^LRO(69,"AA",+$G(^LRO(69,LRODT,1,LRSN,.1)),LRODT_"|"_LRSN)=""
+"RTN","LRZOE2",22,0)
+ Q
+"RTN","LRZOE2",23,0)
+LROE ;from LROE1  ;;;;JFR copied from LRFAST to reduce mods
+"RTN","LRZOE2",24,0)
+ S LRLLOC=$P(^LRO(69,LRODT,1,LRSN,0),U,7) S:'$L(LRLLOC) LRLLOC=0 K LROE
+"RTN","LRZOE2",25,0)
+ S I1=0 F  S I1=$O(^LRO(69,LRODT,1,LRSN,2,I1)) Q:I1<1!($G(LREND))  S X=^(I1,0) I $P(X,U,4) S LRAA=$P(X,U,4),LRAN=$P(X,U,5),LRAD=$P(X,U,3) I '$D(LROE(LRAD_LRAA_LRAN)) S LROE(LRAD_LRAA_LRAN)="" D LROE1
+"RTN","LRZOE2",26,0)
+ G QUIT^LRFAST
+"RTN","LRZOE2",27,0)
+ ;
+"RTN","LRZOE2",28,0)
+ ;
+"RTN","LRZOE2",29,0)
+LROE1 S LRX=$G(^LRO(68,LRAA,0))
+"RTN","LRZOE2",30,0)
+ S LRIDIV=$S($L($P(LRX,U,19)):$P(LRX,U,19),1:"CP")
+"RTN","LRZOE2",31,0)
+ D:$P(LRPARAM,U,14)&($P($G(^LRO(68,LRAA,0)),U,16)) ^LRCAPV
+"RTN","LRZOE2",32,0)
+ I $G(LREND) Q
+"RTN","LRZOE2",33,0)
+ ; Check for different performing lab.
+"RTN","LRZOE2",34,0)
+ I $G(LRPL) N LRDUZ S LRDUZ(2)=LRPL
+"RTN","LRZOE2",35,0)
+ ;
+"RTN","LRZOE2",36,0)
+ S LRUID=$P(^LRO(68,LRAA,1,LRAD,1,LRAN,.3),"^")
+"RTN","LRZOE2",37,0)
+ I $P(LRX,U,2)="CH" D ^LRZVER1
+"RTN","LRZOE2",38,0)
+ K LRX
+"RTN","LRZOE2",39,0)
+ Q
+"RTN","LRZOE2",40,0)
+ ;
+"RTN","LRZORD")
+0^1^B65736758
+"RTN","LRZORD",1,0)
+LRZORD ;DALOI/CJS,NTEO/JFR - LAZY ACCESSION LOGGING ;12/6/06 13:14; [12/27/09 5:21pm]
+"RTN","LRZORD",2,0)
+ ;;5.2;LAB SERVICE;**100,121,153,286**;Sep 27, 1994;Build 6
+"RTN","LRZORD",3,0)
+ ;;
+"RTN","LRZORD",4,0)
+VEHU ; Entry point for jamming in labs
+"RTN","LRZORD",5,0)
+ ; get test (one only for now)
+"RTN","LRZORD",6,0)
+ ; show test range
+"RTN","LRZORD",7,0)
+ ; ask for result range
+"RTN","LRZORD",8,0)
+ ; get collection date/time
+"RTN","LRZORD",9,0)
+ ; get patient list
+"RTN","LRZORD",10,0)
+ ; rock & roll
+"RTN","LRZORD",11,0)
+ K ^TMP("LRZSTIK",$J),^TMP("LRVEHU",$J)
+"RTN","LRZORD",12,0)
+ N LRZPT,LRVEHU,LRZONE,DIR,Y,DUOUT,DTOUT,DIRUT
+"RTN","LRZORD",13,0)
+ N LRBLOOD,LRDT0,LRLABKY,LRPARAM,LRPLASMA,LRSERUM,LRODT0,LRSND
+"RTN","LRZORD",14,0)
+ N LRUNKNOW,LRURINE,LRVIDO,LRVIDOF,LRAL,LRALL,LRCMTDSP,LRFLG,LRNGS
+"RTN","LRZORD",15,0)
+ D ^LRPARAM I $G(LREND) D KILL Q
+"RTN","LRZORD",16,0)
+ D GET I '$D(^TMP("LRZSTIK",$J)) W !,"No test selected, you lose!" Q
+"RTN","LRZORD",17,0)
+ S ^TMP("LRVEHU",$J,"RNG")=$$RNG
+"RTN","LRZORD",18,0)
+ I '$L(^TMP("LRVEHU",$J,"RNG")) W !,"No result entered, can't continue" D KILL Q
+"RTN","LRZORD",19,0)
+ S ^TMP("LRVEHU",$J,"I")=$P(^VA(200,+DUZ,0),U,2)
+"RTN","LRZORD",20,0)
+ ;S ^TMP("LRVEHU",$J,"I")=$P(^VA(200,+1,0),U,2)
+"RTN","LRZORD",21,0)
+ S ^TMP("LRVEHU",$J,"COLL")=$$COLLDT
+"RTN","LRZORD",22,0)
+ I '$L(^TMP("LRVEHU",$J,"COLL")) W !,"No collection date/time entered, gotta go!" D KILL Q
+"RTN","LRZORD",23,0)
+ W !!
+"RTN","LRZORD",24,0)
+ W "Provider Selection:"
+"RTN","LRZORD",25,0)
+ K LRSRNB
+"RTN","LRZORD",26,0)
+ D ALSP("Providers with ORES key^Provider","^VA(200,",.LRSRNB)
+"RTN","LRZORD",27,0)
+ I LRSRNB["^" D KILL Q
+"RTN","LRZORD",28,0)
+ ;ZW LRSRNB
+"RTN","LRZORD",29,0)
+ S LRVEHU=1
+"RTN","LRZORD",30,0)
+ D PT
+"RTN","LRZORD",31,0)
+ I '$D(^TMP("LRVEHU",$J,"PT")) W !,"No patients selected!",!,"Outta Here!" D KILL Q
+"RTN","LRZORD",32,0)
+ W !
+"RTN","LRZORD",33,0)
+ S DIR(0)="YA",DIR("A")="Are you ready to proceed? "
+"RTN","LRZORD",34,0)
+ D ^DIR
+"RTN","LRZORD",35,0)
+ I $D(DTOUT)!($D(DUOUT))!('$G(Y)) W !!,"OK! No data entered." H 1 D KILL Q
+"RTN","LRZORD",36,0)
+ S LRZPT=0
+"RTN","LRZORD",37,0)
+ ;Q  ; JFR QUIT TO TEST ALL DATA COLLECTION
+"RTN","LRZORD",38,0)
+ F  S LRZPT=$O(^TMP("LRVEHU",$J,"PT",LRZPT)) Q:'LRZPT  D
+"RTN","LRZORD",39,0)
+ . S LRWP=1
+"RTN","LRZORD",40,0)
+ . M ^TMP("LRSTIK",$J)=^TMP("LRZSTIK",$J)
+"RTN","LRZORD",41,0)
+ . D ^LRPARAM
+"RTN","LRZORD",42,0)
+ . D EN
+"RTN","LRZORD",43,0)
+ . S ^TMP("LRVEHU",$J,"R")=$$RAND($P(^TMP("LRVEHU",$J,"RNG"),U,1),$P(^TMP("LRVEHU",$J,"RNG"),U,2))
+"RTN","LRZORD",44,0)
+ . D STAT^LRZOE
+"RTN","LRZORD",45,0)
+ . K ^TMP("LRVEHU",$J,LRZORD),LRZORD,LRZONE
+"RTN","LRZORD",46,0)
+ . D ^LRORDK
+"RTN","LRZORD",47,0)
+ . W !,$$CJ^XLFSTR("************************************************",80),!
+"RTN","LRZORD",48,0)
+ . Q
+"RTN","LRZORD",49,0)
+ D KILL
+"RTN","LRZORD",50,0)
+ K LRVEHU
+"RTN","LRZORD",51,0)
+ Q
+"RTN","LRZORD",52,0)
+ ;
+"RTN","LRZORD",53,0)
+EN ;;from LROR4
+"RTN","LRZORD",54,0)
+ K DIC,LRURG,LRSAME,LRCOM,LRNATURE,LRTCOM
+"RTN","LRZORD",55,0)
+ S LRORDR="WC"
+"RTN","LRZORD",56,0)
+ S LRORDTIM=""
+"RTN","LRZORD",57,0)
+ I $D(LRADDTST) Q:LRADDTST=""
+"RTN","LRZORD",58,0)
+ S LRFIRST=1,LRODT=DT,U="^",LRECT=0,LROUTINE=$P(^LAB(69.9,1,3),U,2)
+"RTN","LRZORD",59,0)
+ S:$G(LRORDRR)="R" LRECT=1,LRFIRST=0
+"RTN","LRZORD",60,0)
+ I LRORDR="SP" S LRLWC="SP"
+"RTN","LRZORD",61,0)
+ I LRORDR="WC" S LRLWC="WC"
+"RTN","LRZORD",62,0)
+L5 S Y=$$NOW^XLFDT S LRORDTIM=$P(Y,".",2),LRODT=$P(Y,".",1),X1=Y,X2=DT D ^%DTC ;;  JFR  def order time
+"RTN","LRZORD",63,0)
+ G KILL:LRWP<1
+"RTN","LRZORD",64,0)
+ S:'$D(^LRO(69,LRODT,0)) ^(0)=$P(^LRO(69,0),U,1,2)_U_LRODT_U_(1+$P(^(0),U,4)),^LRO(69,LRODT,0)=LRODT,^LRO(69,"B",LRODT,LRODT)=""
+"RTN","LRZORD",65,0)
+ S LRURG="",LRAD=DT,LRWPD=LRWP\2+(LRWP#2) ; D ^LRZORD1 Q
+"RTN","LRZORD",66,0)
+ N IENN
+"RTN","LRZORD",67,0)
+ ;ZW LRSRNB
+"RTN","LRZORD",68,0)
+ S IENN=0
+"RTN","LRZORD",69,0)
+ F  S IENN=$O(LRSRNB(IENN)) Q:IENN=""  D
+"RTN","LRZORD",70,0)
+ .D ^LRZORD1
+"RTN","LRZORD",71,0)
+ ;NEW BELOW
+"RTN","LRZORD",72,0)
+ ;K LRAD,LRADDTST,LRBLEND,
+"RTN","LRZORD",73,0)
+ Q
+"RTN","LRZORD",74,0)
+G0 ;
+"RTN","LRZORD",75,0)
+G1 ;
+"RTN","LRZORD",76,0)
+GET ;
+"RTN","LRZORD",77,0)
+ N DIC,X,Y,DUOUT,DTOUT
+"RTN","LRZORD",78,0)
+ S LRORDR="WC"
+"RTN","LRZORD",79,0)
+ S DIC("S")="I $P(^(0),U,4)=""CH"""_$S('$D(LRLABKY):",""NO""'[$P(^(0),U,3)",'$P(LRLABKY,U,3):",""N""'[$P(^(0),U,3)",1:"")
+"RTN","LRZORD",80,0)
+ S DIC="^LAB(60,",DIC(0)="AEMOQZ"
+"RTN","LRZORD",81,0)
+ D ^DIC I Y<1 Q
+"RTN","LRZORD",82,0)
+ S LRWP=1,LRY=Y
+"RTN","LRZORD",83,0)
+ S ^TMP("LRZSTIK",$J,LRWP)=$P(LRY,U,1,2)
+"RTN","LRZORD",84,0)
+ ; "B" Used to lookup by number user enters.
+"RTN","LRZORD",85,0)
+ S ^TMP("LRZSTIK",$J,"B",LRWP)=LRWP
+"RTN","LRZORD",86,0)
+ ; "C" Used by LEDI (LRORDB)
+"RTN","LRZORD",87,0)
+ S ^TMP("LRZSTIK",$J,"C",+LRY,LRWP)=""
+"RTN","LRZORD",88,0)
+ S LRTSTS=+^TMP("LRZSTIK",$J,LRWP) D SAMP
+"RTN","LRZORD",89,0)
+ S:+LRSAMP=-1&(LRSPEC=-1) LRWP=LRWP-1
+"RTN","LRZORD",90,0)
+ G GET:+LRSAMP=-1&(LRSPEC=-1)
+"RTN","LRZORD",91,0)
+ S ^TMP("LRZSTIK",$J,LRWP)=^TMP("LRZSTIK",$J,LRWP)_U_LRSAMP_U_U_LRSPEC
+"RTN","LRZORD",92,0)
+ W !!
+"RTN","LRZORD",93,0)
+ W !,"Reference Ranges for this test and Specimen:",!
+"RTN","LRZORD",94,0)
+ N LRZSP S LRZSP=$O(^LAB(60,+LRY,1,"B",LRSPEC,0)),LRZSP=$G(^LAB(60,+LRY,1,LRZSP,0))
+"RTN","LRZORD",95,0)
+ W !,"Reference Low: ",$P(LRZSP,U,2)
+"RTN","LRZORD",96,0)
+ W !,"Reference High: ",$P(LRZSP,U,3)
+"RTN","LRZORD",97,0)
+ W !,"Critical Low: ",$P(LRZSP,U,4)
+"RTN","LRZORD",98,0)
+ W !,"Critical High: ",$P(LRZSP,U,5),!!
+"RTN","LRZORD",99,0)
+ Q
+"RTN","LRZORD",100,0)
+ ;
+"RTN","LRZORD",101,0)
+RNG() ;
+"RTN","LRZORD",102,0)
+ N LRZRES
+"RTN","LRZORD",103,0)
+ N DIR,X,Y,DUOUT,DTOUT
+"RTN","LRZORD",104,0)
+ W !,"If you want the same value for all patients, enter it for both high and low",!
+"RTN","LRZORD",105,0)
+ S DIR(0)="N^::2",DIR("A")="Enter the low result to enter for this test"
+"RTN","LRZORD",106,0)
+ D ^DIR I $D(DTOUT)!($D(DUOUT)) K ^TMP("LRSTIK",$J) Q ""
+"RTN","LRZORD",107,0)
+ S LRZRES=Y
+"RTN","LRZORD",108,0)
+ S DIR(0)="NA^"_LRZRES_"::2"
+"RTN","LRZORD",109,0)
+ S DIR("A")="Enter the high result for this test: " D ^DIR
+"RTN","LRZORD",110,0)
+ I $D(DTOUT)!($D(DUOUT)) K ^TMP("LRSTIK",$J) Q ""
+"RTN","LRZORD",111,0)
+ S LRZRES=LRZRES_U_Y
+"RTN","LRZORD",112,0)
+ Q LRZRES
+"RTN","LRZORD",113,0)
+ ;
+"RTN","LRZORD",114,0)
+KILL D ^LRORDK,LROEND^LRORDK K ^TMP("LRVEHU",$J),^TMP("LRSTIK",$J) D HOME^%ZIS Q
+"RTN","LRZORD",115,0)
+% R %:DTIME Q:%=""!(%["N")!(%["Y")!($E(%)="^")  W !,"Answer 'Y' or 'N': " G %
+"RTN","LRZORD",116,0)
+ Q
+"RTN","LRZORD",117,0)
+ ;
+"RTN","LRZORD",118,0)
+RAND(LOW,HIGH) ; GET RANGE
+"RTN","LRZORD",119,0)
+ N DIFF,NEWVAL,LOWDEC,HIGHDEC,NEWDEC,LDEC
+"RTN","LRZORD",120,0)
+ S DIFF=HIGH-LOW
+"RTN","LRZORD",121,0)
+ I DIFF=0 Q LOW
+"RTN","LRZORD",122,0)
+ I DIFF<1 S DIFF=1
+"RTN","LRZORD",123,0)
+ S NEWVAL=LOW+$R(DIFF)
+"RTN","LRZORD",124,0)
+ S LOWDEC=$P(LOW,".",2)
+"RTN","LRZORD",125,0)
+ S HIGHDEC=$P(HIGH,".",2)
+"RTN","LRZORD",126,0)
+ I 'HIGHDEC,'LOWDEC Q NEWVAL
+"RTN","LRZORD",127,0)
+ S LDEC=$S($L(LOWDEC)=2:2,$L(HIGHDEC)=2:2,1:1)
+"RTN","LRZORD",128,0)
+ I LDEC=2 S NEWDEC=$R(100)
+"RTN","LRZORD",129,0)
+ I LDEC=1 S NEWDEC=$R(10)
+"RTN","LRZORD",130,0)
+ S NEWVAL=NEWVAL+("."_NEWDEC)
+"RTN","LRZORD",131,0)
+ S $P(NEWVAL,".",2)=$E(+$P(NEWVAL,".",2),1,LDEC)
+"RTN","LRZORD",132,0)
+ I NEWVAL>HIGH S NEWVAL=HIGH
+"RTN","LRZORD",133,0)
+ Q NEWVAL
+"RTN","LRZORD",134,0)
+ ;
+"RTN","LRZORD",135,0)
+ALSP(PRPT,FILE,ARR) ; Selection of (A)LL or (S)pecific values from a given file
+"RTN","LRZORD",136,0)
+ ; Input: PRPT  - Piece 1: Label for the PROMPT to be asked for the 
+"RTN","LRZORD",137,0)
+ ;                         selection (in the plural) - e.g. "Providers"
+"RTN","LRZORD",138,0)
+ ;                Piece 2: Singular of piece 1 -  e.g. "Provider"
+"RTN","LRZORD",139,0)
+ ;                Example: "Specialties^Specialty"
+"RTN","LRZORD",140,0)
+ ;        FILE  - File global root (e.g., "^IBE(356.8," ) that the values
+"RTN","LRZORD",141,0)
+ ;                will be selected from
+"RTN","LRZORD",142,0)
+ ;        ARR   - Name of the array that will contain the specific values
+"RTN","LRZORD",143,0)
+ ;                (must be passed as a reference value ".ARR")
+"RTN","LRZORD",144,0)
+ ; Output: ARR  - "S" - Specific values OR "^"
+"RTN","LRZORD",145,0)
+ ;                The values will be returned in the array indicated in
+"RTN","LRZORD",146,0)
+ ;                ARR parameter 
+"RTN","LRZORD",147,0)
+ ;
+"RTN","LRZORD",148,0)
+ N DIC,PRL,SNG,X
+"RTN","LRZORD",149,0)
+ K ARR S PRL=$P(PRPT,"^"),SNG=$P(PRPT,"^",2) S:SNG="" SNG=PRL
+"RTN","LRZORD",150,0)
+ ;ALSP1 W !!,"Run report for (A)LL or (S)PECIFIC "_PRL_": A// "
+"RTN","LRZORD",151,0)
+ ;R X:DTIME I '$T!(X["^") S ARR="^" G QALSP
+"RTN","LRZORD",152,0)
+ ;S X=$S(X="":"A",1:$E(X)) I "AaSs"'[X D HALSP G ALSP1
+"RTN","LRZORD",153,0)
+ ;W " ",$S("Ss"[X:"SPECIFIC",1:"ALL") I "Aa"[X K ARR S ARR="A" G QALSP
+"RTN","LRZORD",154,0)
+ S ARR="S"
+"RTN","LRZORD",155,0)
+ALSP2 S DIC=FILE,DIC(0)="AEQMZ"
+"RTN","LRZORD",156,0)
+ S DIC("A")="   Select a"_$S($O(ARR(""))'="":"nother",1:"")_" "
+"RTN","LRZORD",157,0)
+ S DIC("A")=DIC("A")_SNG_": "
+"RTN","LRZORD",158,0)
+ D ^DIC K DIC I $D(DTOUT)!($D(DUOUT)) K ARR S ARR="^" G QALSP
+"RTN","LRZORD",159,0)
+ I Y'>0 G QALSP ; G ALSP1:$O(ARR(""))="" G QALSP
+"RTN","LRZORD",160,0)
+ I $D(ARR(+Y)) D  G ALSP2
+"RTN","LRZORD",161,0)
+ . W !!?3,"Already selected. Choose another "_SNG,*7,!
+"RTN","LRZORD",162,0)
+ S ARR(+Y)="" Q ; ONLY ALLOW 1 PATIENT PER PATIENT PER TIME OF LAB RESULTING ALERT G ALSP2
+"RTN","LRZORD",163,0)
+ ;
+"RTN","LRZORD",164,0)
+QALSP Q
+"RTN","LRZORD",165,0)
+ ;
+"RTN","LRZORD",166,0)
+PT N PTARR
+"RTN","LRZORD",167,0)
+ W !!,"Select patients to enter the selected lab result for. Select numbers between"
+"RTN","LRZORD",168,0)
+ W !,"0 and 950 with the number corresponding to the VeHU patient that you want to"
+"RTN","LRZORD",169,0)
+ W !,"update.  For example, choosing number 12 will update VeHU patient twelve"
+"RTN","LRZORD",170,0)
+ W !,"(LAST 6 digits of SSN. Test patients SSN assumed XXX and leading zeros up to 6 digits OR ""66600"""_"L4."
+"RTN","LRZORD",171,0)
+ W !,"Twelve is XXX000012 for SSN)",!!
+"RTN","LRZORD",172,0)
+ S DIR("A")="Select patient(s) to be updated"
+"RTN","LRZORD",173,0)
+ S DIR(0)="LO^0:950" D ^DIR K DIR Q:Y=""!($D(DUOUT))!($D(DTOUT))
+"RTN","LRZORD",174,0)
+ D PARSE(Y,.PTARR) S J=0 F  S J=$O(Y(J)) Q:'+J  D PARSE(Y(J),.PTARR)
+"RTN","LRZORD",175,0)
+ M ^TMP("LRVEHU",$J,"PT")=PTARR
+"RTN","LRZORD",176,0)
+ Q
+"RTN","LRZORD",177,0)
+ ;
+"RTN","LRZORD",178,0)
+PARSE(ARRAY,LIST) ;
+"RTN","LRZORD",179,0)
+ N NUM,R,LNUM,L4,SSN
+"RTN","LRZORD",180,0)
+ S NUM=$L(ARRAY,",")-1
+"RTN","LRZORD",181,0)
+ F R=1:1:NUM S LNUM=$P(ARRAY,",",R) S L4=$S(LNUM=0:"0000",1:$E("000",1,(4-$L(LNUM)))_LNUM) D
+"RTN","LRZORD",182,0)
+ .S SSN="66600"_L4
+"RTN","LRZORD",183,0)
+ .I $D(^DPT("SSN",SSN)) S LIST($O(^DPT("SSN",SSN,0)))=""
+"RTN","LRZORD",184,0)
+ Q
+"RTN","LRZORD",185,0)
+ ;
+"RTN","LRZORD",186,0)
+COLLDT() ; get d/t to stuff in for collection date@time
+"RTN","LRZORD",187,0)
+ ;
+"RTN","LRZORD",188,0)
+ N DIR,X,Y,DTOUT,DUOUT,DIRUT
+"RTN","LRZORD",189,0)
+ W !
+"RTN","LRZORD",190,0)
+ S DIR(0)="D^:NOW:ETR",DIR("A")="Enter the date/time of collection for all results"
+"RTN","LRZORD",191,0)
+ D ^DIR
+"RTN","LRZORD",192,0)
+ I $D(DTOUT)!($D(DUOUT)) Q ""
+"RTN","LRZORD",193,0)
+ Q Y(0)
+"RTN","LRZORD",194,0)
+ ;
+"RTN","LRZORD",195,0)
+SAMP ; copy of GS^LRORD3
+"RTN","LRZORD",196,0)
+ N X,Y,DIC,DTOUT,DUOUT,J
+"RTN","LRZORD",197,0)
+ S LRSAMP=-1,LRSPEC=-1 S:$D(LRSAME) LRSAMP=$P(LRSAME,U),LRSPEC=$P(LRSAME,U,2)
+"RTN","LRZORD",198,0)
+ K %
+"RTN","LRZORD",199,0)
+ S J=$O(^LAB(60,LRTSTS,3,0)) G GSNO:J<1 S LRCSN=1,LRUNQ=+$P(^LAB(60,LRTSTS,0),U,8),LRCS(1)=+^(3,J,0) S X=$P(^LAB(62,LRCS(1),0),U) W:'$D(LRSAME) !,$S(LRUNQ:"The Sample ",1:""),"Is ",X,"   ",$P(^(0),U,3)
+"RTN","LRZORD",200,0)
+ G G2S:LRUNQ Q:$D(LRSAME)  W " the correct sample to collect? Y//" D % G G2S:%'["N"
+"RTN","LRZORD",201,0)
+ F  S J=$O(^LAB(60,LRTSTS,3,J)) Q:J<1  S LRCSN=LRCSN+1,LRCS(LRCSN)=+^(J,0)
+"RTN","LRZORD",202,0)
+ G GSNO:LRCSN<2
+"RTN","LRZORD",203,0)
+ W ! F I=1:1:LRCSN W !,I," ",$P(^LAB(62,LRCS(I),0),U),"  ",$P(^(0),U,3)
+"RTN","LRZORD",204,0)
+ ;K I,LRCS
+"RTN","LRZORD",205,0)
+ R !,"Choose one: ",X:DTIME IF X>0&(X<(LRCSN+1)) S LRCSN=+X G G2S
+"RTN","LRZORD",206,0)
+GSNO ;
+"RTN","LRZORD",207,0)
+ Q:$D(LRSAME)  S LRCSN=1,LRCS(1)=-1,DIC="^LAB(62,",DIC(0)="AEMOQ" D ^DIC K DIC S LRCS(1)=+Y
+"RTN","LRZORD",208,0)
+G2S S LRSAMP=LRCS(LRCSN) I LRSAMP<1 S Y=-1,LROT="" G G3S
+"RTN","LRZORD",209,0)
+ I $P(^LAB(62,LRSAMP,0),U,2)'="" S LRSPEC=+$P(^(0),U,2) G G4S
+"RTN","LRZORD",210,0)
+W18A S DIC="^LAB(61,",DIC(0)="EMOQ",D="E" R !,"Select SITE/SPECIMEN: ",X:DTIME
+"RTN","LRZORD",211,0)
+ D IX^DIC:X="?" G W18A:X="?" D ^DIC K DIC G W18A:'($D(DUOUT)!$D(DTOUT))&(Y<0) I $D(DTOUT)!$D(DUOUT) S LREND=1 K D Q
+"RTN","LRZORD",212,0)
+ I LRUNKNOW=+Y W !,"Unknown is not allowed." G W18A
+"RTN","LRZORD",213,0)
+G3S S LRSPEC=+Y
+"RTN","LRZORD",214,0)
+ I +LRSAMP=-1&(LRSPEC=-1),$D(LROT) W !,"Sample and source incompletely defined, test skipped." Q
+"RTN","LRZORD",215,0)
+G4S Q:+LRSAMP=-1&(LRSPEC=-1)!$D(LRSAME)!$D(LRBLEND)
+"RTN","LRZORD",216,0)
+ Q
+"RTN","LRZORD1")
+0^2^B25312131
+"RTN","LRZORD1",1,0)
+LRZORD1 ;DALOI/RWF,NTEO/JFR - LAZY ACCESSION LOGGING ; 12/6/06 18:59
+"RTN","LRZORD1",2,0)
+ ;;5.2;LAB SERVICE;**1,8,121,153,201,286**;Sep 27, 1994;Build 6
+"RTN","LRZORD1",3,0)
+L2 Q:$G(LREND)
+"RTN","LRZORD1",4,0)
+ K LROT,LRSAME,LRKIL,LRGCOM,LRCCOM,LR696IEN,LRNATURE,DGSENFLG
+"RTN","LRZORD1",5,0)
+ S LRWPC=LRWP G:$D(LROR) LRFIRST
+"RTN","LRZORD1",6,0)
+ ;I '$D(LRADDTST) K DFN,DIC S PNM="",DIC(0)="EMQ"_$S($P(LRPARAM,U,6)&$D(LRLABKY):"L",1:"") W ! D ^LRDPA I (LRDFN=-1)!$D(DUOUT)!$D(DTOUT) Q
+"RTN","LRZORD1",7,0)
+ K DFN,DIC,X
+"RTN","LRZORD1",8,0)
+ S X="`"_LRZPT
+"RTN","LRZORD1",9,0)
+ S PNM="",DIC(0)="EMQ",DGSENFLG=1 D EN^LRDPA ; JFR must default patient
+"RTN","LRZORD1",10,0)
+ I '+DFN G DROP
+"RTN","LRZORD1",11,0)
+ I $D(LRADDTST),LRADDTST="" Q
+"RTN","LRZORD1",12,0)
+ S LRORDR="WC"
+"RTN","LRZORD1",13,0)
+ S:'$D(LREND) LREND=0 I LRORDR="" D COLTY^LRWU G DROP:LREND
+"RTN","LRZORD1",14,0)
+ ;B
+"RTN","LRZORD1",15,0)
+ S LRDPF=$P(^LR(LRDFN,0),U,2),DFN=$P(^(0),U,3)
+"RTN","LRZORD1",16,0)
+Q12 D LOC
+"RTN","LRZORD1",17,0)
+Q11 D PRAC G DROP:LREND
+"RTN","LRZORD1",18,0)
+ K T,TT,LRDMAX,LRDTST,LRTMAX
+"RTN","LRZORD1",19,0)
+ S DA=0
+"RTN","LRZORD1",20,0)
+ F  S DA=$O(^LRO(69,LRODT,1,"AA",LRDFN,DA)) Q:DA<1  I $S($D(^LRO(69,LRODT,1,DA,1)):$P(^(1),U,4)'="U",1:1) S S=$S($D(^LRO(69,LRODT,1,DA,4,1,0)):+^(0),1:0) D
+"RTN","LRZORD1",21,0)
+ . S I=0 F  S I=$O(^LRO(69,LRODT,1,DA,2,I)) Q:I<1  I $D(^(I,0)) S T(+^(0),DA)=S,X=+^(0) S:'$D(TT(X,S)) TT(X,S)=0 S TT(X,S)=TT(X,S)+1
+"RTN","LRZORD1",22,0)
+ K DIC
+"RTN","LRZORD1",23,0)
+ I $D(LRADDTST) S LRORD=+LRADDTST,LRADDTST="" G LRFIRST
+"RTN","LRZORD1",24,0)
+ D ORDER^LROW2
+"RTN","LRZORD1",25,0)
+ ;
+"RTN","LRZORD1",26,0)
+LRFIRST S LRSX=1 G Q13:'LRFIRST!(LRWP<2)
+"RTN","LRZORD1",27,0)
+ W !,"Choose one (or more, separated by commas)  ('*' AFTER NUMBER TO CHANGE URGENCY) "
+"RTN","LRZORD1",28,0)
+ F I=1:1:LRWPD D
+"RTN","LRZORD1",29,0)
+ . N X
+"RTN","LRZORD1",30,0)
+ . S X=^TMP("LRSTIK",$J,"B",I)
+"RTN","LRZORD1",31,0)
+ . W !,X,?4,$P(^TMP("LRSTIK",$J,X),U,2)
+"RTN","LRZORD1",32,0)
+ . S X=$G(^TMP("LRSTIK",$J,"B",I+LRWPD))
+"RTN","LRZORD1",33,0)
+ . I X W ?39," ",X,?44,$P(^TMP("LRSTIK",$J,X),U,2)
+"RTN","LRZORD1",34,0)
+Q13 S LREDO=0
+"RTN","LRZORD1",35,0)
+LEDI ;
+"RTN","LRZORD1",36,0)
+ ;
+"RTN","LRZORD1",37,0)
+ ; If LEDI accessioning then check for pending orders in file #69.6
+"RTN","LRZORD1",38,0)
+ I $G(LRRSTAT)="I",$G(LRRSITE("SMID"))'="",$G(LRSD("RUID"))'="" D  I $O(LROT(0)) G BAR
+"RTN","LRZORD1",39,0)
+ . D EN^LRORDB(LRSD("RUID"),LRRSITE("SMID"))
+"RTN","LRZORD1",40,0)
+ G:LRWP'>1 Q13A
+"RTN","LRZORD1",41,0)
+ W ! W:'LRFIRST "'?' for list,  " S LRFIRST=0
+"RTN","LRZORD1",42,0)
+ R "TEST number(s): ",LRSX:DTIME S:LRSX["?" LRFIRST=1 G LRFIRST:LRFIRST
+"RTN","LRZORD1",43,0)
+ I LRSX=""!(LRSX["^") G BAR
+"RTN","LRZORD1",44,0)
+ F I=1:1:$L(LRSX,",") D  Q:LREDO
+"RTN","LRZORD1",45,0)
+ . S LRSSX=$P(LRSX,",",I)
+"RTN","LRZORD1",46,0)
+ . I LRSSX'?1.3N.1"*" S LREDO=1 Q
+"RTN","LRZORD1",47,0)
+ . S LRSSX=$P(LRSSX,"*")
+"RTN","LRZORD1",48,0)
+ . I '$D(^TMP("LRSTIK",$J,LRSSX)) S LREDO=1
+"RTN","LRZORD1",49,0)
+Q13A I LREDO W !,"Something was mistyped, try again." G Q13
+"RTN","LRZORD1",50,0)
+ F LRK=1:1 S LRSSX=$P(LRSX,",",LRK) Q:LRSSX=""  D
+"RTN","LRZORD1",51,0)
+ . N X
+"RTN","LRZORD1",52,0)
+ . S LRST=$S(LRSSX["*":1,1:0),LRSSX=+LRSSX
+"RTN","LRZORD1",53,0)
+ . S X=^TMP("LRSTIK",$J,LRSSX)
+"RTN","LRZORD1",54,0)
+ . S LRSAMP=$P(X,U,3),LRSPEC=$P(X,U,5),LRTSTS=+X
+"RTN","LRZORD1",55,0)
+ . D Q20^LRORDD
+"RTN","LRZORD1",56,0)
+BAR ;S LRM=LRWPC+1,K=0 W !,"Other tests? N//" D % G Q14:'(%["Y")
+"RTN","LRZORD1",57,0)
+LRM ;D MORE^LRORD2
+"RTN","LRZORD1",58,0)
+ ; JFR - changed following to use stuff LRNATURE
+"RTN","LRZORD1",59,0)
+Q14 ;D:$P(LRPARAM,U,17) ^LRORDD D ^LRORD2A    ;JFR  testing the max order stuff
+"RTN","LRZORD1",60,0)
+ S LRNATURE="4^SERVICE CORRECTION^99ORN",%=1
+"RTN","LRZORD1",61,0)
+ G LRM:'$D(%)&($D(LROT)'=11),DROP:$O(LROT(-1))="",LRM:'$D(%),DROP:%[U K DIC G DROP:'$D(LROT)!(%["N")
+"RTN","LRZORD1",62,0)
+ ;W !!,"LAB Order number: ",LRORD,!!
+"RTN","LRZORD1",63,0)
+ S ^TMP("LRVEHU",$J,LRORD)=""
+"RTN","LRZORD1",64,0)
+ S LRZORD=LRORD
+"RTN","LRZORD1",65,0)
+ I LRECT D  G DROP:LRCDT<1
+"RTN","LRZORD1",66,0)
+ . I $G(LRORDRR)="R",$G(LRSD("CDT")) D  Q
+"RTN","LRZORD1",67,0)
+ . . S LRCDT=LRSD("CDT")_"^"
+"RTN","LRZORD1",68,0)
+ . . S LRORDTIM=$P(LRSD("CDT"),".",2)
+"RTN","LRZORD1",69,0)
+ . . I 'LRORDTIM S $P(LRCDT,"^",2)=1
+"RTN","LRZORD1",70,0)
+ . D TIME^LROE
+"RTN","LRZORD1",71,0)
+ . I LRCDT<1 Q
+"RTN","LRZORD1",72,0)
+ . S LRORDTIM=$P(Y,".",2)
+"RTN","LRZORD1",73,0)
+ D NOW^%DTC S LRNT=% S:'LRECT LRCDT=LRNT_"^1"
+"RTN","LRZORD1",74,0)
+ S LRIDT=9999999-LRCDT
+"RTN","LRZORD1",75,0)
+ D ^LRORDST Q:$D(LROR)
+"RTN","LRZORD1",76,0)
+ Q
+"RTN","LRZORD1",77,0)
+% R %:DTIME Q:%=""!(%["N")!(%["Y")  W !,"Answer 'Y' or 'N': " G %
+"RTN","LRZORD1",78,0)
+ ;
+"RTN","LRZORD1",79,0)
+Q20A ;from LRORD2
+"RTN","LRZORD1",80,0)
+MAX ; CHECK FOR MAXIUM ORDER FREQUENCY
+"RTN","LRZORD1",81,0)
+ I $D(TT(LRTSTS,LRSPEC)),$D(^LAB(60,LRTSTS,3,"B",LRCS(LRCSN))) D EN2^LRORDD I %'["Y" Q
+"RTN","LRZORD1",82,0)
+ S I7=0 F I9=0:0 S I9=$O(T(LRTSTS,I9)) Q:I9=""  I $D(^LAB(60,LRTSTS,3,+$O(^LAB(60,LRTSTS,3,"B",LRSAMP,0)),0)),+$P(^(0),U,5),LRSPEC=T(LRTSTS,I9) S I7=1
+"RTN","LRZORD1",83,0)
+ I I7 W $C(7),!!,"You have a duplicate: " S LRSN=0 F  S LRSN=$O(T(LRTSTS,LRSN)) Q:LRSN<1  W "  for ",$P(^LAB(60,LRTSTS,0),U) S LRZT=LRTSTS D ORDER^LROS S LRTSTS=LRZT
+"RTN","LRZORD1",84,0)
+ I I7 W !,"You already have that test, do you really want another? N//" D %
+"RTN","LRZORD1",85,0)
+ Q
+"RTN","LRZORD1",86,0)
+ ;
+"RTN","LRZORD1",87,0)
+URGG W !,"For ",$P(^TMP("LRSTIK",$J,LRSSX),U,2)
+"RTN","LRZORD1",88,0)
+ D URG^LRORD2
+"RTN","LRZORD1",89,0)
+ Q
+"RTN","LRZORD1",90,0)
+ ;
+"RTN","LRZORD1",91,0)
+ ;
+"RTN","LRZORD1",92,0)
+DROP W !!,"ORDER CANCELED",$C(7),!! Q:$D(LROR)  G L2
+"RTN","LRZORD1",93,0)
+ ;
+"RTN","LRZORD1",94,0)
+ ;
+"RTN","LRZORD1",95,0)
+MICRO ;
+"RTN","LRZORD1",96,0)
+ Q
+"RTN","LRZORD1",97,0)
+ ;
+"RTN","LRZORD1",98,0)
+LOC ;get pt. location, called by LRPDA1
+"RTN","LRZORD1",99,0)
+ N %
+"RTN","LRZORD1",100,0)
+ I +LRDPF=LRDPF S LRDPF=LRDPF_^DIC(LRDPF,0,"GL")
+"RTN","LRZORD1",101,0)
+ S LREND=0,LRCAPLOC="Z"
+"RTN","LRZORD1",102,0)
+ I $D(^LR(LRDFN,.1)) S LRLLOC=^(.1)
+"RTN","LRZORD1",103,0)
+ S X="`23" ; JFR  whatever location var we use
+"RTN","LRZORD1",104,0)
+ K DIC S DIC("S")="I '$G(^(""OOS""))"
+"RTN","LRZORD1",105,0)
+ S LROLLOC="",DIC=44,DIC(0)="MOQZ" S:X="" X=LRLLOC D ^DIC K DIC G LOC:X["?"
+"RTN","LRZORD1",106,0)
+ S:Y>0 LROLLOC=+Y,LRLLOC=$P(Y(0),U,2),LRCAPLOC=$S($L($P(Y(0),U,3)):$P(Y(0),U,3),1:LRCAPLOC)
+"RTN","LRZORD1",107,0)
+ I $L(LRLLOC) S ^LR(LRDFN,.1)=LRLLOC
+"RTN","LRZORD1",108,0)
+ S ^LR(LRDFN,.092)=LRCAPLOC
+"RTN","LRZORD1",109,0)
+ K LRIA,LRRA I $D(^SC(+Y,"I")) S LRIA=+^("I"),LRRA=$P(^("I"),U,2)
+"RTN","LRZORD1",110,0)
+ K DIC,LRIA,LRRA,% Q
+"RTN","LRZORD1",111,0)
+ S LREND=1 K DIC,LRIA,LRRE,%
+"RTN","LRZORD1",112,0)
+ Q
+"RTN","LRZORD1",113,0)
+PRAC ;
+"RTN","LRZORD1",114,0)
+ N PROVIDER,IEN1
+"RTN","LRZORD1",115,0)
+ ; S LRPRAC=20364 Q
+"RTN","LRZORD1",116,0)
+ ;S LRPRAC=1 Q
+"RTN","LRZORD1",117,0)
+ ;S PROVIDER=LRSRNB1(IENN)
+"RTN","LRZORD1",118,0)
+ S PROVIDER=$P($G(^VA(200,IENN,0)),"^",1)
+"RTN","LRZORD1",119,0)
+ W !,"PROVIDER=",PROVIDER
+"RTN","LRZORD1",120,0)
+ S LRPRAC=IENN Q
+"RTN","LRZORD1",121,0)
+ N %
+"RTN","LRZORD1",122,0)
+ D:'$D(LRPARAM) ^LRPARAM K DIC S LREND=0,(VA200,DIC("B"))=""
+"RTN","LRZORD1",123,0)
+ S DFN=$P(^LR(LRDFN,0),U,3) S LRDPF=$P(^LR(LRDFN,0),U,2)
+"RTN","LRZORD1",124,0)
+ ; S X="`20364" ; JFR might need to allow provider selection
+"RTN","LRZORD1",125,0)
+ S X="`1" ; JFR might need to allow provider selection 
+"RTN","LRZORD1",126,0)
+ S DIC="^VA(200,",DIC(0)="MNQ",DIC("S")="I $D(^VA(200,""AK.PROVIDER"",$P(^(0),U))),$$ACTIVE^XUSER(Y)",LRPRAC="",DIC("A")="PROVIDER: ",D="AK.PROVIDER"
+"RTN","LRZORD1",127,0)
+ D ^DIC K DIC G:Y<0 QUIT
+"RTN","LRZORD1",128,0)
+ S:Y>0 (^LR(LRDFN,.2),LRPRAC)=+Y
+"RTN","LRZORD1",129,0)
+ Q
+"RTN","LRZORD1",130,0)
+QUIT S LREND=1 Q
+"RTN","RADZVEFA")
+0^5^B35603018
+"RTN","RADZVEFA",1,0)
+RADZVEFA ;HISC/FPT-Radiology Utility Routine ;6/2/98  16:17
+"RTN","RADZVEFA",2,0)
+ ;;5.0;Radiology/Nuclear Medicine;**1,5,10,65,94**;VEFA ABNORMAL IMAGE "ALERT GENERATOR" TEST PROGRAM Mar 16, 1998;Build 6
+"RTN","RADZVEFA",3,0)
+ ;
+"RTN","RADZVEFA",4,0)
+IMAGEGEN ;
+"RTN","RADZVEFA",5,0)
+ N PATIEN,ALERTID,DATETIME,ORDERPRV,MSGTEXT1,LAST4,LENGTH,NEWALERT,ACTIONFLG,ENTRYPNT,AROUTINE,DELWOPRC,DAYSSURG,DAYSSUPV,DAYSBREV,DATAALR
+"RTN","RADZVEFA",6,0)
+ N DATAALRT,PATIENT,FILE
+"RTN","RADZVEFA",7,0)
+ N RADIOLO,RETENTD,ALERTIDN,RECIPINT,RECIPTYP,EXIT,X1,X2,Y,ORDERP
+"RTN","RADZVEFA",8,0)
+ K FDA,FDAIEN,OROUT
+"RTN","RADZVEFA",9,0)
+REP1 S DIC=2,DIC(0)="QAEZ" K DIC("A") S DIC("A")="Select Patient for Imaging Alert : " D ^DIC
+"RTN","RADZVEFA",10,0)
+ I X="^" Q
+"RTN","RADZVEFA",11,0)
+ I Y=-1 G REP1
+"RTN","RADZVEFA",12,0)
+ ;
+"RTN","RADZVEFA",13,0)
+ ; ALERT FILE FIRST
+"RTN","RADZVEFA",14,0)
+ ;
+"RTN","RADZVEFA",15,0)
+ ;
+"RTN","RADZVEFA",16,0)
+ S PATIEN=$P(Y,"^",1) ; 
+"RTN","RADZVEFA",17,0)
+ D NOW^%DTC S DATETIME=%
+"RTN","RADZVEFA",18,0)
+ S X1=%,X2=14 D C^%DTC S RETENTD=X
+"RTN","RADZVEFA",19,0)
+ S LAST4=$E($P($G(^DPT(PATIEN,0)),"^",9),6,9)
+"RTN","RADZVEFA",20,0)
+ ;
+"RTN","RADZVEFA",21,0)
+ ; FOR NOW NO QUESTION ON ORDERING PROVIDER. ASSUMED `1 AS PROGRAMMER,ONE
+"RTN","RADZVEFA",22,0)
+ S ORDERPRV=1 ; ARTIFICIAL 2ND RECIPIENT AFTER RADIOLOGIST,ONE (11716) BELOW
+"RTN","RADZVEFA",23,0)
+ W !!
+"RTN","RADZVEFA",24,0)
+ W "Provider Selection:"
+"RTN","RADZVEFA",25,0)
+ K LRSRNB
+"RTN","RADZVEFA",26,0)
+ D ALSP("Providers with ORES key^Provider","^VA(200,",.LRSRNB)
+"RTN","RADZVEFA",27,0)
+ I LRSRNB["^" Q
+"RTN","RADZVEFA",28,0)
+ N IENN
+"RTN","RADZVEFA",29,0)
+ ;ZW LRSRNB
+"RTN","RADZVEFA",30,0)
+ S IENN=0
+"RTN","RADZVEFA",31,0)
+ F  S IENN=$O(LRSRNB(IENN)) Q:IENN=""  D
+"RTN","RADZVEFA",32,0)
+ .S ORDERPRV=IENN
+"RTN","RADZVEFA",33,0)
+ S RADIOLO=DUZ ; 11716
+"RTN","RADZVEFA",34,0)
+ S ALERTID="OR,"_PATIEN_",25;"_ORDERPRV_";"_DATETIME
+"RTN","RADZVEFA",35,0)
+ S MSGTEXT1=$G(^DPT(PATIEN,0))
+"RTN","RADZVEFA",36,0)
+ ;W !,MSGTEXT1
+"RTN","RADZVEFA",37,0)
+ S MSGTEXT1=$E(MSGTEXT1,1,9)
+"RTN","RADZVEFA",38,0)
+ ;W !,MSGTEXT1
+"RTN","RADZVEFA",39,0)
+ ;   $E($P($G(^DPT(PATIEN,0)),"^",1),1,9)
+"RTN","RADZVEFA",40,0)
+ S MSGTEXT1=MSGTEXT1_" ("
+"RTN","RADZVEFA",41,0)
+ ;   _" ("
+"RTN","RADZVEFA",42,0)
+ S MSGTEXT1=MSGTEXT1_$E($P($G(^DPT(PATIEN,0)),"^",1),1,1)
+"RTN","RADZVEFA",43,0)
+ S EXIT=1
+"RTN","RADZVEFA",44,0)
+ S MSGTEXT1=MSGTEXT1_LAST4_"): Abnl Imaging Reslt, Needs Attn: "
+"RTN","RADZVEFA",45,0)
+ W !!,"DO YOU WANT CHEST 2 VIEWS PA&LAT" S %=1 D YN^DICN I %=1 D
+"RTN","RADZVEFA",46,0)
+ .S MSGTEXT1=MSGTEXT1_"CHEST 2 VIEWS PA&LAT" S EXIT=0
+"RTN","RADZVEFA",47,0)
+ I EXIT=0 G OVER
+"RTN","RADZVEFA",48,0)
+ W !!,"DO YOU WANT MAMMOGRAM BILAT" S %=1 D YN^DICN I %=1 D
+"RTN","RADZVEFA",49,0)
+ .S MSGTEXT1=MSGTEXT1_"MAMMOGRAM" S EXIT=0
+"RTN","RADZVEFA",50,0)
+ .;S MSGTEXT1=MSGTEXT1_"MAMM BI2V" S EXIT=0
+"RTN","RADZVEFA",51,0)
+OVER I EXIT=1 K % Q
+"RTN","RADZVEFA",52,0)
+ ;WRITE INTO ALERT "PROVIDER" RECORD FIRST BEFORE SUB-FILE MULTIPLE ENTRY
+"RTN","RADZVEFA",53,0)
+ S FILE=8992
+"RTN","RADZVEFA",54,0)
+ S FDA(43,FILE,"?+1,",.01)=ORDERPRV
+"RTN","RADZVEFA",55,0)
+ D UPDATE^DIE("","FDA(43)","FDAIEN","OROUT(43)")
+"RTN","RADZVEFA",56,0)
+ I $D(OROUT(43,"DIERR")) W !,"ORDERING PROVIDER ERROR= ",ORDERPRV," ",OROUT(43,"DIERR",1,"TEXT",1) Q
+"RTN","RADZVEFA",57,0)
+ S ORDERP=FDAIEN(1)
+"RTN","RADZVEFA",58,0)
+ K FDA(43),FDAIEN,OROUT(43)
+"RTN","RADZVEFA",59,0)
+ K %
+"RTN","RADZVEFA",60,0)
+ S LENGTH=$L(MSGTEXT1)
+"RTN","RADZVEFA",61,0)
+ I LENGTH>60 S MSGTEXT1=$E(MSGTEXT1,1,60)  ; W !,"OVER"
+"RTN","RADZVEFA",62,0)
+ S NEWALERT=1
+"RTN","RADZVEFA",63,0)
+ S ACTIONFLG="R"
+"RTN","RADZVEFA",64,0)
+ S ENTRYPNT="RPTRAD2"
+"RTN","RADZVEFA",65,0)
+ S AROUTINE="ORB3FUP2"
+"RTN","RADZVEFA",66,0)
+ S DELWOPRC=1 ; CAN DELETE W/O PROCESSING
+"RTN","RADZVEFA",67,0)
+ S DAYSSURG=1
+"RTN","RADZVEFA",68,0)
+ S DAYSSUPV=1
+"RTN","RADZVEFA",69,0)
+ S DAYSBREV=1
+"RTN","RADZVEFA",70,0)
+ S DATAALRT="6919591.9099~1"
+"RTN","RADZVEFA",71,0)
+ S PATIENT=$P($G(^DPT(PATIEN,0)),"^",1)
+"RTN","RADZVEFA",72,0)
+ S FDAIEN(1)=ORDERP
+"RTN","RADZVEFA",73,0)
+ S FILE=8992.01
+"RTN","RADZVEFA",74,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.01)=DATETIME
+"RTN","RADZVEFA",75,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.02)=ALERTID
+"RTN","RADZVEFA",76,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.03)=MSGTEXT1
+"RTN","RADZVEFA",77,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.04)=NEWALERT
+"RTN","RADZVEFA",78,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.05)=ACTIONFLG
+"RTN","RADZVEFA",79,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.07)=ENTRYPNT
+"RTN","RADZVEFA",80,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.08)=AROUTINE
+"RTN","RADZVEFA",81,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.1)=DELWOPRC
+"RTN","RADZVEFA",82,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.13)=DAYSSURG
+"RTN","RADZVEFA",83,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.14)=DAYSSUPV
+"RTN","RADZVEFA",84,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",.15)=DAYSBREV
+"RTN","RADZVEFA",85,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",1)=DATAALRT
+"RTN","RADZVEFA",86,0)
+ S FDA(44,FILE,"?+2,"_FDAIEN(1)_",",3.02)=PATIEN
+"RTN","RADZVEFA",87,0)
+ ;W !,MSGTEXT1
+"RTN","RADZVEFA",88,0)
+ ;Q
+"RTN","RADZVEFA",89,0)
+ D UPDATE^DIE("","FDA(44)","FDAIEN","OROUT(44)")
+"RTN","RADZVEFA",90,0)
+ I $D(OROUT(44,"DIERR")) W !,"DATE/TIME ERROR= ",DATETIME," ",OROUT(44,"DIERR",1,"TEXT",1) Q
+"RTN","RADZVEFA",91,0)
+ ;K FDA(44),OROUT(44)
+"RTN","RADZVEFA",92,0)
+ ;Q
+"RTN","RADZVEFA",93,0)
+ ;
+"RTN","RADZVEFA",94,0)
+ ; ALERT TRACKING FILE NOW
+"RTN","RADZVEFA",95,0)
+ ;
+"RTN","RADZVEFA",96,0)
+ ;
+"RTN","RADZVEFA",97,0)
+ ;S PKKID="OR,25"
+"RTN","RADZVEFA",98,0)
+ ;S DISPTXT=MSGTEXT1
+"RTN","RADZVEFA",99,0)
+ ;DATETIME
+"RTN","RADZVEFA",100,0)
+ ;ALERTID
+"RTN","RADZVEFA",101,0)
+ ;FIRST RECEIPIENT IS RADIOLOGIST,TWO
+"RTN","RADZVEFA",102,0)
+ ;S GENERBY=11716
+"RTN","RADZVEFA",103,0)
+ K FDA,FDAIEN,OROUT
+"RTN","RADZVEFA",104,0)
+ S FILE=8992.1
+"RTN","RADZVEFA",105,0)
+ S FDA(45,FILE,"?+1,",.01)=ALERTID   ;NAME ALERTID
+"RTN","RADZVEFA",106,0)
+ S FDA(45,FILE,"?+1,",.02)=DATETIME  ; DATE CREATED
+"RTN","RADZVEFA",107,0)
+ S FDA(45,FILE,"?+1,",.03)="OR,"_25   ; PKG ID
+"RTN","RADZVEFA",108,0)
+ S FDA(45,FILE,"?+1,",.04)=PATIEN     ; PATIENT
+"RTN","RADZVEFA",109,0)
+ S FDA(45,FILE,"?+1,",.05)=RADIOLO   ;GENERATED BY (RADIOLOGIST)
+"RTN","RADZVEFA",110,0)
+ S FDA(45,FILE,"?+1,",.06)=1         ; GENERATED WHILE QUEUED
+"RTN","RADZVEFA",111,0)
+ S FDA(45,FILE,"?+1,",.08)=RETENTD   ; RETENTION DATE
+"RTN","RADZVEFA",112,0)
+ S FDA(45,FILE,"?+1,",1.01)=MSGTEXT1     ; DISPLAY TEXT
+"RTN","RADZVEFA",113,0)
+ S FDA(45,FILE,"?+1,",1.03)=ENTRYPNT   ;ROUTINE TAG
+"RTN","RADZVEFA",114,0)
+ S FDA(45,FILE,"?+1,",1.04)=AROUTINE   ; ROUTINE FOR PROCESSING
+"RTN","RADZVEFA",115,0)
+ S FDA(45,FILE,"?+1,",2)=DATAALRT   ; DATA FOR ALERT
+"RTN","RADZVEFA",116,0)
+ D UPDATE^DIE("","FDA(45)","FDAIEN","OROUT(45)")
+"RTN","RADZVEFA",117,0)
+ I $D(OROUT(45,"DIERR")) W !,"NAME ALERTID ERROR= ",ALERTID," ",OROUT(45,"DIERR",1,"TEXT",1) Q
+"RTN","RADZVEFA",118,0)
+ S ALERTIDN=FDAIEN(1)
+"RTN","RADZVEFA",119,0)
+ K FDA(45),OROUT(45)
+"RTN","RADZVEFA",120,0)
+ K FDA,FDAIEN,OROUT
+"RTN","RADZVEFA",121,0)
+ S FILE=8992.11 ; RECIPIENT MULTIPLE
+"RTN","RADZVEFA",122,0)
+ S FDAIEN(1)=ALERTIDN
+"RTN","RADZVEFA",123,0)
+ ;RECIPIENT , FIRST PROGRAMMER,ONE AS ORDERING PROVIDER AS"INITIAL RECIPIENT" AS RECIPIENT TYPE
+"RTN","RADZVEFA",124,0)
+ S FDA(46,FILE,"?+2,"_FDAIEN(1)_",",.01)=ORDERPRV
+"RTN","RADZVEFA",125,0)
+ ;//S FDA(46,FILE,"?+2,"_FDAIEN(1)_",",.02)=DATETIME  ; ALERT FIRST DISPLAYED
+"RTN","RADZVEFA",126,0)
+ D UPDATE^DIE("","FDA(46)","FDAIEN","OROUT(46)")
+"RTN","RADZVEFA",127,0)
+ I $D(OROUT(46,"DIERR")) W !,"RECIPIENT ERROR= ",ORDERPRV," ",OROUT(46,"DIERR",1,"TEXT",1) Q
+"RTN","RADZVEFA",128,0)
+ S RECIPINT=FDAIEN(2)
+"RTN","RADZVEFA",129,0)
+ K FDA(46),OROUT(46)
+"RTN","RADZVEFA",130,0)
+ ; SUB FILE ENTRY RECIPIENT TYPE 
+"RTN","RADZVEFA",131,0)
+ K FDA,FDAIEN,OROUT
+"RTN","RADZVEFA",132,0)
+ S FILE=8992.111  ; RECIPIENT TYPE MULTIPLE
+"RTN","RADZVEFA",133,0)
+ S FDAIEN(1)=ALERTIDN
+"RTN","RADZVEFA",134,0)
+ S FDAIEN(2)=RECIPINT
+"RTN","RADZVEFA",135,0)
+ S RECIPTYP=1  ; INITIAL RECIPIENT
+"RTN","RADZVEFA",136,0)
+ ;RECIPIENT , FIRST PROGRAMMER,ONE AS ORDERING PROVIDER AS"INITIAL RECIPIENT" AS RECIPIENT TYPE
+"RTN","RADZVEFA",137,0)
+ S FDA(47,FILE,"?+3,"_FDAIEN(2)_","_FDAIEN(1)_",",.01)=RECIPTYP   ; RECIPIENT TYPE
+"RTN","RADZVEFA",138,0)
+ S FDA(47,FILE,"?+3,"_FDAIEN(2)_","_FDAIEN(1)_",",.04)=DATETIME  ; ALERT DATE/TIME
+"RTN","RADZVEFA",139,0)
+ D UPDATE^DIE("","FDA(47)","FDAIEN","OROUT(47)")
+"RTN","RADZVEFA",140,0)
+ I $D(OROUT(47,"DIERR")) W !,"RECIPIENT TYPE ERROR= ",DATETIME," ",OROUT(47,"DIERR",1,"TEXT",1) Q
+"RTN","RADZVEFA",141,0)
+ K FDA(47),OROUT(47)
+"RTN","RADZVEFA",142,0)
+ Q
+"RTN","RADZVEFA",143,0)
+DATEFMT(X) ;
+"RTN","RADZVEFA",144,0)
+ N DATETIME
+"RTN","RADZVEFA",145,0)
+ ;
+"RTN","RADZVEFA",146,0)
+ N Y
+"RTN","RADZVEFA",147,0)
+ S DATETIME=X
+"RTN","RADZVEFA",148,0)
+ S Y=DATETIME X ^DD("DD") S DATETIME=Y
+"RTN","RADZVEFA",149,0)
+ Q DATETIME
+"RTN","RADZVEFA",150,0)
+ALSP(PRPT,FILE,ARR) ; Selection of (A)LL or (S)pecific values from a given file
+"RTN","RADZVEFA",151,0)
+ ; Input: PRPT  - Piece 1: Label for the PROMPT to be asked for the 
+"RTN","RADZVEFA",152,0)
+ ;                         selection (in the plural) - e.g. "Providers"
+"RTN","RADZVEFA",153,0)
+ ;                Piece 2: Singular of piece 1 -  e.g. "Provider"
+"RTN","RADZVEFA",154,0)
+ ;                Example: "Specialties^Specialty"
+"RTN","RADZVEFA",155,0)
+ ;        FILE  - File global root (e.g., "^IBE(356.8," ) that the values
+"RTN","RADZVEFA",156,0)
+ ;                will be selected from
+"RTN","RADZVEFA",157,0)
+ ;        ARR   - Name of the array that will contain the specific values
+"RTN","RADZVEFA",158,0)
+ ;                (must be passed as a reference value ".ARR")
+"RTN","RADZVEFA",159,0)
+ ; Output: ARR  - "S" - Specific values OR "^"
+"RTN","RADZVEFA",160,0)
+ ;                The values will be returned in the array indicated in
+"RTN","RADZVEFA",161,0)
+ ;                ARR parameter 
+"RTN","RADZVEFA",162,0)
+ ;
+"RTN","RADZVEFA",163,0)
+ N DIC,PRL,SNG,X
+"RTN","RADZVEFA",164,0)
+ ;
+"RTN","RADZVEFA",165,0)
+ N Y
+"RTN","RADZVEFA",166,0)
+ K ARR S PRL=$P(PRPT,"^"),SNG=$P(PRPT,"^",2) S:SNG="" SNG=PRL
+"RTN","RADZVEFA",167,0)
+ ;ALSP1 W !!,"Run report for (A)LL or (S)PECIFIC "_PRL_": A// "
+"RTN","RADZVEFA",168,0)
+ ;R X:DTIME I '$T!(X["^") S ARR="^" G QALSP
+"RTN","RADZVEFA",169,0)
+ ;S X=$S(X="":"A",1:$E(X)) I "AaSs"'[X D HALSP G ALSP1
+"RTN","RADZVEFA",170,0)
+ ;W " ",$S("Ss"[X:"SPECIFIC",1:"ALL") I "Aa"[X K ARR S ARR="A" G QALSP
+"RTN","RADZVEFA",171,0)
+ S ARR="S"
+"RTN","RADZVEFA",172,0)
+ALSP2 S DIC=FILE,DIC(0)="AEQMZ"
+"RTN","RADZVEFA",173,0)
+ S DIC("A")="   Select a"_$S($O(ARR(""))'="":"nother",1:"")_" "
+"RTN","RADZVEFA",174,0)
+ S DIC("A")=DIC("A")_SNG_": "
+"RTN","RADZVEFA",175,0)
+ D ^DIC K DIC I $D(DTOUT)!($D(DUOUT)) K ARR S ARR="^" G QALSP
+"RTN","RADZVEFA",176,0)
+ I Y'>0 G QALSP ; G ALSP1:$O(ARR(""))="" G QALSP
+"RTN","RADZVEFA",177,0)
+ I $D(ARR(+Y)) D  G ALSP2
+"RTN","RADZVEFA",178,0)
+ . W !!?3,"Already selected. Choose another "_SNG,*7,!
+"RTN","RADZVEFA",179,0)
+ S ARR(+Y)="" K DTOUT K DUOUT Q  ; ONLY ALLOW 1 PATIENT PER PATIENT PER TIME OF LAB RESULTING ALERT G ALSP2
+"RTN","RADZVEFA",180,0)
+ ;
+"RTN","RADZVEFA",181,0)
+QALSP K DTOUT K DUOUT Q
+"VER")
+8.0^22.0
+**END**
+**END**

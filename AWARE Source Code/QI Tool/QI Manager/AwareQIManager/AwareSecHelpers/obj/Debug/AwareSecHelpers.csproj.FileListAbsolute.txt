@@ -1,0 +1,10 @@
+C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\bin\Debug\AwareSecHelpers.dll
+C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\bin\Debug\AwareSecHelpers.pdb
+C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\obj\Debug\AwareSecHelpers.dll
+C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\obj\Debug\AwareSecHelpers.pdb
+C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\obj\Debug\AwareSecHelpers.csprojResolveAssemblyReference.cache
+C:\AppDev\AwareQIManager\AwareSecHelpers\bin\Debug\AwareSecHelpers.dll
+C:\AppDev\AwareQIManager\AwareSecHelpers\bin\Debug\AwareSecHelpers.pdb
+C:\AppDev\AwareQIManager\AwareSecHelpers\obj\Debug\AwareSecHelpers.dll
+C:\AppDev\AwareQIManager\AwareSecHelpers\obj\Debug\AwareSecHelpers.pdb
+C:\AppDev\AwareQIManager\AwareSecHelpers\obj\Debug\AwareSecHelpers.csprojResolveAssemblyReference.cache

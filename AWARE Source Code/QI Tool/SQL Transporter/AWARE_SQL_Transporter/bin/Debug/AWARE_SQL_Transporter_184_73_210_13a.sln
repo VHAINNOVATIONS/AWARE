@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB9-8B4A-11D0-8D11-00A0C91BC942}") = "AWARE_SQL_Transporter_184_73_210_13a.exe", "AWARE_SQL_Transporter_184_73_210_13a.exe", "{BB12C7C4-27C9-4514-9A3B-5F8111265CC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB12C7C4-27C9-4514-9A3B-5F8111265CC0}.Debug|Default.ActiveCfg = Debug
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

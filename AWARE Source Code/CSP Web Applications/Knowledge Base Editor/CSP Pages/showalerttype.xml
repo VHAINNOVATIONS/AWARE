@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 17:30:35">
+<CSP name="kbeditor/showalerttype.csp" application="/csp/aware/"><![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>AWARE KB Editor Alert Type</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <style type="text/css">
+        #txtName
+        {
+            width: 400px;
+        }
+        #txtDescr
+        {
+            width: 400px;
+        }
+        #txtRemDlg
+        {
+            width: 400px;
+        }
+        #txtTIU
+        {
+            width: 400px;
+        }
+        #txtSite
+        {
+            width: 100px;
+        }
+        #selAlertCat
+        {
+            width: 400px;
+        }
+        #txtMnemonic
+        {
+            width: 100px;
+        }
+        #dtInit
+        {
+            width: 200px;
+        }
+        #ok
+        {
+            width: 100px;
+        }
+        #cancel
+        {
+            width: 100px;
+        }
+        #txtAreaResult {
+            width: 888px;
+            height: 52px;
+        }     
+        .button
+        {
+            width: 273px;
+        }
+		.auto-style1 {
+            width: 688px;
+        }
+        .auto-style2 {
+            width: 578px;
+        }
+        .auto-style3 {
+            width: 654px;
+        }
+        .auto-style4 {
+            width: 252px;
+        }        
+     </style>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="ui.jqgrid.css" />
+
+    <style type="text/css">
+	   #tabs {
+            padding: 0px;
+	   }
+	   #tabs .ui-tabs-nav {
+    	 background: transparent; 
+         border-width: 0px 0px 1px 0px; 
+         -moz-border-radius: 0px; 
+         -webkit-border-radius: 0px; 
+         border-radius: 0px; 
+	   }
+	   #tabs .ui-tabs-panel {
+          margin: 0em 0.2em 0.2em 0.2em;
+	   }
+	    .style3
+        {
+            width: 267px;
+        }
+
+      	.ui-jqgrid tr.ui-row-ltr td {
+			padding: 0 8px;
+    	}
+    	
+		.ui-jqgrid tr.jqgrow td {
+			word-wrap: break-word;
+			white-space:normal !important;
+    	}
+
+
+	</style>
+
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="jquery.cookie.js"></script>
+    <script src="jquery.ui.datepicker.js"></script>
+    <script src="jquery.ui.button.js"></script>
+    
+	<script src="grid.locale-en.js"></script>
+	<script src="jquery.jqGrid.min.js"></script>
+	<script src="mousetrap.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        var btnClicked = false;
+		function NotNumber(str) {
+			return ((str == "undefined") || (str == "") || isNaN(str));
+	    }
+	
+        $(function () {
+  			var ordRowNum = $.cookie("ord.rowNum");
+    	    if (NotNumber(ordRowNum)) {
+        	    ordRowNum = 10;
+	        } else {
+    	        ordRowNum = parseInt(ordRowNum);
+        	}
+	
+			var folRowNum = $.cookie("fol.rowNum");
+    	    if (NotNumber(folRowNum)) {
+        	    folRowNum = 10;
+	        } else {
+    	        folRowNum = parseInt(folRowNum);
+        	}
+
+			var cmtRowNum = $.cookie("cmt.rowNum");
+    	    if (NotNumber(cmtRowNum)) {
+        	    cmtRowNum = 10;
+	        } else {
+    	        cmtRowNum = parseInt(cmtRowNum);
+        	}
+
+            $("#form1").validate({
+                rules: {
+                    txtName: "required",
+                    txtRemDlg: "required",
+                    txtTIU: "required",
+                    selAlertCat: "required",
+                    dtInit: "required",
+                    txtMnemonic: "required",
+                    txtSite: "required"
+                }
+            });
+
+			if (($.cookie("fromPage") == "showmain") || ($.cookie("updateResult") == "")) {
+				clearUpdateResult();
+			} else {
+				showUpdateResult();
+			}
+			
+			function showUpdateResult() {
+				var updateResult = $.cookie("updateResult") ;
+				$("#txtAreaResult").val(updateResult);
+				$("#lblAreaResult").show();
+				$("#txtAreaResult").show();
+			}
+
+			function clearUpdateResult() {
+				$.cookie("fromPage", "alertType");
+            	$("#txtAreaResult").val("");
+				$("#lblAreaResult").hide();
+				$("#txtAreaResult").hide();
+			}
+
+            $("#listOrder").jqGrid({
+                datatype: "local",
+                height: "auto",
+                colNames: ["ID", "Dialog Box Text", "Orderable Item Disp Grp", "Orderable Item Name", "Order Dlg Disp Grp",
+                 "Order Dialog", "Addl Finding", "Desired OrdDlgPkg"],
+                colModel: [
+                    { name: "ien", width: 50 },
+                    { name: "boxText", width: 100 },
+                    { name: "ordItemDispGrp", width: 130 },
+                    { name: "ordItemName", width: 125 },
+                    { name: "ordDlgDispGrp", width: 100 },
+                    { name: "ordDlg", width: 100 },
+                    { name: "AddFind", width: 100 },
+       		        { name: "OrdDlgPkg", width: 100 }
+                ],
+                pager: "#pagerOrder",
+                rowNum: ordRowNum,
+                rowList: [10, 20, 30, 40],
+                viewrecords: true,
+                gridview: true,
+                autoencode: true,
+                multiSelect: true,
+                caption: "Order Dialog Box Text",
+                ondblClickRow: function (rowId) {
+                    editOrderDlg();
+                },
+  	            loadComplete: function () {
+          			//var rowsPerPage = getGridSize("#listOrder");
+	                //$("#listOrder").jqGrid("setGridHeight", (rowsPerPage * 23.5), true);
+	            }
+
+            }).navGrid("#pagerOrder", { add: false, edit: false, del: false, refresh: false, search: false })
+            .navButtonAdd("#pagerOrder", {
+                caption: "Add",
+                buttonicon: "ui-icon-add",
+                onClickButton: function () {
+                    addOrderDlg();
+                },
+                position: "last"
+            })
+	        .navButtonAdd("#pagerOrder", {
+	            caption: "Edit",
+	            buttonicon: "ui-icon-edit",
+	            onClickButton: function () {
+	                editOrderDlg();
+	            },
+	            position: "last"
+	        })
+	        .navButtonAdd("#pagerOrder", {
+	            caption: "Delete",
+	            buttonicon: "ui-icon-delete",
+	            onClickButton: function () {
+	                delOrderDlg();
+	            },
+	            position: "last"
+	        });
+
+            $("#listOrder").jqGrid("bindKeys", {}); 	// Bind the navigation and set the onEnter event
+			//$("#pagerOrder_center").hide();
+
+            $("#listFol").jqGrid({
+                datatype: "local",
+                height: "auto",
+                colNames: ["ID", "Dialog Box Text", "Orderable Item Disp Grp", "Orderable Item Name", "Order Dlg Disp Grp",
+                 "Order Dialog", "Addl Finding", "Desired OrdDlgPkg"],
+                colModel: [
+                    { name: "ien", width: 50 },
+                    { name: "boxText", width: 100 },
+                    { name: "ordItemDispGrp", width: 130 },
+                    { name: "ordItemName", width: 125 },
+                    { name: "ordDlgDispGrp", width: 100 },
+                    { name: "ordDlg", width: 100 },
+                    { name: "AddFind", width: 100 },
+       		        { name: "OrdDlgPkg", width: 100 }
+                ],
+                pager: "#pagerFol",
+                rowNum: folRowNum,
+                rowList: [10, 20, 30, 40],
+                viewrecords: true,
+                gridview: true,
+                autoencode: true,
+                multiSelect: true,
+                caption: "Follow-up Dialog Box Text",
+                ondblClickRow: function (rowId) {
+                    editFolDlg();
+                },
+  	            loadComplete: function () {
+          			//var rowsPerPage = getGridSize("#listFol");
+	                //$("#listFol").jqGrid("setGridHeight", (rowsPerPage * 23.5), true);
+	            }
+            }).navGrid("#pagerFol", { add: false, edit: false, del: false, refresh: false, search: false })
+            .navButtonAdd("#pagerFol", {
+                caption: "Add",
+                buttonicon: "ui-icon-add",
+                onClickButton: function () {
+                    addFolDlg();
+                },
+                position: "last"
+            })
+	        .navButtonAdd("#pagerFol", {
+	            caption: "Edit",
+	            buttonicon: "ui-icon-edit",
+	            onClickButton: function () {
+	                editFolDlg();
+	            },
+	            position: "last"
+	        })
+	        .navButtonAdd("#pagerFol", {
+	            caption: "Delete",
+	            buttonicon: "ui-icon-delete",
+	            onClickButton: function () {
+	                delFolDlg();
+	            },
+	            position: "last"
+	        });
+
+            $("#listFol").jqGrid("bindKeys", {}); 	// Bind the navigation and set the onEnter event
+			//$("#pagerFol_center").hide();
+
+            $("#listCmt").jqGrid({
+                datatype: "local",
+                height: "auto",
+                colNames: ["ID", "Dialog Box Text", "Orderable Item Disp Grp", "Orderable Item Name", "Order Dlg Disp Grp",
+                 "Order Dialog", "Addl Finding", "Desired OrdDlgPkg"],
+                colModel: [
+                    { name: "ien", width: 50 },
+                    { name: "boxText", width: 100 },
+                    { name: "ordItemDispGrp", width: 130 },
+                    { name: "ordItemName", width: 125 },
+                    { name: "ordDlgDispGrp", width: 100 },
+                    { name: "ordDlg", width: 100 },
+                    { name: "AddFind", width: 100 },
+       		        { name: "OrdDlgPkg", width: 100 }
+                ],
+                pager: "#pagerCmt",
+                rowNum: cmtRowNum,
+                rowList: [10, 20, 30, 40],
+                viewrecords: true,
+                gridview: true,
+                autoencode: true,
+                multiSelect: true,
+                caption: "Comments Dialog Box Text",
+                ondblClickRow: function (rowId) {
+                    editCmtDlg();
+                },
+  	            loadComplete: function () {
+          			//var rowsPerPage = getGridSize("#listCmt");
+	                //$("#listCmt").jqGrid("setGridHeight", (rowsPerPage * 23.5), true);
+	            }
+            }).navGrid("#pagerCmt", { add: false, edit: false, del: false, refresh: false, search: false })
+            .navButtonAdd("#pagerCmt", {
+                caption: "Add",
+                buttonicon: "ui-icon-add",
+                onClickButton: function () {
+                    addCmtDlg();
+                },
+                position: "last"
+            })
+	        .navButtonAdd("#pagerCmt", {
+	            caption: "Edit",
+	            buttonicon: "ui-icon-edit",
+	            onClickButton: function () {
+	                editCmtDlg();
+	            },
+	            position: "last"
+	        })
+	        .navButtonAdd("#pagerCmt", {
+	            caption: "Delete",
+	            buttonicon: "ui-icon-delete",
+	            onClickButton: function () {
+	                delCmtDlg();
+	            },
+	            position: "last"
+	        });
+	        
+            $("#listCmt").jqGrid("bindKeys", {}); 	// Bind the navigation and set the onEnter event
+			//$("#pagerCmt_center").hide();
+
+            $("#ok")
+            .button()
+            .click(function () {
+	            if (valLength()) {
+                	btnClicked = true;
+                	setCookies();
+                	var activeIndex = $("#tabs").tabs("option", "active");
+                	activeIndex = parseInt(activeIndex, 10);
+                	$.cookie("type.lastTabIndex",activeIndex);
+					saveRowsPerPage();                
+                	window.location = "savealerttype.csp";
+	            }
+            });
+
+            $("#cancel")
+            .button()
+            .click(function () {
+                btnClicked = true;
+				saveRowsPerPage();                
+                window.location = "showmain.csp";
+            });
+
+            $("#btnTIU")
+            .button({ text: true, icons: { primary: "ui-icon ui-icon-search" } })
+            .click(function () {
+                var tiu = $("#txtTIU").val();
+                if (tiu == "") {
+                    alert('To search, enter "Start With" value in the TIU Template text Box');
+                    $("#txtTIU").focus();
+                } else {
+                    searchFile("8927", "TIU Template", tiu, "txtTIU", "");
+                }
+
+            });
+
+            $("#btnRemDlg")
+            .button({ text: true, icons: { primary: "ui-icon-search" } })
+            .click(function () {
+                var remDlgVal = $("#txtRemDlg").val();
+                if (remDlgVal == "") {
+                    alert('To search, enter "Start With" value in the Reminder Dialog text Box');
+                    $("#txtRemDlg").focus();
+                } else {
+                    searchFile('801.41', 'Reminder Dialog', remDlgVal, 'txtRemDlg', 'I $P(^(0),U,4)="R"');
+                }
+            });
+
+
+            Mousetrap.bind("alt+g", function (e) {
+                var activeIndex = $("#tabs").tabs("option", "active");
+                activeIndex = parseInt(activeIndex, 10);
+                $('#tabs').tabs({ active: activeIndex });
+                if (activeIndex == 0) {
+                  $("#txtName").focus();
+                } else if (activeIndex == 1) {
+                    selectOrdRow();
+                } else if (activeIndex == 2) {
+                    selectFolRow();
+                } else if (activeIndex == 3) {
+                    selectCmtRow();
+                }
+            });
+
+
+            Mousetrap.bind("ctrl+alt+n", function (e) {
+                var activeIndex = $("#tabs").tabs("option", "active");
+                activeIndex = parseInt(activeIndex, 10);
+                $('#tabs').tabs({ active: activeIndex });
+                if (activeIndex == 1) {
+                    nextPage("#listOrder");
+                } else if (activeIndex == 2) {
+                    nextPage("#listFol");
+                } else if (activeIndex == 3) {
+                    nextPage("#listCmt");
+                }
+            });
+
+	        function nextPage(grid) {
+				var rowNum = $(grid).getGridParam("rowNum");
+				var allRecs = $(grid).getGridParam("records");
+				var totalPages = parseInt((allRecs/rowNum) + 1);
+				var page = $(grid).getGridParam("page");
+				if (page+1 <= totalPages) {
+		        	$(grid).setGridParam({ page: (page+1) }).trigger("reloadGrid");
+					$(grid).focus();
+	        		$(grid + " tr").eq(1).trigger("click");
+				}
+	        }
+
+            Mousetrap.bind("ctrl+alt+b", function (e) {
+                var activeIndex = $("#tabs").tabs("option", "active");
+                activeIndex = parseInt(activeIndex, 10);
+                $('#tabs').tabs({ active: activeIndex });
+                if (activeIndex == 1) {
+                    prevPage("#listOrder");
+                } else if (activeIndex == 2) {
+                    prevPage("#listFol");
+                } else if (activeIndex == 3) {
+                    prevPage("#listCmt");
+                }
+            });
+            
+	        function prevPage(grid) {
+				var page = $(grid).getGridParam("page");
+				if (page > 0) {
+		        	$(grid).setGridParam({ page: (page-1) }).trigger("reloadGrid");
+					$(grid).focus();
+	        		$(grid + " tr").eq(1).trigger("click");
+				}
+	        }
+
+            Mousetrap.bind("ctrl+alt+a", function (e) {
+	            var activeIndex = $("#tabs").tabs("option", "active");
+	            if (activeIndex == 1) {
+                    addOrderDlg();
+	            } else if (activeIndex == 2) {
+	                addFolDlg();
+	            } else if (activeIndex == 3) {
+	                addCmtDlg();
+	            }
+	        });
+
+	        Mousetrap.bind("ctrl+alt+e", function (e) {
+	            var activeIndex = $("#tabs").tabs("option", "active");
+	            if (activeIndex == 1) {
+                    editOrderDlg();
+	            } else if (activeIndex == 2) {
+	                editFolDlg();
+	            } else if (activeIndex == 3) {
+	                editCmtDlg();
+	            }
+	        });
+
+	        Mousetrap.bind("ctrl+alt+d", function (e) {
+	            var activeIndex = $("#tabs").tabs("option", "active");
+	            if (activeIndex == 1) {
+                    delOrderDlg();
+	            } else if (activeIndex == 2) {
+	                delFolDlg();
+	            } else if (activeIndex == 3) {
+	                delCmtDlg();
+	            }
+	        });
+
+            window.onload = function () {
+                var activeIndex = $("#tabs").tabs("option", "active");
+                if (activeIndex == 1) {
+                    $('#tabs').tabs({ active: 1 });
+                    selectOrdRow();
+                } else if (activeIndex == 2) {
+                    $('#tabs').tabs({ active: 2 });
+                    selectFolRow();
+                } else if (activeIndex == 3) {
+                    $('#tabs').tabs({ active: 3 });
+                    selectCmtRow();
+                }
+            };
+
+            $("#tabs").focus();
+            $("#tabs").tabs();
+
+            $("#dtInit").datepicker();
+
+            selectLastTab();
+            
+            function setCookies() {
+				var active = $("#chkActive").prop("checked") ? "1" : "0";
+                var record = ""
+                record = $("#txtName").val() + "^" +
+                	$("#txtRemDlg").val() + "^" +
+                	$("#txtTIU").val() + "^" +
+					$("#selAlertCat").val() + "^" +
+					$("#dtInit").val() + "^" +
+					$("#txtMnemonic").val() + "^" +
+					$("#txtSite").val() +"^" +
+					active +"^" +
+					$("#txtDescr").val();
+                
+                $.cookie("type.record", record);
+       			$.cookie("dlg.record", "");
+            }
+
+            function selectLastTab() {
+                var lastTabIndex = $.cookie("type.lastTabIndex");
+                lastTabIndex = parseInt(lastTabIndex, 10);
+                $('#tabs').tabs({ active: lastTabIndex });
+                if (lastTabIndex == 0) {
+                    $("#txtName").focus();
+                }
+            }
+
+            function addOrderDlg() {
+                if (!btnClicked) {
+                    btnClicked = true;
+
+                    setCookies();
+                    $.cookie("type.lastTabIndex", 1);
+                    $.cookie("ord.lastrow", getLastRowId("#listOrder"));
+                    $.cookie("ord.todo", "add");
+					saveRowsPerPage();                
+                    window.location = "showorderdlg.csp";
+                }
+            }
+
+            function editOrderDlg() {
+                if (!btnClicked) {
+                    setCookies();
+                    var rowId = $("#listOrder").jqGrid("getGridParam", "selrow");
+                    if (rowId == null) {
+                        alert("No row selected");
+                    } else {
+	                    btnClicked = true;
+                        var rowData = $("#listOrder").getRowData(rowId);
+                        var ien = rowData["ien"];
+                        $.cookie("type.lastTabIndex", 1);
+                        $.cookie("ord.todo", "edit");
+                        $.cookie("ord.id", rowId);
+                        $.cookie("ord.ien", ien);
+	    				saveRowsPerPage();                
+    	                window.location = "showorderdlg.csp";
+                    }
+                }
+            }
+
+            function delOrderDlg() {
+                if (!btnClicked) {
+                    setCookies();
+                    var rowId = $("#listOrder").jqGrid("getGridParam", "selrow");
+                    if (rowId == null) {
+                        alert("No row selected");
+                    } else {
+	                    if (confirm("Delete the selected Order Dialog")) {
+	            		    btnClicked = true;
+                            var rowData = $("#listOrder").getRowData(rowId);
+    	                    var ien = rowData["ien"];
+        	                $.cookie("type.lastTabIndex", 1);
+                	        $.cookie("ord.todo", "delete");
+                    	    $.cookie("ord.id", rowId);
+                        	$.cookie("ord.ien", ien);
+	        				saveRowsPerPage();                
+    			           	window.location = "saveorderdlg.csp";
+	                    }
+                    }
+                }
+            }
+
+            function addFolDlg() {
+                if (!btnClicked) {
+                    btnClicked = true;
+                    setCookies();
+                    $.cookie("type.lastTabIndex", 2);
+                    $.cookie("fol.lastrow", getLastRowId("#listFol"));
+                    $.cookie("fol.todo", "add");
+       				saveRowsPerPage();                
+				    window.location = "showfoldlg.csp";
+                }
+            }
+
+            function editFolDlg() {
+                if (!btnClicked) {
+                    setCookies();
+                    var rowId = $("#listFol").jqGrid("getGridParam", "selrow");
+                    if (rowId == null) {
+                        alert("No row selected");
+                    } else {
+	                    btnClicked = true;
+                        var rowData = $("#listFol").getRowData(rowId);
+                        var ien = rowData["ien"];
+                        $.cookie("type.lastTabIndex", 2);
+                        $.cookie("fol.todo", "edit");
+                        $.cookie("fol.id", rowId);
+                        $.cookie("fol.ien", ien);
+           				saveRowsPerPage();                
+						window.location = "showfoldlg.csp";
+                    }
+                }
+            }
+
+            function delFolDlg() {
+                if (!btnClicked) {
+                    setCookies();
+                    var rowId = $("#listFol").jqGrid("getGridParam", "selrow");
+                    if (rowId == null) {
+                        alert("No row selected");
+                    } else {
+	                    if (confirm("Delete the selected Follow-up Dialog")) {
+	            		    btnClicked = true;
+                            var rowData = $("#listFol").getRowData(rowId);
+    	                    var ien = rowData["ien"];
+        	                $.cookie("type.lastTabIndex", 2);
+                	        $.cookie("fol.todo", "delete");
+                    	    $.cookie("fol.id", rowId);
+                        	$.cookie("fol.ien", ien);
+               				saveRowsPerPage();                
+							window.location = "savefoldlg.csp";
+	                    }
+                    }
+                }
+            }
+
+            function addCmtDlg() {
+                if (!btnClicked) {
+                    btnClicked = true;
+                    setCookies();
+                    $.cookie("type.lastTabIndex", 3);
+                    $.cookie("cmt.lastrow", getLastRowId("#listCmt"));
+                    $.cookie("cmt.todo", "add");
+       				saveRowsPerPage();                
+                    window.location = "showcmtdlg.csp";
+                }
+            }
+
+            function editCmtDlg() {
+                if (!btnClicked) {
+                    setCookies();
+                    var rowId = $("#listCmt").jqGrid("getGridParam", "selrow");
+                    if (rowId == null) {
+                        alert("No row selected");
+                    } else {
+	                    btnClicked = true;
+                        var rowData = $("#listCmt").getRowData(rowId);
+                        var ien = rowData["ien"];
+                        $.cookie("type.lastTabIndex", 3);
+                        $.cookie("cmt.todo", "edit");
+                        $.cookie("cmt.id", rowId);
+                        $.cookie("cmt.ien", ien);
+						saveRowsPerPage();                
+                        window.location = "showcmtdlg.csp";
+                    }
+                }
+            }
+
+            function delCmtDlg() {
+                if (!btnClicked) {
+                    setCookies();
+                    var rowId = $("#listCmt").jqGrid("getGridParam", "selrow");
+                    if (rowId == null) {
+                        alert("No row selected");
+                    } else {
+	                    if (confirm("Delete the selected Comments Dialog")) {
+	            		    btnClicked = true;
+                            var rowData = $("#listCmt").getRowData(rowId);
+    	                    var ien = rowData["ien"];
+        	                $.cookie("type.lastTabIndex", 3);
+                	        $.cookie("cmt.todo", "delete");
+                    	    $.cookie("cmt.id", rowId);
+                        	$.cookie("cmt.ien", ien);
+	        				saveRowsPerPage();                
+    		            	window.location = "savecmtdlg.csp";
+	                    }
+                    }
+                }
+            }
+
+            function getLastRowId(list) {
+                var rows = $(list)[0].rows;
+                return (rows.length - 1);
+            }
+
+            function selectOrdRow() {
+                $("#listOrder").focus();
+                var id = $.cookie("ord.id");
+                if (typeof id == "undefined") {
+                    id = 1;
+                    $.cookie("ord.id", id);
+                } else if (id == "") {
+                    id = $.cookie("ord.lastrow");
+                    id = parseInt(id, 10) + 1;
+                    $.cookie("ord.id", id);
+                }
+                $("#listOrder").jqGrid("setSelection", id);
+            }
+
+            function selectFolRow() {
+                $("#listFol").focus();
+                var id = $.cookie("fol.id");
+                if (typeof id == "undefined") {
+                    id = 1;
+                    $.cookie("fol.id", id);
+                } else if (id == "") {
+                    id = $.cookie("fol.lastrow");
+                    id = parseInt(id, 10) + 1;
+                    $.cookie("fol.id", id);
+                }
+                $("#listFol").jqGrid("setSelection", id);
+            }
+
+            function selectCmtRow() {
+                $("#listCmt").focus();
+                var id = $.cookie("cmt.id");
+                if (typeof id == "undefined") {
+                    id = 1;
+                    $.cookie("cmt.id", id);
+                } else if (id == "") {
+                    id = $.cookie("cmt.lastrow");
+                    id = parseInt(id, 10) + 1;
+                    $.cookie("cmt.id", id);
+                }
+                $("#listCmt").jqGrid("setSelection", id);
+            }
+
+
+            function searchFile(filenumber, filename, searchval, element, screen) {
+                var features = "dialogwidth: 550px; dialogheight: 700px; resizable: yes";
+
+                $.cookie("search.filenumber", filenumber);
+                $.cookie("search.filename", filename);
+                $.cookie("search.value", searchval);
+                $.cookie('search.screen', screen);
+
+				var remDlg = window.showModalDialog("searchfile.csp", null, "dialogHeight:700px;dialogWidth:500px");
+				if (typeof remDlg === "undefined") {
+				} else {
+					$("#" + element).val(remDlg);
+				}
+
+                //window.open("searchfile.csp", "_blank", "height=700,width=550,status=yes,toolbar=no,menubar=no,location=no");
+            }
+
+  	        function getGridSize(grid) {
+	            var rowsPerPage = $(grid).getGridParam("rowNum");
+	            if (NotNumber(rowsPerPage)) {
+	                rowsPerPage = 10;
+	            } else {
+		            rowsPerPage = parseInt(rowsPerPage);
+	            }
+	            return rowsPerPage;
+	        }
+
+			function saveRowsPerPage() {
+   				var rowsPerPage = $("#listOrder").getGridParam("rowNum");
+                $.cookie("ord.rowNum", rowsPerPage, { expires: 10000 });
+   				var page = $("#listOrder").getGridParam("page");
+                $.cookie("ord.page", page);
+
+   				var rowsPerPage = $("#listFol").getGridParam("rowNum");
+                $.cookie("fol.rowNum", rowsPerPage, { expires: 10000 });
+   				var page = $("#listFol").getGridParam("page");
+                $.cookie("fol.page", page);
+
+   				var rowsPerPage = $("#listCmt").getGridParam("rowNum");
+                $.cookie("cmt.rowNum", rowsPerPage, { expires: 10000 });
+   				var page = $("#listCmt").getGridParam("page");
+                $.cookie("cmt.page", page);
+			}
+
+        });
+
+		function valLength() {
+			var fld = "#txtName";
+			var val = valFieldLength(fld, "Alert Type", 3, 30);
+			if (val) {
+				fld = "#txtDescr";
+				val = valFieldLength(fld, "Description", 3, 40);
+			}
+			
+			if (!val) {
+				$(fld).focus();
+			}
+
+			return val;
+		}
+		
+		function valFieldLength(fld, caption, low, high) {
+			if (($(fld).val().length > high) || ($(fld).val().length < low)) {
+				alert(caption + " must be " + low + "-" + high + " characters in length");
+				return false;
+			} else {
+				return true;
+			}
+		}
+
+
+	</script>
+
+</head>
+<body>
+
+<center>
+
+<FORM id="form1" name="form1" class="ui-widget ui-state-default ui-corner-all" style="width:900px">
+
+<div id="header" name="header" style="background-color:#001A4C; color:#FFFFFF; " >
+    <table>
+		<td align="left">
+            <img border="0" src="va.png" alt="U.S. Department of Veterans Affairs" width="125" height="125"/>
+		</td>
+		<td align="left">
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+		</td>
+        <td align="right">
+			<h1 style="margin-bottom:0;">VistA AWARE KB Editor<br/> Alert Type</h1>
+        </td>
+    </table>
+</div>
+
+
+<div id='tabs' text-align:left>
+    <ul>
+        <li><a id='tabRem' href='#tabs-1'>Reminder Dialog</a></li>
+        <li><a id='tabOrder' href='#tabs-2'>Order Dialog</a></li>
+        <li><a id='tabFol' href='#tabs-3'>Follow-up Dialog</a></li>
+	    <li><a id='tabCmt' href='#tabs-4'>Comments Dialog</a></li>
+	</ul>
+	
+    <div id='tabs-1'>
+        <table class="ui-widget ui-state-default ui-corner-all" style="width: 100%;">
+        
+        <tr>
+        <td align="right" >
+            <label for="txtName">Alert Type</label></td>
+        <td align="left">
+            <input id="txtName" name="txtName" align="left" type="text" 
+                class="ui-widget ui-corner-all" tabindex="1" />&nbsp;
+        </td>
+        </tr>
+
+        <tr>
+        <td align="right" >
+            <label for="txtDescr">Description</label></td>
+        <td align="left">
+            <input id="txtDescr" name="txtDescr" align="left" type="text" 
+                class="ui-widget ui-corner-all" tabindex="2" />&nbsp;
+        </td>
+        </tr>
+
+        <tr>
+        <td align="right" >
+            <label for="txtRemDlg">Reminder Dialog</label></td>
+        <td align="left">
+            <input id="txtRemDlg" name="txtRemDlg" align="left" type="text" 
+                class="ui-widget ui-corner-all required" tabindex="3"/>
+            <input id="btnRemDlg" type="button" align="left" value="Search" tabindex="4"/></td>
+        </tr>
+        
+        <tr>
+        <td align="right" >
+            <label for="txtTIU">TIU Template</label></td>
+        <td align="left">
+            <input id="txtTIU" name="txtTIU" align="left" type="text" 
+                class="ui-widget ui-corner-all" tabindex="5" />
+            <input id="btnTIU" type="button" align="left" value="Search" tabindex="6" /></td>
+        </tr>
+        
+        <tr>
+        <td align="right" >
+            <label for="selAlertCat">Alert Category</label></td>
+        <td align="left">
+            <select id="selAlertCat" name="selAlertCat" class="ui-widget ui-corner-all" tabindex="7">
+	        </select>
+        </td>
+        </tr>
+
+        <tr>
+        <td align="right" >
+            <label for="txtMnemonic">Alert Type Mnemonic</label></td>
+        <td align="left">
+            <input id="txtMnemonic" name="txtMnemonic" type="text" 
+                class="ui-widget ui-corner-all" tabindex="8"/>
+        </td>
+        </tr>
+        
+        <tr>
+        <td align="right" >
+            <label for="txtSite">AWARE Source Site</label></td>
+        <td align="left">
+            <input id="txtSite" name="txtSite" type="text" 
+                class="ui-widget ui-corner-all" tabindex="9"/>
+        </td>
+        </tr>
+        
+        </table>
+    </div>
+
+    <div id='tabs-2'>
+        <table id="listOrder"></table>
+        <div id="pagerOrder"></div>
+		<table style="width: 700px">
+            <tr>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Alt+G to Last Accessed Record</br>Ctrl+Alt+A to Add</p>
+                </td>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Ctrl+Alt+N to Next Page</br>Ctrl+Alt+E to Edit</p>
+                </td>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Ctrl+Alt+B to Previous Page</br>Ctrl+Alt+D to Delete</p>
+                </td>
+           </tr>
+        </table>
+    </div>
+
+   <div id='tabs-3'>
+        <table id="listFol"></table>
+        <div id="pagerFol"></div>
+		<table style="width: 700px">
+            <tr>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Alt+G to Last Accessed Record</br>Ctrl+Alt+A to Add</p>
+                </td>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Ctrl+Alt+N to Next Page</br>Ctrl+Alt+E to Edit</p>
+                </td>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Ctrl+Alt+B to Previous Page</br>Ctrl+Alt+D to Delete</p>
+                </td>
+           </tr>
+        </table>
+   </div>
+
+   <div id='tabs-4'>
+        <table id="listCmt"></table>
+        <div id="pagerCmt"></div>
+		<table style="width: 700px">
+            <tr>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Alt+G to Last Accessed Record</br>Ctrl+Alt+A to Add</p>
+                </td>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Ctrl+Alt+N to Next Page</br>Ctrl+Alt+E to Edit</p>
+                </td>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Ctrl+Alt+B to Previous Page</br>Ctrl+Alt+D to Delete</p>
+                </td>
+           </tr>
+        </table>
+   </div>
+
+</div>
+
+<div style="width: 900px">
+    <table style="width: 900px">
+	   	<tr>
+	        <td align="left" class="auto-style4">
+             <input id="chkActive" name="chkActive" type="checkbox" tabindex="10"/><label for="chkActive">Active</label>
+           &nbsp;
+            </td>
+
+  	        <td align="right" class="auto-style3">
+		     <label for="dtInit">Initiation Date</label>
+            </td>
+  	        
+  	        <td align="left" class="auto-style2">
+             <input id="dtInit" name="dtInit" disabled="disabled" type="text" align="left" class="ui-widget ui-corner-all"/>
+            </td>
+       	
+
+		    <td align="right" class="auto-style1">
+	            &nbsp;<input id="ok" name="ok" type="button" value="OK" tabindex="11"/>
+	        </td>
+
+	        <td align="left" class="button">
+    	        &nbsp;<input type="button" value="Cancel" id="cancel" name="cancel" tabindex="12">
+        	</td>
+
+	    </tr>
+
+    </table>
+</div>
+
+</FORM>
+
+<script language="Cache" runat="server" >
+	d ##class(VEFA.AlertType).Populate()
+</script>
+
+<script type="text/javascript">
+	
+	$(function () {
+        fillForm();
+    
+		var reminderDlg = $("#txtName").val();
+	    if (reminderDlg != "") {
+		   		$("#listOrder").setCaption(reminderDlg + " - Order Dialog Box Text");
+		   		$("#listFol").setCaption(reminderDlg + " - Follow-up Dialog Box Text");
+		   		$("#listCmt").setCaption(reminderDlg + " - Comments Dialog Box Text");
+	    }
+
+        fillOrdDlg();
+        fillfollDlg();
+        fillCmtDlg();
+
+		//Set Order Dialog Grid Size
+	    var ordRowNum = $.cookie("ord.rowNum");
+         
+         if (NotNumber(ordRowNum)) {
+             ordRowNum = 10;
+             $.cookie("ord.rowNum", ordRowNum, { expires: 10000 });
+         } else{
+	         ordRowNum = parseInt(ordRowNum,10);
+         }
+
+		 //Set Followup Grid Size
+	     var folRowNum = $.cookie("fol.rowNum");
+         
+         if (NotNumber(folRowNum)) {
+             folRowNum = 10;
+             $.cookie("fol.rowNum", folRowNum, { expires: 10000 });
+         } else {
+	         folRowNum = parseInt(folRowNum);
+         }
+ 
+		 //Set Comments Grid Size
+	     var cmtRowNum = $.cookie("cmt.rowNum");
+         
+         if (NotNumber(cmtRowNum)) {
+             cmtRowNum = 10;
+             $.cookie("cmt.rowNum", cmtRowNum, { expires: 10000 });
+         } else {
+	         cmtRowNum = parseInt(cmtRowNum);
+         }
+
+	     //Set order dialog page and row id
+	     var pageNum = $.cookie("ord.page")
+	     if (NotNumber(pageNum)) {
+		     pageNum = 1;
+	     } else {
+		     pageNum = parseInt(pageNum);
+	     }
+         $("#listOrder").setGridParam({ page: pageNum, rowNum: ordRowNum }).trigger("reloadGrid");
+         
+
+	     var rowID = $.cookie("ord.id");
+	     if (NotNumber(rowID)) {
+		     rowID = 1;
+	     } else {
+		     rowID = parseInt(rowID);
+	     }
+	                
+         $("#listOrder").jqGrid("setSelection", rowID);
+         
+         
+	     //Set followup dialog page and row id
+	     var pageNum = $.cookie("fol.page")
+	     if (NotNumber(pageNum)) {
+		     pageNum = 1;
+	     } else {
+		     pageNum = parseInt(pageNum);
+	     }
+         $("#listFol").setGridParam({ page: pageNum, rowNum: folRowNum }).trigger("reloadGrid");
+
+	     var rowID = $.cookie("fol.id");
+	     if (NotNumber(rowID)) {
+		     rowID = 1;
+	     } else {
+		     rowID = parseInt(rowID);
+	     }
+	                
+         $("#listFol").jqGrid("setSelection", rowID);
+
+	     //Set comments dialog page and row id
+	     var pageNum = $.cookie("cmt.page")
+	     if (NotNumber(pageNum)) {
+		     pageNum = 1;
+	     } else {
+		     pageNum = parseInt(pageNum);
+	     }
+         $("#listCmt").setGridParam({ page: pageNum, rowNum: cmtRowNum }).trigger("reloadGrid");
+
+	     var rowID = $.cookie("cmt.id");
+	     if (NotNumber(rowID)) {
+		     rowID = 1;
+	     } else {
+		     rowID = parseInt(rowID);
+	     }
+	                
+         $("#listCmt").jqGrid("setSelection", rowID);
+
+		 //set grid size
+         //$("#listOrder").jqGrid("setGridHeight", (ordRowNum * 23.5), true);
+         //$("#listFol").jqGrid("setGridHeight", (folRowNum * 23.5), true);
+         //$("#listCmt").jqGrid("setGridHeight", (cmtRowNum * 23.5), true);
+	    
+    });
+    
+</script>
+
+	
+<p>
+	<label id="lblAreaResult" name="lblAreaResult" for="txtAreaResult" style="font-size:100%; color:#001A4C;">Validation Result</label></br>
+    <textarea id="txtAreaResult" name="txtAreaResult" disabled="disabled"></textarea>
+</p>
+
+
+</center>
+</body>
+</html>
+]]></CSP>
+</Export>

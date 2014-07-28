@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "AwareQIReports", "AwareQIReports\AwareQIReports.rptproj", "{1E6DFB13-B821-4CAE-A185-90FFA2F8797C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E6DFB13-B821-4CAE-A185-90FFA2F8797C}.Debug|Default.ActiveCfg = DebugLocal
+		{1E6DFB13-B821-4CAE-A185-90FFA2F8797C}.Debug|Default.Build.0 = DebugLocal
+		{1E6DFB13-B821-4CAE-A185-90FFA2F8797C}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{1E6DFB13-B821-4CAE-A185-90FFA2F8797C}.DebugLocal|Default.Build.0 = DebugLocal
+		{1E6DFB13-B821-4CAE-A185-90FFA2F8797C}.Release|Default.ActiveCfg = Release
+		{1E6DFB13-B821-4CAE-A185-90FFA2F8797C}.Release|Default.Build.0 = Release
+		{1E6DFB13-B821-4CAE-A185-90FFA2F8797C}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

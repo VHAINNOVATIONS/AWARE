@@ -1,0 +1,19 @@
+
+// get the username
+User = System.Web.HttpContext.Current.User
+
+//force the authentication to see the site - this can get real tricky
+<configuration>
+    <system.web>
+        <authentication mode="Windows" />
+         <authorization>
+             <deny users="?"/>
+          </authorization>
+    </system.web>
+</configuration>
+
+link for windows authentication stuff
+http://weblogs.asp.net/scottgu/archive/2006/07/12/Recipe_3A00_-Enabling-Windows-Authentication-within-an-Intranet-ASP.NET-Web-application.aspx
+
+// this needs to be run after .Net4 is loaded
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis -i

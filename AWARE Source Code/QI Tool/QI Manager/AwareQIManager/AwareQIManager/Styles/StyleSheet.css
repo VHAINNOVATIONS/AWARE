@@ -1,0 +1,573 @@
+
+#content,#content-va {
+background-color:#FFF;
+border-left:1px solid #FFF;
+border-top:1px solid #FFF;
+vertical-align:top;
+width:100%;
+}
+
+#content-benefits-booklet {
+border-top:1px solid #FFF;
+padding:5px 10px 10px;
+}
+
+#content-featured {
+border-bottom:1px solid #B2B2B2;
+border-right:1px solid #B2B2B2;
+vertical-align:top;
+padding:6px 10px 6px 20px;
+}
+
+#content-main {
+width:100%;
+padding:5px 20px 20px;
+}
+
+#content-main h2 {
+margin:32px 0 10px;
+}
+
+
+
+#nav a.parent {
+background:url(/va_files/images/rightarrow.gif) 96% 50% no-repeat;
+}
+
+
+#nav li a:hover {
+background-color:#2E498F;
+color:#FFF;
+margin-bottom:-2px;
+z-index:33;
+padding:9px 3px 9px 10px;
+}
+
+
+#nav,#nav ul {
+background-color:#1E2D54;
+color:#FFF;
+float:left;
+font-size:11px;
+font-weight:700;
+list-style:none;
+width:13.5em;
+margin:0;
+padding:0;
+}
+
+#nav-footer {
+background-color:#Fff;
+border-top:1px solid #000;
+color:#999;
+font-size:11px;
+line-height:1.6em;
+width:571px;
+margin:0;
+padding:6px 20px 10px;
+}
+
+#nav-footer a:hover,.site-footer a:hover {
+text-decoration:underline;
+}
+
+#nav-footer a:link,#nav-footer a:active,#nav-footer a:visited,.site-footer a:link,.site-footer a:active,.site-footer a:visited {
+color:#101863;
+text-decoration:none;
+}
+
+#nav-main {
+background-color:#2E3A3F;
+color:#FFF;
+font-weight:700;
+left:0;
+margin:0;
+padding:0;
+width:767px;
+z-index:21;
+}
+
+#nav-main-seal {
+background-color:#2E3A3F;
+vertical-align:top;
+}
+
+
+#nav-sidebar {
+background-color:#1E2D54;
+border-top:1px solid #FFF;
+vertical-align:top;
+width:auto;
+z-index:1;
+}
+
+#nav-top a {
+display:block;
+width:10em;
+}
+
+#nav-top a.averagetop,#nav-top li a.averagetop,#nav-top li ul.averagetop {
+width:8.6em;
+}
+
+#nav-top a.narrowtop,#nav-top li a.narrowtop,#nav-top li ul.narrowtop {
+width:7em;
+}
+
+
+#nav-top,#nav-top ul {
+background-color:#2E3A3F;
+color:#FFF;
+float:left;
+font-size:10px;
+font-weight:700;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+
+#seal {
+left:0;
+position:absolute;
+top:0;
+z-index:1;
+margin:0;
+padding:0;
+}
+
+
+
+#skiplink a {
+height:0;
+overflow:hidden;
+position:absolute;
+width:0;
+}
+
+#skiplink a:active,#skiplink a:focus {
+background-color:#666;
+border:1px solid #FFF;
+color:#FFF;
+font-size:13px;
+font-weight:700;
+height:auto;
+left:3px;
+overflow:visible;
+position:absolute;
+top:3px;
+width:auto;
+z-index:5;
+padding:3px 5px 5px;
+}
+
+
+
+#top-info-req {
+font-size:90%;
+padding-left:0;
+margin:0 10px 5px 25px;
+}
+
+#top-info-req-tbl {
+border-left:1px solid #FFF;
+border-bottom:1px solid #FFF;
+margin-left:5px;
+background-color:#E5E5E5;
+border-right:1px solid #B2B2B2;
+width:189px!important;
+}
+
+
+.breadcrumb {
+background-color:#6B1424;
+border-bottom:1px solid #000;
+color:#FFF;
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-variant:small-caps;
+font-weight:700;
+letter-spacing:1px;
+margin:0 0 2px;
+padding:8px 25px 5px 10px;
+}
+
+.content {
+border-top:2px solid #FFF;
+padding-left:0px;
+height: 100%;
+background: #FFF;
+}
+
+.contentTable {
+height:100%;
+width:100%;
+}
+
+.contentLayoutTable {
+width:100%;
+}
+
+
+.divCell {
+background-color:#FFF;
+display:inline;
+float:left;
+font-size:small;
+font-style:normal;
+height:100px;
+padding-bottom:8px;
+padding-top:8px;
+width:30%;
+}
+
+.footer {
+background-image:url(images/footer_background.jpg);
+background-repeat:repeat-x;
+text-align:center;
+}
+
+
+.headerEnd {
+background-color:#101010;
+width: 100%;
+}
+
+.headerEndBottom {
+background-color:#2E3A3F;
+width: 100%;
+}
+
+.highlight {
+background-color:#fefbd2;
+color:navy;
+}
+
+.hoverStyle {
+padding-top:4px;
+font-size:.85em;
+height:25px;
+border-left:solid 1px #6F7DA1;
+text-align:center;
+background:#3D4B51;
+width:97px;
+vertical-align:middle;
+}
+
+
+.leftMenuItem {
+border-bottom:solid 1px #2e498f;
+background-color:#1E2D54;
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size:.97em;
+font-weight:700;
+color:#FFF;
+display:block;
+text-decoration:none;
+padding:2px 8px 2px 6px;
+}
+
+.leftMenuItemHover {
+border-bottom:solid 1px NFpx;
+background-color:#2e498f;
+font-size:.97em;
+font-weight:700;
+color:#FFF;
+display:block;
+text-decoration:none;
+padding:2px 8px 2px 6px;
+}
+
+.leftNav
+{
+    margin-top: 1px;
+    width: 150px;
+    height: 100%;
+    background-color: #1E2D54;
+    float: left;
+}
+
+.leftNavHide
+{
+    margin-top: 1px;
+    width: 0px;
+    height: 100%;
+    background-color: #1E2D54;
+    float: left;
+    visibility: collapse;
+    display: none;
+}
+
+.mainContent
+{
+    width: 908px;
+    background-color: #fff;
+    margin-left: 5px;
+    float: none;
+}
+
+.mainContentNoLeft
+{
+    width: 1102px;
+    background-color: #fff;
+    margin-left: 5px;
+    float: none;
+}
+
+.mainContainer {
+background-color:#fff;
+}
+
+.menuItem
+{
+    color: #FFF;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: .98em;
+    font-weight: 700;
+}
+
+.menuStyle
+{
+    background-position: 2px;
+    width: 97px;
+    background: 2px;
+    height: 25px;
+    font-size: .85em;
+    border-left: solid 1px #6F7DA1;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.nav-section-hdr {
+border:0;
+margin:0;
+padding:0;
+}
+
+.pageContent
+{
+    width: 50px;
+    background-color: #FFF;
+    float: left;
+}
+
+.pageContentNoLeft
+{
+    width: 1130px;
+    background-color: #FFF;
+    float: left;
+}
+
+.page-title {
+font-size:125%;
+font-weight:700;
+}
+
+
+.subMenuItem {
+color:#FFF;
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size:.97em;
+font-weight:700;
+padding-left:12px;
+}
+
+.title {
+font-size:18px;
+font-weight:700;
+text-align:left;
+width:75%;
+}
+
+
+
+.va-highlight {
+background-color:#F8F3E2;
+padding:3px;
+}
+
+
+
+.va-section-header {
+background-color:#6B1424;
+color:#FFF;
+font-size:115%;
+font-weight:700;
+padding:3px;
+}
+
+.va-small {
+font-size:90%;
+}
+
+.va-xlarge {
+font-size:130%;
+}
+
+.va-xsmall {
+font-size:80%;
+}
+
+.validationErrorMessage {
+color:red;
+}
+
+.validationErrorMessageHeader {
+color:red;
+font-weight:700;
+text-decoration:underline;
+}
+
+a {
+color:#0064FF;
+text-decoration:underline;
+}
+
+a:active,a:visited {
+color:#891228;
+}
+
+a:hover {
+color:#4CA8FF;
+text-decoration:underline;
+}
+
+a:link {
+color:#234C9F;
+}
+
+body {
+color:#000;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:75%;
+line-height:140%;
+text-align:left;
+height:68%;
+width:100%;
+margin:0;
+padding:0;
+}
+
+caption {
+font-weight:700;
+text-align:left;
+}
+
+
+
+h1 {
+font-size:18px;
+margin:0 0 8px;
+padding:0;
+}
+
+h2 {
+font-size:16px;
+}
+
+h2,h3,h4 {
+margin:0 0 2px;
+padding:0;
+}
+
+h3 {
+font-size:14px;
+}
+
+h4 {
+font-size:13px;
+}
+
+hr.va-hr-black {
+border:1px solid #000;
+}
+
+hr.va-hr-gray {
+border:1px solid #CCC;
+}
+
+label {
+font-size:12px;
+font-weight:700;
+margin:0;
+padding:0;
+}
+
+
+p {
+margin-top:0;
+padding-top:0;
+}
+
+ul {
+margin-top:8px;
+padding-top:0;
+}
+
+td {
+vertical-align:top;
+}
+
+#pgBanner {
+width:100%;
+z-index:1;
+border-style:none;
+margin:-1px;
+padding:-1px;
+}
+
+.leftNav a.visited,.menuStyle a,.menuStyle a:link,.menuStyle a:visited,.menuStyle a:hover,.siteMapControl a,#horizMenu,.menuItem a:link,.menuItem a:visited,.menuItem a:hover,.leftMenuItemHover a:link,.leftMenuItemHover a:visited,.leftMenuItemHover a:hover,.leftMenuItem a:link,.leftMenuItem a:visited,.leftMenuItem a:hover {
+color:#FFF;
+}
+
+
+
+#navigation a
+{
+    background-position: left top;
+    color: #000;
+    background: #fb0 url('../images/Tabs/left-tab.gif') no-repeat left top;
+    text-decoration: none;
+    padding-left: 10px;
+} 
+
+#navigation a span 
+{ 
+background: url("../images/Tabs/right-tab.gif") right top no-repeat; 
+padding-right: 10px 
+} 
+
+#navigation a, #navigation a span 
+{ 
+display: block; 
+float: left 
+} 
+
+/* Commented backslash hack hides rule from IE5-Mac \*/ 
+#navigation a, #navigation a span 
+{ 
+float: none 
+} 
+/* End IE5-Mac hack */ 
+
+#navigation a:hover 
+{ 
+color: #fff; 
+background: #26a url("../images/Tabs/left-tab-hover.gif") left top no-repeat; 
+text-decoration: none; 
+padding-left: 10px 
+} 
+
+#navigation a:hover span 
+{ 
+background: url("../images/Tabs/right-tab-hover.gif") right top no-repeat; 
+padding-right: 10px 
+} 
+
+#navigation 
+{ 
+list-style: none; 
+padding: 0; 
+margin: 0 
+} 
+

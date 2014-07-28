@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 17:24:17">
+<CSP name="alertcache/showalertcachedetail.csp" application="/csp/aware/"><![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>VEFA AWARE Alert Cache Detail</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <style type="text/css">
+        .IDWidth
+        {
+            width: 168px;
+        }
+
+        .DateWidth
+        {
+            width: 217px;
+        }
+
+		.TextWidth
+        {
+            width: 400px;
+        }
+
+	</style>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="ui.jqgrid.css" />
+
+    <style type="text/css">
+	   #tabs {
+            padding: 0px;
+	   }
+	   #tabs .ui-tabs-nav {
+    	 background: transparent; 
+         border-width: 0px 0px 1px 0px; 
+         -moz-border-radius: 0px; 
+         -webkit-border-radius: 0px; 
+         border-radius: 0px; 
+	   }
+	   #tabs .ui-tabs-panel {
+          margin: 0em 0.2em 0.2em 0.2em;
+	   }
+	</style>
+
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="jquery.cookie.js"></script>
+
+	<script src="grid.locale-en.js"></script>
+	<script src="jquery.jqGrid.min.js"></script>
+	<script src="mousetrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#actionlist").jqGrid({
+                datatype: "local",
+                height: 250,
+                colNames: ['ID', 'Follow-up Actions', 'Date/Time'],
+
+                colModel: [
+                { name: 'id', index: 'id', width: 60, sorttype: "int" },
+                { name: 'action', index: 'action', width: 450 },
+   		        { name: 'date', index: 'date', width: 150, sorttype: "date" }
+                ],
+                pager: "#pager",
+                rowNum: 10,
+                rowList: [10, 20, 30, 40],
+                viewrecords: true,
+                gridview: true,
+                autoencode: true,
+                multiSelect: true,
+                caption: "Follow-up Actions"
+            });
+			$("#actionlist").jqGrid("bindKeys", {}); 	// Bind the navigation and set the onEnter event
+
+            $("#close")
+              .button()
+              .click(function (event) {
+                  showList();
+              });
+
+            Mousetrap.bind('ctrl+alt+b', function (e) {
+                showList();
+            });
+
+
+            function showList() {
+                $.cookie("fromPage", "detail");
+                window.location = "showalertcache.csp";
+                //history.back();
+            }
+
+            $("#tabs").focus();
+            $("#tabs").tabs();
+            $("#tab-1").focus();
+
+
+        });
+
+    </script>
+    
+
+</head>
+
+<BODY>
+
+ <center>
+
+<FORM class="ui-widget ui-state-default ui-corner-all" style="width:750px">
+
+<div id="header" name="header" style="background-color:#001A4C; color:#FFFFFF; " >
+    <table>
+		<td align="left">
+            <img border="0" src="va.png" alt="U.S. Department of Veterans Affairs" width="125" height="125"/>
+		</td>
+		<td align="left">
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+		</td>
+        <td align="right">
+			<h1 style="margin-bottom:0;">VistA AWARE <br/> Alert Cache Viewer </h1>
+        </td>
+    </table>
+</div>
+
+
+<br />
+        
+<div id='tabs' text-align:left>
+    <ul>
+        <li><a id='tab-1' href='#tabs-1'>Alert</a></li>
+        <li><a id='tab-2' href='#tabs-2'>FAT/Status</a></li>
+	    <li><a id='tab-3' href='#tabs-3'>Result</a></li>
+	    <li><a id='tab-4' href='#tabs-4'>Follow-up Actions</a></li>
+	</ul>
+	
+    <div id='tabs-1'>
+        <table class="ui-widget ui-state-default ui-corner-all" style="width: 100%;">
+        <tr>
+        <td align="right">
+            <label for="txtAlertID">Alert ID</label></td>
+        <td align="left">
+            <input id="txtAlertID" align="left" type="text" class="ui-widget ui-corner-all TextWidth" 
+                disabled="disabled" />&nbsp;
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtDate">Date</label></td>
+        <td align="left">
+            <input id="txtDate" align="left" type="text" class="ui-widget ui-corner-all DateWidth"
+                disabled="disabled" />&nbsp;
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtService">Service</label></td>
+        <td align="left">
+            <input id="txtService" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtOrderProvider">Ordering Provider</label></td>
+        <td align="left">
+            <input id="txtOrderProvider" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtListValue">Alert Recipient</label></td>
+        <td align="left">
+        	<textarea id="txtListValue" name="txtListValue" rows="3"
+           	style = "overflow-x: hidden; overflow-y: hidden;"
+            class="ui-widget ui-corner-all TextWidth" disabled="disabled" >
+          	</textarea></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtPatient">Patient</label></td>
+        <td align="left">
+            <input id="txtPatient" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtCategory">Alert Category</label></td>
+        <td align="left">
+            <input id="txtCategory" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtType">Alert Type</label></td>
+        <td align="left">
+            <input id="txtType" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        </table>
+    </div>
+    <div id='tabs-2'>
+        <table class="ui-widget ui-state-default ui-corner-all" style="width: 100%;">
+        <tr>
+        <td align="right">
+            <label for="txtVEFASYS">UN-ACK Status</label></td>
+        <td align="left">
+            <input id="txtVEFASYS" align="left" type="text" class="ui-widget ui-corner-all TextWidth" 
+                disabled="disabled" />&nbsp;
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtVEFAPROC">ACK Renew Date</label></td>
+        <td align="left">
+            <input id="txtVEFAPROC" align="left" type="text" class="ui-widget ui-corner-all DateWidth"
+                disabled="disabled" />&nbsp;
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtVEFADELETE">Delete Date</label></td>
+        <td align="left">
+            <input id="txtVEFADELETE" align="left" type="text" class="ui-widget ui-corner-all DateWidth"
+                disabled="disabled" />&nbsp;
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtFATStatus">FAT Status</label></td>
+        <td align="left">
+            <input id="txtFATStatus" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtFATProvider">FAT Provider</label></td>
+        <td align="left">
+            <input id="txtFATProvider" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtFollowupProvider">Follow-up Provider</label> </td>
+        <td align="left">
+            <input id="txtFollowupProvider" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtClinic">Clinic</label></td>
+        <td align="left">
+            <input id="txtClinic" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtPatientID">Patient ID</label></td>
+        <td align="left">
+            <input id="txtPatientID" type="text" 
+                class="ui-widget ui-corner-all IDWidth" disabled="disabled" /></td>
+        </tr>
+        
+        </table>
+    </div>
+    <div id='tabs-3'>
+    <table class="ui-widget ui-state-default ui-corner-all" style="width: 100%;">
+        <tr>
+        <td align="right">
+            <label for="txtGeneratedBy">Alert Resultor</label></td>
+        <td align="left">
+            <input id="txtGeneratedBy" type="text" 
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtGeneratedByPersonCL">Resultor Person Class</label></td>
+        <td align="left">
+            <input id="txtGeneratedByPersonCL" class="ui-widget ui-corner-all TxtWidth" 
+                disabled="disabled" type="text" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtOrigStation" hidden="hidden">Alert Type Orig Station</label></td>
+        <td align="left">
+            <input id="txtOrigStation" type="text" hidden="hidden"
+                class="ui-widget ui-corner-all TextWidth" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="chkFol">Follow-up</label></td>
+        <td align="left">
+      		<input id="chkFol" type="checkbox" class="ui-widget ui-corner-all" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="chkFol7D">Follow-up > 7 Days</label></td>
+        <td align="left">
+      		<input id="chkFol7D" type="checkbox" class="ui-widget ui-corner-all" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="chkAck7D">Ack > 7 Days</label></td>
+        <td align="left">
+      		<input id="chkAck7D" type="checkbox" class="ui-widget ui-corner-all" disabled="disabled" /></td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtAlertValue">Alert Value</label></td>
+        <td align="left">
+            <input id="txtAlertValue" class="ui-widget ui-corner-all TextWidth" 
+                disabled="disabled" type="text" /></td>
+        </tr>
+    </table>
+    </div>
+    <div id='tabs-4'>
+    <table id="actionlist">
+    </table>
+    </div>
+</div>
+
+
+<div>
+<table style="width: 95%">
+    <tr>
+        <td align="left">
+            <p style="font-size:70%; color:#001A4C; text-align:left;">Ctrl+Alt+B to return to previous Page</p>
+        </td>
+        <td align="left">
+            <p style="font-size:70%; color:#001A4C; text-align:left;">Left and Right Arrow 
+                Keys to navigate the TABS</p>
+        </td>
+	</tr>
+</table>
+
+<table style="width: 95%">
+    <tr>
+        <td align="left">
+			<p style="font-size:70%; color:#001A4C; text-align:left;">
+	            <label for="txtFacility">Facility</label>
+    	        <input id="txtFacility" align="left" type="text" class="TextWidth"
+        	        disabled="disabled" /></p>
+        </td>
+        <td align="right" style="font-size:80%">
+            <input type="button" value="Close" id="close" name="close">
+        </td>
+    </tr>
+</table>
+</div>
+
+<br />
+
+</FORM>
+
+<script language="Cache" runat="server" >
+       	d ##class(VEFA.AlertCacheDetail).Show()
+</script>
+
+
+</center>
+
+</body>
+</html>
+]]></CSP>
+</Export>

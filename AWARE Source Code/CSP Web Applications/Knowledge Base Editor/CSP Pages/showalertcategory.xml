@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 17:30:12">
+<CSP name="kbeditor/showalertcategory.csp" application="/csp/aware/"><![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>AWARE KB Editor Alert Category</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <style type="text/css">
+        #txtName
+        {
+            width: 400px;
+        }
+        #txtDescr
+        {
+            width: 400px;
+        }
+        #ok
+        {
+            width: 76px;
+        }
+        #close
+        {
+            width: 76px;
+        }
+     </style>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="ui.jqgrid.css" />
+    
+    
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="jquery.cookie.js"></script>
+
+	<script src="grid.locale-en.js"></script>
+	<script src="jquery.jqGrid.min.js"></script>
+	<script src="mousetrap.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        
+        $(function () {
+            $("#form1").validate({
+                rules: {
+                    txtName: "required",
+                    txtDescr: "required",
+                    selNotfType: "required"
+                }
+            });
+            
+            $.cookie("fromPage", "alertCategory");
+
+            $("#ok")
+            .button()
+            .click(function () {
+	            if (valLength()) {
+                    var action = $("#chkAction").prop("checked") ? "Yes" : "No";
+					var record = $("#txtName").val() + "^" +
+						$("#txtDescr").val() + "^" +
+						$("#selDelAlert").val() + "^" +
+						$("#selNotfType").val() + "^" +
+						action;
+                    $.cookie("cat.record", record);
+
+                    window.location = "savealertcat.csp";
+	            }
+            });
+
+            $("#cancel")
+            .button()
+            .click(function () {
+                    window.location = "showmain.csp";
+            });
+
+        });
+    
+		function valLength() {
+			var fld = "#txtName";
+			var val = valFieldLength(fld, "Name", 3, 60);
+			if (val) {
+				fld = "#txtDescr";
+				val = valFieldLength(fld, "Description", 3, 40);
+			}
+			
+			if (!val) {
+				$(fld).focus();
+			}
+
+			return val;
+		}
+		
+		function valFieldLength(fld, caption, low, high) {
+			if (($(fld).val().length > high) || ($(fld).val().length < low)) {
+				alert(caption + " must be " + low + "-" + high + " characters in length");
+				return false;
+			} else {
+				return true;
+			}
+		}
+
+	</script>
+
+</head>
+<body>
+
+ <center>
+
+<FORM id="form1" name="form1" class="ui-widget ui-state-default ui-corner-all" style="width:750px">
+
+
+<div style="background-color:#001A4C; color:#FFFFFF; " >
+    <table>
+		<td align="left">
+            <img border="0" src="va.png" alt="U.S. Department of Veterans Affairs" width="125" height="125"/>
+		</td>
+		<td align="left">
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+		</td>
+        <td align="right">
+			<h1 style="margin-bottom:0;">VistA AWARE KB Editor<br/> Alert Category</h1>
+        </td>
+    </table>
+</div>
+
+
+    
+<br />
+
+<div id="cat">
+    <table class="ui-widget ui-state-default ui-corner-all" style="width: 100%;">
+        <tr>
+        <td align="right">
+            <label for="txtName">Name</label></td>
+        <td align="left">
+            <input id="txtName" name="txtName" align="left" type="text" class="ui-widget ui-corner-all" />&nbsp;
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="txtDescr">Description</label></td>
+        <td align="left">
+            <input id="txtDescr" name="txtDescr" align="left" type="text" class="ui-widget ui-corner-all"  />&nbsp;
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="selDelAlert">Delete Alert</label></td>
+        <td align="left">
+            <select id="selDelAlert" name="selDelAlert" class="ui-widget ui-corner-all">
+                <script language="Cache" runat="server" >
+       				d ##class(VEFA.AlertCategory).DeleteAlertOptions()
+			   </script>
+            </select>
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            <label for="selNotfType">Notification Type</label></td>
+        <td align="left">
+            <select id="selNotfType" name="selNotfType" class="ui-widget ui-corner-all">
+	             <script language="Cache" runat="server" >
+       				d ##class(VEFA.AlertCategory).NotfTypeOptions()
+			   </script>
+            </select>
+
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            &nbsp;</td>
+        <td align="left" class="ui-widget ui-corner-all">
+           <input id="chkAction" name="chkAction" type="checkbox" class="ui-widget ui-corner-all" />
+           <label for="chkAction">Upon Follow-up Action</label>
+        </td>
+        </tr>
+        
+    </table>
+</div>
+
+<br />
+<div>
+    <table style="width: 405px">
+    <td align="right">
+            <input id="ok" name="ok" type="button" value="OK" />
+        </td>
+        <td align="left">
+            <input type="button" value="Cancel" id="cancel" name="cancel">
+        </td>
+    </table>
+</div>
+
+<script>
+    var todo = $.cookie("cat.todo");
+    if (todo == "edit") {
+	    var record = $.cookie("cat.record");
+	    var arr = (record.length==0 || record.indexOf("^")==-1) ? []: record.split("^");
+        $("#txtName").val(arr[0]);
+        $("#txtDescr").val(arr[1]);
+        var delAlert = arr[2];
+        $("#selDelAlert").val(delAlert).attr("selected", true);
+        $("#selNotfType").val(arr[3]).attr("selected", true);
+        $("#chkAction").attr("checked", (arr[4] == "Yes"));
+        $("#txtName").attr("disabled", "disabled");
+	    $("#txtDescr").focus();
+    } else {
+        $("#txtName").val("");
+        $("#txtDescr").val("");
+        $("#selDelAlert").val("NO").attr("selected", true);
+        $("#selNotfType").val("");
+        $("#chkAction").attr("checked", false);
+        $("#txtName").attr("disabled", false);
+        //$("#selNotfType").attr("disabled", false);
+        $("#txtName").focus();
+    }
+</script>
+
+ <script language="Cache" runat="server" >
+	d ##class(VEFA.AlertCategory).DisableControls()
+</script>
+    
+
+<br />
+
+
+</FORM>
+</center>
+</body>
+</html>
+]]></CSP>
+</Export>

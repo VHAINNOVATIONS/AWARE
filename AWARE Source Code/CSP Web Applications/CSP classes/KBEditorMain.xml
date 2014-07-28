@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 17:05:53">
+<Class name="VEFA.KBEditorMain">
+<ProcedureBlock>0</ProcedureBlock>
+<Super>%CSP.Page</Super>
+<TimeChanged>63252,42613.34657</TimeChanged>
+<TimeCreated>63208,39489.296087</TimeCreated>
+
+<Method name="FillGrids">
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	QUIT:##class(VEFA.Login).InvalidPage()
+	D ..FillAlertCategory()
+	D ..FillAlertType()
+]]></Implementation>
+</Method>
+
+<Method name="FillAlertCategory">
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	W "<script type='text/javascript'>"
+	W "$(function () {"
+	W "  var mydata = ["
+	;
+	N DATA D GETALCAT^VEFAKB01(.DATA)
+	N ID S ID="" F  S ID=$O(DATA(ID)) Q:ID=""  W DATA(ID)
+	;
+	W "	];"
+	;
+	N USERNAME S USERNAME=%session.Data("username",1)
+	N DUZ S DUZ=%session.Data("DUZ",1)
+	W " $('#txtUser').val('"_USERNAME_ "');"
+	W " for(var i=0;i<=mydata.length;i++) $('#listCat').jqGrid('addRowData',i+1,mydata[i]);"
+	W " $('#listCat').focus();"
+	;
+	N ID S ID=%request.GetCookie("cat.id")
+	S:ID="" ID=1
+	W " $('#listCat').jqGrid('setSelection','"_ID_"');"
+	I '$$ISPROG^VEFAALR5(DUZ) D
+	. W " $('#add').addClass('ui-state-disabled');"
+	. W " $('#lblAdd').hide();"
+	W "});"
+	W "</script>"
+]]></Implementation>
+</Method>
+
+<Method name="FillAlertType">
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	W "<script type='text/javascript'>"
+	W "$(function () {"
+	W "  var mydata = ["
+	;
+	N DATA D GETALTYP^VEFAKB01(.DATA)
+	N ID S ID="" F  S ID=$O(DATA(ID)) Q:ID=""  W DATA(ID)
+	;
+	W "	];"
+	;
+	w " for(var i=0;i<=mydata.length;i++) $('#listType').jqGrid('addRowData',i+1,mydata[i]);"
+	w " $('#listType').focus();"
+	;
+	N ID S ID=%request.GetCookie("type.id")
+	S:ID="" ID=1
+	W " $('#listType').jqGrid('setSelection','"_ID_"');"
+	W "});"
+	W "</script>"
+]]></Implementation>
+</Method>
+</Class>
+</Export>

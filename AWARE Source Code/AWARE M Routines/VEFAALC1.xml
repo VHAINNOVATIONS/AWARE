@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 16:34:52">
+<Routine name="VEFAALC1" type="INT" languagemode="0" timestamp="63287,45187.357981"><![CDATA[
+VEFAALC1 ;WOIFO/BT - VEFA AWARE ALERT CACHE API CALLED BY CSP PAGE ; 02/06/2014
+ ;;1.0;VEFA ALRE;**1**;MAY 1, 2011;Build 17
+ ;; Per VHA Directive 2004-038, this routine should not be modified.
+ ;;
+ ; External Reference DBIA#
+ ; ------------------------
+ ; #2056   - GETS^DIQ (Supported)
+ ; #2051   - LIST^DIC (Supported)
+ ; #10104  - LOW^XLFSTR (Supported)
+ ; #10104  - UP^XLFSTR (Supported)
+ ;
+GETALCH(VEFARSLT,USERNAME,DUZ,PROV,SERV,PAT,FOL7,SELPROV,SELSERV,SELPAT,FACILITY) ;Get Alert Cache records
+ ;INPUT
+ ;  USERNAME : User Name 
+ ;             if user has key to see his/her own alert cache, screen result array with this user name
+ ;  DUZ      : DUZ used to get the key
+ ;  PROV     : Provider - if not All, screen result array with this provider
+ ;  SERV     : Service  - if not All, screen result array with this service
+ ;  PAT      : Patient  - if not All, screen result array with this patient
+ ;  FOL7     : Follow-up > 7 Days  - if not All, screen result array with either follow-up >7 Days or not
+ ;OUTPUT 
+ ;  VEFARSLT : Result Array of Alert Cache based on criteria
+ ;  SELPROV  : Result Array of providers
+ ;  SELSERV  : Result Array of services
+ ;  SELPAT   : Result Array of patients
+ ;  FACILITY : Facility
+ ;
+ K @VEFARSLT
+ QUIT:$G(USERNAME)=""
+ QUIT:$G(DUZ)=""
+ S FACILITY=""
+ S:$G(PROV)="" PROV="(All)"
+ S:$G(SERV)="" SERV="(All)"
+ S:$G(FOL7)="" FOL7="(All)"
+ S:$G(PAT)="" PAT="(All)"
+ ;
+ N FILE S FILE="19008.2"
+ N IENS S IENS=""
+ N FIELDS S FIELDS=".01;1;2;3;4;6;7;8;21;24"
+ N FLAGS S FLAGS=""
+ N NUMBER S NUMBER=""
+ N FROM,PART
+ N INDEX S INDEX="#"
+ N SCREEN
+ N IDENT S IDENT=""
+ N TARGET,ERR
+ ;
+ N KEY D USRKEY^VEFAALR5(.KEY,DUZ)
+ QUIT:KEY=0
+ ;
+ I KEY=1 D
+ . S SCREEN="I $P($P(^(0),U,5),"" "")="""_USERNAME_""""
+ . S INDEX="D"
+ ;
+ D LIST^DIC(FILE,IENS,FIELDS,FLAGS,NUMBER,.FROM,.PART,INDEX,.SCREEN,IDENT,"TARGET","ERR")
+ N LAST S LAST=$O(TARGET("DILIST","ID"," "),-1)
+ N ID S ID=""
+ ;
+ F  S ID=$O(TARGET("DILIST","ID",ID)) Q:ID=""  D
+ . N IEN S IEN=TARGET("DILIST",2,ID)
+ . N ALERTID S ALERTID=TARGET("DILIST","ID",ID,.01)
+ . N ALERTDT S ALERTDT=TARGET("DILIST","ID",ID,1)
+ . S FACILITY=$G(TARGET("DILIST","ID",ID,2))
+ . N SERVICE S SERVICE=TARGET("DILIST","ID",ID,3)
+ . N PROVIDER S PROVIDER=TARGET("DILIST","ID",ID,4)
+ . N PATIENT S PATIENT=TARGET("DILIST","ID",ID,6)
+ . N ALERTCAT S ALERTCAT=TARGET("DILIST","ID",ID,7)
+ . N ALERTTY S ALERTTY=TARGET("DILIST","ID",ID,8)
+ . N FOL7DAYS S FOL7DAYS=TARGET("DILIST","ID",ID,21)
+ . S FOL7DAYS=$S($$UP^XLFSTR(FOL7DAYS)="YES":"true",1:"false")
+ . N FOLUP S FOLUP=TARGET("DILIST","ID",ID,24)
+ . S FOLUP=$S($$UP^XLFSTR(FOLUP)="YES":"true",1:"false")
+ . S SELPROV(PROVIDER)=""
+ . S SELSERV(SERVICE)=""
+ . S SELPAT(PATIENT)=""
+ . I PROV'="(All)",PROV'=PROVIDER QUIT
+ . I SERV'="(All)",SERV'=SERVICE QUIT
+ . I PAT'="(All)",PAT'=PATIENT QUIT
+ . I FOL7'="(All)",$$LOW^XLFSTR(FOL7)'=FOL7DAYS QUIT
+ . N LINE S LINE="  {"
+ . S LINE=LINE_"ien:'"_IEN_"',"
+ . S LINE=LINE_"alertid:'"_$$QUOTE^VEFACSP1(ALERTID)_"',"
+ . S LINE=LINE_"date:'"_ALERTDT_"',"
+ . ;S LINE=LINE_"facility:'"_$$QUOTE^VEFACSP1(FACILITY)_"',"
+ . S LINE=LINE_"service:'"_$$QUOTE^VEFACSP1(SERVICE)_"',"
+ . S LINE=LINE_"provider:'"_$$QUOTE^VEFACSP1(PROVIDER)_"',"
+ . S LINE=LINE_"patient:'"_$$QUOTE^VEFACSP1(PATIENT)_"',"
+ . S LINE=LINE_"alertcategory:'"_$$QUOTE^VEFACSP1(ALERTCAT)_"',"
+ . S LINE=LINE_"alerttype:'"_$$QUOTE^VEFACSP1(ALERTTY)_"',"
+ . S LINE=LINE_"folup:'"_FOLUP_"',"
+ . S LINE=LINE_"fol7days:'"_FOL7DAYS_"'}"
+ . I ID<LAST S LINE=LINE_","
+ . S @VEFARSLT@(ID)=LINE
+ QUIT
+ ;
+GETDATA(DATA,IENS) ;Get single Alert Cache record for IENS
+ ; INPUT
+ ;   IENS : Internal Alert Cache Record ID
+ ; OUTPUT
+ ;   DATA : Alert Cache Record for IENS
+ ;
+ K DATA
+ QUIT:$G(IENS)=""
+ N FILE S FILE=19008.2
+ N FIELDS S FIELDS=".01;1;2;3;4;5;6;7;8;9;10;11;12;13;14;16;17;18;19;20;21;22;23;24"
+ N FLAGS S FLAGS=""
+ N TARGET,ERR
+ ;
+ D GETS^DIQ(FILE,IENS,FIELDS,FLAGS,"TARGET","ERR")
+ I '$D(ERR) D
+ . N INDEX
+ . F INDEX=.01,1:1:14,16:1:20,23 S DATA(INDEX)=$$QUOTE^VEFACSP1(TARGET(FILE,IENS_",",INDEX))
+ . S DATA(24)=$S($$UP^XLFSTR(TARGET(FILE,IENS_",",24))="YES":"true",1:"false")
+ . S DATA(21)=$S($$UP^XLFSTR(TARGET(FILE,IENS_",",21))="YES":"true",1:"false")
+ . S DATA(22)=$S($$UP^XLFSTR(TARGET(FILE,IENS_",",22))="YES":"true",1:"false")
+ Q
+ ;
+GETFOL(VEFARSLT,IENS) ;Get Alert Cache Followup data (multiple)
+ ; INPUT
+ ;   IENS     : Internal Alert Cache Record ID
+ ; OUTPUT
+ ;   VEFARSLT : Alert Cache Follow-up Records for IENS
+ ;
+ K VEFARSLT
+ QUIT:$G(IENS)=""
+ N FILE S FILE="19008.215"
+ N FIELDS S FIELDS=".01;1"
+ N FLAGS S FLAGS=""
+ N NUMBER S NUMBER=""
+ N FROM,PART
+ N INDEX S INDEX="#"
+ N SCREEN
+ N IDENT S IDENT=""
+ N TARGET,ERR
+ ;
+ D LIST^DIC(FILE,IENS,FIELDS,FLAGS,NUMBER,.FROM,.PART,INDEX,.SCREEN,IDENT,"TARGET","ERR")
+ N LAST S LAST=$O(TARGET("DILIST","ID"," "),-1)
+ N ID S ID=""
+ ;
+ F  S ID=$O(TARGET("DILIST","ID",ID)) Q:ID=""  D
+ . N IEN S IEN=TARGET("DILIST",2,ID)
+ . N FOLACT S FOLACT=TARGET("DILIST","ID",ID,.01)
+ . N FOLACTDT S FOLACTDT=TARGET("DILIST","ID",ID,1)
+ . N LINE S LINE="  {"_"id:'"_IEN_"',"_"action:'"_$$QUOTE^VEFACSP1(FOLACT)_"',"_"date:'"_FOLACTDT_"'}"
+ . S:ID<LAST LINE=LINE_","
+ . S VEFARSLT(ID)=LINE
+ Q
+]]></Routine>
+</Export>
