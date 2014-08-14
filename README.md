@@ -1,5 +1,7 @@
 # VistA AWARE (Alert Watch And Response Engine #
 
+The Alert Watch and Response Engine (AWARE) is an automated tool that enables clinicians, supervisors, and administrations to monitor and track responses to alerts in CPRS. It consists of three components: (1) an alert monitor (2) an actions tracking feature; and (3) a web-based alert reporting engine.
+
 AWARE will
 - Track critical alerts and monitor follow-up action
 - Identify critical lab and imaging test result alerts that lack timely follow-up
