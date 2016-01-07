@@ -1,0 +1,10 @@
+
+//---------------------------------------------------------------------------
+// The Installing event is sent just before the feature 
+// DefaultFeature is installed.
+//---------------------------------------------------------------------------
+export prototype DefaultFeature_Installing();
+function DefaultFeature_Installing()
+begin
+	WriteLine(nvLogFile, "Installing application files");
+end;

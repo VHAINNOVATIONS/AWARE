@@ -1,0 +1,405 @@
+//===========================================================================
+//
+//  File Name:    Setup.rul
+//
+//  Description:  Blank setup main script file
+//
+//  Comments:     Blank setup is an empty setup project. If you want to
+//				  create a new project via. step-by step instructions use the
+//				  Project Assistant.
+//
+//===========================================================================
+
+// Included header files ----------------------------------------------------
+#include "ifx.h"
+
+prototype vefaalerttracking.DllRegisterServer();
+prototype vefaalerttracking.DllUnregisterServer();
+prototype RegisterDll();
+prototype BuildShortCuts();
+
+NUMBER nvLogFile;
+STRING szVistaAddy, szVistaPort;
+
+//---------------------------------------------------------------------------                                                                        
+// OnFirstUIBefore
+//
+// First Install UI Sequence - Before Move Data
+//
+// The OnFirstUIBefore event is called by OnShowUI when the setup is
+// running in first install mode. By default this event displays UI allowing
+// the end user to specify installation parameters.
+//
+// Note: This event will not be called automatically in a
+// program...endprogram style setup.
+//---------------------------------------------------------------------------
+function OnFirstUIBefore()
+    number  nResult, nLevel, nSize, nSetupType;
+    string  szTitle, szMsg, szOpt1, szOpt2, szLicenseFile, svAddy, svPort;
+    string  szName, szCompany, szTargetPath, szDir, szFeatures;
+    BOOL    bLicenseAccepted;
+begin	
+	OpenFileMode(APPEND);
+    // Added in InstallShield 15 - Show an appropriate error message if
+    // -removeonly is specified and the product is not installed.
+    if( REMOVEONLY ) then
+        Disable( DIALOGCACHE );
+		szMsg = SdLoadString( IDS_IFX_ERROR_PRODUCT_NOT_INSTALLED_UNINST );
+   		SdSubstituteProductInfo( szMsg );
+		MessageBox( szMsg, SEVERE );
+		abort;
+    endif;
+   
+    nSetupType = COMPLETE;	
+    szDir = TARGETDIR;
+    szName = "";
+    szCompany = "";
+    bLicenseAccepted = FALSE;
+
+// Beginning of UI Sequence
+Dlg_Start:
+    nResult = 0;
+
+Dlg_SdWelcome:
+    szTitle = "";
+    szMsg = "";
+    //{{IS_SCRIPT_TAG(Dlg_SdWelcome)
+    nResult = SdWelcome( szTitle, szMsg );
+    //}}IS_SCRIPT_TAG(Dlg_SdWelcome)
+    if (nResult = BACK) goto Dlg_Start;
+
+Dlg_SdLicense2:
+    szTitle = "";
+    szOpt1 = "";
+    szOpt2 = "";
+    //{{IS_SCRIPT_TAG(License_File_Path)
+    szLicenseFile = SUPPORTDIR ^ "License.rtf";
+    //}}IS_SCRIPT_TAG(License_File_Path)
+    //{{IS_SCRIPT_TAG(Dlg_SdLicense2)
+    nResult = SdLicense2Ex( szTitle, szOpt1, szOpt2, szLicenseFile, bLicenseAccepted, TRUE );
+    //}}IS_SCRIPT_TAG(Dlg_SdLicense2)
+    if (nResult = BACK) then
+        goto Dlg_SdWelcome;
+    else
+        bLicenseAccepted = TRUE;
+    endif;
+
+Dlg_SdAskDestPath2:
+    if ((nResult = BACK) && (nSetupType != CUSTOM)) goto Dlg_SdLicense2;
+	szTitle = "";
+    szMsg = "";
+    
+    nResult = SdAskDestPath2( szTitle, szMsg, szDir );
+    TARGETDIR = szDir;
+                
+    if (nResult = BACK) goto Dlg_SdLicense2;
+    
+    
+Dlg_SdFeatureTree: 
+    if ((nResult = BACK) && (nSetupType != CUSTOM)) goto Dlg_SdAskDestPath2;
+    szTitle = "";
+    szMsg = "";
+    szFeatures = "";
+    nLevel = 2;
+    if (nSetupType = CUSTOM) then
+        //{{IS_SCRIPT_TAG(Dlg_SdFeatureTree)	
+        nResult = SdFeatureTree( szTitle, szMsg, TARGETDIR, szFeatures, nLevel );
+        //}}IS_SCRIPT_TAG(Dlg_SdFeatureTree)
+        if (nResult = BACK) goto Dlg_SdAskDestPath2;  
+    endif;
+
+Dlg_ObjDialogs:
+    nResult = ShowObjWizardPages( nResult );
+    if (nResult = BACK) goto Dlg_SdFeatureTree;
+  
+Dlg_SdStartCopy2:
+    szTitle = "";
+    szMsg = "";
+    //{{IS_SCRIPT_TAG(Dlg_SdStartCopy2)	
+    nResult = SdStartCopy2( szTitle, szMsg );	
+    //}}IS_SCRIPT_TAG(Dlg_SdStartCopy2)
+    if (nResult = BACK) goto Dlg_ObjDialogs;
+
+	if(NOTEXISTS = ExistsDir(TARGETDIR)) then
+		CreateDir(TARGETDIR);
+	endif;
+	CreateFile(nvLogFile, TARGETDIR, "AwareDllInstall.log");
+	WriteLine(nvLogFile, "Beginning Installation");
+    WriteLine(nvLogFile, "Target folder set to: " + TARGETDIR);
+    	
+    // Added in 11.0 - Set appropriate StatusEx static text.
+    SetStatusExStaticText( SdLoadString( IDS_IFX_STATUSEX_STATICTEXT_FIRSTUI ) );
+ 
+    return 0;
+end;
+
+// SdAskDestPath2 -----------------------------------------------------------
+function  SdAskDestPath2( szTitle, szMsg, svDir )
+    string  szDlg, svDirLoc, szTemp, svAddy, svPort;
+    number  nId, nTemp, nSdDialog, nStyle;
+    HWND    hwndDlg;
+    BOOL    bDone;
+begin
+
+    szDlg     = SD_DLG_ASKDESTPATH2;
+    nSdDialog = SD_NDLG_ASKDESTPATH2;
+    svDirLoc = svDir;
+    
+    svAddy = "23.21.114.197";
+    svPort = "9300";
+
+    // record data produced by this dialog
+    if(MODE=SILENTMODE) then
+        SdMakeName( szAppKey, szDlg, szTitle, nSdAskDestPath2 );
+        SilentReadData( szAppKey, "Result", DATA_NUMBER, szTemp, nId );
+        if((nId != BACK) && (nId != CANCEL)) then
+            SilentReadData( szAppKey, "szDir", DATA_STRING, svDir, nTemp );
+        endif;
+        return nId;
+    endif;
+
+    // ensure general initialization is complete
+    if(!bSdInit) then
+        SdInit();
+    endif;
+
+    if(EzDefineDialog( szDlg, "", "", SD_NDLG_ASKDESTPATH2 ) = DLG_ERR) then
+        return -1;
+    endif;
+
+    // Loop in dialog until the user selects a standard button
+    bDone = FALSE;
+
+    while (!bDone)
+
+        nId = WaitOnDialog( szDlg );
+
+        switch (nId)
+
+        case DLG_INIT:
+
+            CtrlSetText( szDlg, 0x80000000 | SD_STA_DESTDIR, svDirLoc );
+            CtrlSetText ( "DialogID_12067", 1303, svAddy ); 
+			CtrlSetText ( "DialogID_12067", 1305, svPort ); 
+
+            if(szMsg != "") then
+                SdSetStatic( szDlg, SD_STA_CHANGEDIRMSG, szMsg );
+            endif;
+
+            hwndDlg = CmdGetHwndDlg( szDlg );
+            SdGeneralInit( szDlg, hwndDlg, nStyle, szSdProduct );
+
+            SdSetDlgTitle(szDlg, hwndDlg, szTitle);
+
+        case SD_PBUT_CHANGEDIR:
+
+            SelectDirNoLog( "", "", svDirLoc, TRUE );
+            CtrlSetText( szDlg, 0x80000000 | SD_STA_DESTDIR, svDirLoc );
+
+        case SD_PBUT_CONTINUE:
+
+            svDir = svDirLoc;
+            nId   = NEXT;
+            bDone = TRUE;
+
+        case BACK:
+
+            nId    = BACK;
+            bDone  = TRUE;
+
+        case DLG_ERR:
+
+            SdError( -1, "SdAskDestPath2" );
+            nId   = -1;
+            bDone = TRUE;
+
+        case DLG_CLOSE:
+
+            SdCloseDlg( hwndDlg, nId, bDone );
+    
+        default:
+
+            // check standard handling
+            if(SdIsStdButton( nId ) && SdDoStdButton( nId )) then
+                bDone = TRUE;
+            endif;
+
+        endswitch;
+
+    endwhile;
+    
+    CtrlGetText("DialogID_12067", 1303, szVistaAddy);
+	CtrlGetText("DialogID_12067", 1305, szVistaPort);
+
+
+    // Cleanup Dialog
+    EndDialog( szDlg );
+    ReleaseDialog( szDlg );
+    SdUnInit();
+
+    // record data produced by this dialog
+    if(MODE=RECORDMODE) then
+        SdMakeName( szAppKey, szDlg, szTitle, nSdAskDestPath2 );
+        SilentWriteData( szAppKey, "szDir", DATA_STRING, svDir, 0 );
+        SilentWriteData( szAppKey, "Result", DATA_NUMBER, "", nId );
+    endif;
+
+    return nId;
+
+end;
+
+#include "FeatureEvents.rul"
+
+//---------------------------------------------------------------------------
+// OnInstallingFile
+//
+// The OnInstallingFile event is called when a file is about to be installed
+// as a result of FeatureTransferData or FeatureMoveData.
+//
+// szFile will contain the full path of file about to be installed.
+//---------------------------------------------------------------------------
+function OnInstallingFile(szFile)
+begin
+	WriteLine(nvLogFile, "Installing file: " + szFile);
+end;
+
+//---------------------------------------------------------------------------
+// OnInstalledFile
+//
+// The OnInstalledFile event is called after a file is installed as 
+// a result of ComponentTransferData or ComponentMoveData.
+//
+// szFile will contain the full path of file that was just installed.
+//---------------------------------------------------------------------------
+function OnInstalledFile(szFile)
+begin
+	WriteLine(nvLogFile, "Finished installing file: " + szFile);
+end;
+
+//---------------------------------------------------------------------------
+// OnSelfRegistrationError
+//
+// The OnSelfRegistrationError event is called directly by the framework
+// when a call to  Do(SELFREGISTRATIONPROCESS) fails to register files
+// successfully.
+//---------------------------------------------------------------------------
+function OnSelfRegistrationError()
+NUMBER ncnt, nResult, i, nCount;
+STRING svNum, szFiles, szError, svResult;
+begin
+    if(FileRegistrar.Errors.Count)then
+    	szFiles = SdLoadString(IFX_ONSELFREG_TITLE);
+    
+        nCount = FileRegistrar.Errors.Count;
+
+        // don't display more then 8
+        if(nCount > 8)then
+            nCount = 8;
+        endif;
+        
+        for i = 1 to nCount
+            // add file
+            NumToStr(svNum, i);
+            szFiles = szFiles + svNum + ". " + FileRegistrar.Errors(i).File + "\n";
+            
+            // add error description or number
+            if(FileRegistrar.Errors(i).Description != "")then
+                szFiles = szFiles + "\t" + FileRegistrar.Errors(i).Description + "\n\n";
+            else
+                // Format of numeric error: Error 0x80010105
+		szError = SdLoadString(IFX_SELFREG_ERR_HEX);
+		WriteLine(nvLogFile, "File registration ERROR number: " + szError);
+		Sprintf(svResult,szError,FileRegistrar.Errors(i).LastError);
+                szFiles = szFiles + svResult;
+            endif;
+        endfor;
+
+        if(FileRegistrar.Errors.Count > 8)then
+			svResult = SdLoadString(IFX_SELFREG_TRAILER);
+            szFiles = szFiles + svResult;
+        endif;
+		
+		//Add selection statement.
+        szFiles = szFiles + SdLoadString(IFX_ONSELFREG_MSG);
+		
+		//Get Caption
+		svResult = SdLoadString(IFX_ONSELFREG_CAPTION);
+
+		nResult = SprintfBox(MB_OKCANCEL,svResult,"%s",szFiles);
+
+        if (nResult = IDCANCEL) then
+		abort;
+        endif;
+    endif;
+end;
+
+//---------------------------------------------------------------------------
+// OnEnd
+//
+// The OnEnd event is called at the end of the setup. This event is not
+// called if the setup is aborted.
+//---------------------------------------------------------------------------
+function OnEnd()
+begin
+	CloseFile(nvLogFile);
+end;
+
+//---------------------------------------------------------------------------
+// OnFirstUIAfter
+//
+// First Install UI Sequence - After Move Data
+//
+// The OnFirstUIAfter event called by OnShowUI after the file transfer
+// of the setup when the setup is running in first install mode. By default
+// this event displays UI that informs the end user that the setup has been
+// completed successfully.
+//
+// Note: This event will not be called automatically in a
+// program...endprogram style setup.
+//---------------------------------------------------------------------------
+function OnFirstUIAfter()
+    STRING szTitle, szMsg1, szMsg2, szOpt1, szOpt2;
+    NUMBER bvOpt1, bvOpt2;
+begin
+	Do(SELFREGISTRATIONPROCESS);
+	RegisterDll();
+	BuildShortCuts();
+	ShowObjWizardPages(NEXT);
+    
+    szTitle = "";
+    szMsg1 = ""; 
+    szMsg2 = "";
+    szOpt1 = "";
+    szOpt2 = "";
+	bvOpt1   = FALSE;
+    bvOpt2   = FALSE;    
+    
+    //{{IS_SCRIPT_TAG(Dlg_SdDinishEx)	
+    if ( BATCH_INSTALL ) then
+		WriteLine(nvLogFile, "Ending Installation - Reboot required");
+    	SdFinishReboot ( szTitle , szMsg1 , SYS_BOOTMACHINE , szMsg2 , 0 );
+    else
+		WriteLine(nvLogFile, "Ending Installation");
+	    SdFinish ( szTitle , szMsg1 , szMsg2 , szOpt1 , szOpt2 , bvOpt1 , bvOpt2 );
+	endif;
+    //}}IS_SCRIPT_TAG(Dlg_SdDinishEx)	
+end;
+
+function RegisterDll()
+begin
+	WriteLine(nvLogFile, "Registering vefaalerttracking.dll");
+	UseDLL(TARGETDIR ^ "vefaalerttracking.dll");
+	vefaalerttracking.DllRegisterServer();
+end;
+
+
+function BuildShortCuts()
+	STRING szProgram, szName, szArgs, szWorkingFolder;
+begin
+	WriteLine(nvLogFile, "Creating desktop shortcut.");
+	szArgs = "s=" + szVistaAddy + " p=" + szVistaPort + " CCOW=disable";
+	szProgram = "\"" + TARGETDIR + "\\CPRSChart29_AWARE.exe\" " + szArgs;
+	
+	
+	AddFolderIcon(FOLDER_DESKTOP,"CPRS29-Aware", szProgram, TARGETDIR, TARGETDIR + "\\CPRSChart29_AWARE.exe", 0, "", REPLACE);
+end;
