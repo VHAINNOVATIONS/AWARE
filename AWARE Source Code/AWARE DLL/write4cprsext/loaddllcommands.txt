@@ -1,2 +1,0 @@
-c:\WINDOWS\system32\regsvr32.exe /U "C:\Program Files\vista\cprs27\write4cprsext.dll"
-c:\WINDOWS\system32\regsvr32.exe /C "C:\Program Files\vista\cprs27\write4cprsext.dll"
