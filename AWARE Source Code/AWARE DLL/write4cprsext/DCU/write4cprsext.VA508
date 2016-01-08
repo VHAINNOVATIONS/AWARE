@@ -1,0 +1,19 @@
+S:\i082 - AWARE\src\write4cprsext\write4cprsext\FAT3_textok.dfm
+7564/1150006547
+0
+2
+S:\i082 - AWARE\src\write4cprsext\write4cprsext\FAT4_textok.dfm
+5269/1058911268
+2
+2
+S:\i082 - AWARE\src\write4cprsext\write4cprsext\FATHelpScreen.dfm
+3256/1051044205
+4
+2
+|EOINDEX|
+327
+object FATForm: TFATForm
+201
+object FATFormS: TFATFormS
+122
+object HelpScreen: THelpScreen
