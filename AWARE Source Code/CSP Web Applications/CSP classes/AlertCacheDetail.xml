@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 17:04:37">
+<Class name="VEFA.AlertCacheDetail">
+<Description>
+WOIFO/BT - VEFA AWARE ALERT CACHE DETAIL API CALLED BY CSP FILE ; 01/22/2014
+1.0; VEFA ALRE ;**1,4**;MAY 2011;Build 1
+Per VHA Directive 2004-038, this routine should not be modified.
+</Description>
+<ProcedureBlock>0</ProcedureBlock>
+<Super>%CSP.Page</Super>
+<TimeChanged>63288,50675.548602</TimeChanged>
+<TimeCreated>63208,4165.91796</TimeCreated>
+
+<Method name="Show">
+<Description>
+Populate HTML elements of Alert Cache Detail Form web page with Alert Cache data and
+Populate HTML follow-up action Grid with Alert Cache Follow-up actions (multiple records)</Description>
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	QUIT:##class(VEFA.Login).InvalidPage()
+	D ..FillAlertCache()
+	D ..FillFollowupActions()
+]]></Implementation>
+</Method>
+
+<Method name="FillAlertCache">
+<Description>
+Populate HTML elements of Alert Cache Detail Form web page with Alert Cache data</Description>
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	N FIELDS
+	S FIELDS(.01)="txtAlertID"
+	S FIELDS(1)="txtDate"
+	S FIELDS(2)="txtFacility"
+	S FIELDS(3)="txtService"
+	S FIELDS(4)="txtOrderProvider"
+	S FIELDS(5)="txtListValue"
+	S FIELDS(6)="txtPatient"	
+	S FIELDS(7)="txtCategory"
+	S FIELDS(8)="txtType"
+	S FIELDS(9)="txtVEFASYS"
+	S FIELDS(10)="txtVEFAPROC"
+	S FIELDS(11)="txtVEFADELETE"
+	S FIELDS(12)="txtFATStatus"
+	S FIELDS(13)="txtFATProvider"
+	S FIELDS(14)="txtFollowupProvider"
+	S FIELDS(15)="txtFollowupActions"
+	S FIELDS(16)="txtClinic"
+	S FIELDS(17)="txtPatientID"
+	S FIELDS(18)="txtGeneratedBy"
+	S FIELDS(19)="txtGeneratedByPersonCL"
+	S FIELDS(20)="txtOrigStation"
+	S FIELDS(21)="chkFol7D"
+	S FIELDS(22)="chkAck7D"
+	S FIELDS(23)="txtAlertValue"
+	S FIELDS(24)="chkFol"
+	;
+	N IENS S IENS=%request.GetCookie("ien")
+	N DATA D GETDATA^VEFAALC1(.DATA,IENS)
+	;
+	W "<script type='text/javascript'>"
+    W "$(function () {"
+	;	
+	N FLD F FLD=.01,1:1:14,16:1:20,23 W !,"$('#",FIELDS(FLD),"').val('",DATA(FLD),"');"
+	N FLD F FLD=.01,1:1:14,16:1:20,23 W !,"$('#",FIELDS(FLD),"').parent().attr('title','",DATA(FLD),"');"
+	W !,"$('#",FIELDS(24),"').attr('checked',",DATA(24),");"	
+	W !,"$('#",FIELDS(21),"').attr('checked',",DATA(21),");"	
+	W !,"$('#",FIELDS(22),"').attr('checked',",DATA(22),");"
+	;
+	W "});"
+	W "</script>"
+]]></Implementation>
+</Method>
+
+<Method name="FillFollowupActions">
+<Description>
+Populate HTML follow-up action Grid with Alert Cache Follow-up actions (multiple records)</Description>
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	W "<script type='text/javascript'>"
+    W "$(function () {"
+	W "  var mydata=["
+	;
+	N IENS S IENS=","_%request.GetCookie("ien")_","
+	N DATA D GETFOL^VEFAALC1(.DATA,IENS)
+	N ID S ID="" F  S ID=$O(DATA(ID)) Q:ID=""  W DATA(ID)
+	;
+	W "	];"
+	W "for (var i=0; i <= mydata.length - 1; i++) {"
+	W " $('#actionlist').jqGrid('addRowData', i + 1, mydata[i]);"
+   	W "	}"
+ 	W "$('#actionlist').focus();"
+    W "$('#actionlist').jqGrid('setSelection',1);"
+	W "});"
+	W "</script>"
+]]></Implementation>
+</Method>
+</Class>
+</Export>

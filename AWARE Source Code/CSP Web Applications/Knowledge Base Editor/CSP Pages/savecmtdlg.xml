@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 17:28:53">
+<CSP name="kbeditor/savecmtdlg.csp" application="/csp/aware/"><![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>AWARE KBEditor Save Alert Type - Comments Dialog</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery.ui.dialog.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="ui.jqgrid.css" />
+    
+    <script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="jquery.cookie.js"></script>
+
+	<script src="grid.locale-en.js"></script>
+	<script src="jquery.jqGrid.min.js"></script>
+	<script src="mousetrap.min.js"></script>
+    <script src="jquery.ui.dialog.js"></script>
+
+	<style type="text/css">
+   	.no-close .ui-dialog-titlebar-close {
+	   	display: none;
+   	}
+   </style>
+
+    <script>
+        $.cookie("fromPage", "saveCmtDlg");
+    </script>
+	
+    
+</head>
+
+<body>
+
+<center>
+
+<FORM id= "form1" name="form1" style="width:750px">
+
+<div id="header" name="header" style="background-color:#001A4C; color:#FFFFFF; " >
+    <table>
+		<td align="left">
+            <img border="0" src="va.png" alt="U.S. Department of Veterans Affairs" width="125" height="125"/>
+		</td>
+		<td align="left">
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+		</td>
+        <td align="right">
+			<h1 style="margin-bottom:0;">VistA AWARE KB Editor<br/>Comments Dialog</h1>
+        </td>
+    </table>
+</div>
+
+<div id="savedialog" title="Knowledge Based Editor">Error</div>
+
+    <script language="Cache" runat="server" >
+       	d ##class(VEFA.OrderDialog).SaveCommentDlg()
+   </script>
+
+
+<script>
+	function successDlg() {
+		if ($.cookie("cmt.form") == "update") {
+			$.cookie("cmt.todo", "edit");
+			window.location = 'showcmtdlg.csp';
+		} else {
+
+			$("#savedialog").dialog({
+				dialogClass: "no-close",
+				modal: true,
+				buttons: [{
+					text: "OK",
+					click: function () {
+                        $.cookie("type.todo", "edit");
+	                    $(this).dialog("close");
+                        if ($.cookie("cmt.form") == "close") {
+		                    window.location = 'showalerttype.csp';
+                        } else {
+							$.cookie("cmt.todo", "edit");
+							window.location = 'showcmtdlg.csp';
+						}
+                    }
+				}],
+				open: function(event, ui) {
+					$(":button:contains('OK')").focus();
+				}
+			});
+
+		}
+	}
+        
+	function failDlg() {
+    	$.cookie("type.todo", "edit");
+        if ($.cookie("cmt.todo") == "delete") {
+    		$("#savedialog").dialog({
+				dialogClass: "no-close",
+				modal: true,
+				buttons: [{
+					text: "OK",
+					click: function () {
+    			    	window.location = 'showalerttype.csp';
+					}
+				}],
+				open: function(event, ui) {
+					$(":button:contains('OK')").focus();
+				}
+    		});
+        } else {
+            if ($.cookie("cmt.form") == "close") {
+	    		$("#savedialog").dialog({
+					dialogClass: "no-close",
+					modal: true,
+					buttons: [{
+						text: "OK",
+						click: function () {
+    			    		window.location = 'showalerttype.csp';
+						}
+					}],
+					open: function(event, ui) {
+						$(":button:contains('OK')").focus();
+					}
+	    		});
+	        } else {
+				window.location = 'showcmtdlg.csp';
+	        }
+        }
+    }
+
+    
+</script>
+
+
+
+
+</FORM>
+
+</center>
+
+
+
+</body>
+</html>
+]]></CSP>
+</Export>

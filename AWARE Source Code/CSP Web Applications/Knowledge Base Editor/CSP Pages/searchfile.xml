@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 17:29:49">
+<CSP name="kbeditor/searchfile.csp" application="/csp/aware/"><![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>AWARE KBEditor Main</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="ui.jqgrid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="jquery.ui.dialog.css" />
+    
+
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="jquery.cookie.js"></script>
+
+	<script src="grid.locale-en.js"></script>
+	<script src="jquery.jqGrid.min.js"></script>
+	<script src="mousetrap.min.js"></script>
+    <script src="jquery.ui.dialog.js"></script>
+
+
+	<script type="text/javascript">
+	    $(function () {
+	        
+	        var filename = $.cookie("search.filename");
+	        
+	        $("#listFile").jqGrid({
+	            datatype: "local",
+	            height: 470,
+	            colNames: ["ID", "Name"],
+	            colModel: [
+                    { name: "ien", width: 50 },
+                    { name: "name", width: 300 }
+	            ],
+	            rowNum: 20,
+	            viewrecords: true,
+	            gridview: true,
+	            autoencode: true,
+	            multiSelect: true,
+	            caption: filename,
+	            ondblClickRow: function (rowId) {
+	                selectRecord();
+	            }
+	        });
+           
+	        $("#listFile").jqGrid("bindKeys", {});
+
+	        Mousetrap.bind("enter", function (e) {
+	            selectRecord();
+	        });
+
+	        Mousetrap.bind("ctrl+alt+x", function (e) {
+                window.close();
+	        });
+
+	        function selectRecord() {
+	            var rowId = $("#listFile").jqGrid("getGridParam", "selrow");
+	            if (rowId == null) {
+	                alert("No row selected");
+	            } else {
+	                var rowData = $("#listFile").getRowData(rowId);
+                	window.returnValue = rowData["name"];
+                    window.close();
+	            }
+	        }
+
+	        
+	        fillSearchValues();
+	        $("#listFile").focus();
+	        $("#listFile").jqGrid("setSelection", "1");
+	    });
+
+    </script>
+
+</head>
+
+<body>
+
+<center>
+
+<FORM class="ui-widget ui-state-default ui-corner-all" style="width:450px">
+
+
+<div align="center" style="background-color:#001A4C; color:#FFFFFF;" >
+	<h1 style="margin-bottom:0;" align="center">
+        Search Result</h1>
+</div>
+
+<br />
+
+<div>
+    <table id="listFile"></table>
+</div>
+
+    <div>
+        <table>
+           <tr>
+                <td>
+                  <p style="font-size:70%; color:#001A4C; text-align:left;">Double-Click or Press Enter key to select a Row
+                  </br>Ctrl+Alt+X to exit</p>
+                </td>
+           </tr>
+           <tr>
+                <td>
+                </td>
+           </tr>
+            
+        </table>
+   </div>
+
+   
+</FORM>    
+
+</center>
+
+   
+ 
+
+</body>
+
+    <script language="Cache" runat="server" >
+       	d ##class(VEFA.Search).Fill()
+   </script>
+
+
+
+</html>
+]]></CSP>
+</Export>

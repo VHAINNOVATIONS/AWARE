@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 17:04:56">
+<Class name="VEFA.AlertCategory">
+<ProcedureBlock>0</ProcedureBlock>
+<Super>%CSP.Page</Super>
+<TimeChanged>63288,52257.128249</TimeChanged>
+<TimeCreated>63208,53292.598442</TimeCreated>
+
+<Method name="DeleteAlertOptions">
+<Description>
+Provide HTML Delete Alert Select with Alert Category's Delete Alert Options</Description>
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	N DELOPTS D GETDELOP^VEFAALC2(.DELOPTS) ;Get all Alert Category Delete Options
+	N OPT S OPT=""
+	F  S OPT=$O(DELOPTS(OPT)) Q:OPT=""  D
+	. W "<option value='",DELOPTS(OPT)_"'>",DELOPTS(OPT),"</option>"
+]]></Implementation>
+</Method>
+
+<Method name="NotfTypeOptions">
+<Description>
+Provide HTML Notification Type select with Alert Category's Notification Types</Description>
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	N NOTFTYP D GETNOTF^VEFAALR4(.NOTFTYP)
+	N NOTFI S NOTFI=""
+	F  S NOTFI=$O(NOTFTYP(NOTFI)) Q:NOTFI=""  D
+	. W "<option value=",NOTFI,">",NOTFTYP(NOTFI),"</option>"
+]]></Implementation>
+</Method>
+
+<Method name="Save">
+<Description>
+Save Alert Category</Description>
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	QUIT:##class(VEFA.Login).InvalidPage()
+	;
+	N RECORD S RECORD= ..UnescapeURL(%request.GetCookie("cat.record"))
+	N NAME S NAME=$P(RECORD,"^")
+	;
+	D:NAME="" ##class(VEFA.Login).DisplayResult(0,"Invalid Name")
+	QUIT:NAME=""
+	;
+	N TODO S TODO=%request.GetCookie("cat.todo")
+	N IEN
+	S:TODO="add" IEN=""
+	S:TODO="edit" IEN=%request.GetCookie("cat.ien")
+	;
+	N ERR,OK S OK=$$SAVE^VEFAALC2(TODO,IEN,RECORD,.ERR)
+	D:'OK ##class(VEFA.Login).DisplayResult(0,ERR)
+	QUIT:'OK
+	;
+	D ##class(VEFA.Login).DisplayResult(1,"Alert Category is "_$S(TODO="add":"added",1:"updated")_" successfully")
+	I TODO="add",IEN D ##class(VEFA.Login).SetCookie("cat.ien",IEN)
+]]></Implementation>
+</Method>
+
+<Method name="DisableControls">
+<Description>
+Disable all except description HTML Alert Category elements for non-programmer user</Description>
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	QUIT:##class(VEFA.Login).InvalidPage()
+	N DUZ S DUZ=(%session.Data("DUZ",1))
+	QUIT:$$ISPROG^VEFAALR5(DUZ)
+   	W "<script type='text/javascript'>"
+	W "	$('#selNotfType').attr('disabled', 'disabled');"
+	W " $('#selDelAlert').attr('disabled', 'disabled');"
+	W " $('#selNotfType').attr('disabled', 'disabled');"
+	W " $('#chkAction').attr('disabled', 'disabled');"
+	W "</script>"
+]]></Implementation>
+</Method>
+</Class>
+</Export>

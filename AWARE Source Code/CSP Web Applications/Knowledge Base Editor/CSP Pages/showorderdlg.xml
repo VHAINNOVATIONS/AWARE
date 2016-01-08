@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux 5 for x86-64) 2011.1.2 (Build 701)" ts="2014-04-25 17:32:00">
+<CSP name="kbeditor/showorderdlg.csp" application="/csp/aware/"><![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>AWARE KB Editor Alert Type</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <style type="text/css">
+    	.TxtBoxWidth
+        {
+            width: 400px;
+        }
+        #chkOrdItemReq
+        {
+            width: 26px;
+        }
+        
+		#txtAreaResult {
+            width: 888px;
+            height: 52px;
+        }     
+	</style>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="ui.jqgrid.css" />
+
+    <style type="text/css">
+	   #tabs {
+            padding: 0px;
+	   }
+	   #tabs .ui-tabs-nav {
+    	 background: transparent; 
+         border-width: 0px 0px 1px 0px; 
+         -moz-border-radius: 0px; 
+         -webkit-border-radius: 0px; 
+         border-radius: 0px; 
+	   }
+	   #tabs .ui-tabs-panel {
+          margin: 0em 0.2em 0.2em 0.2em;
+	   }
+	    
+	    .style1
+        {
+            height: 29px;
+        }
+	    
+	</style>
+
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="jquery.cookie.js"></script>
+    <script src="jquery.ui.datepicker.js"></script>
+    
+	<script src="grid.locale-en.js"></script>
+	<script src="jquery.jqGrid.min.js"></script>
+	<script src="mousetrap.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        var btnClicked = false;
+
+        $(function () {
+            $("#form1").validate({
+                rules: {
+                    txtName: "required",
+                    selOrdDlgPkg: "required",
+                    txtDesired: "required"
+                }
+            });
+
+			$("#btnSearch")
+            .button({ text: true, icons: { primary: "ui-icon ui-icon-search" } })
+            .click(function () {
+	            searchReminderDlg();
+            });
+
+            $("#ok")
+            .button()
+            .click(function () {
+	            if (valLength()) {
+	                if (!btnClicked) {
+                 	   btnClicked = true;
+                    	setCookies();
+			            $.cookie("ord.form", "close");
+						clearUpdateResult();
+    	                window.location = "saveorderdlg.csp";
+        	        }
+	            }
+            });
+
+            $("#update")
+            .button()
+            .click(function () {
+                if (valLength()) {
+	    	        if (!btnClicked) {
+            	        btnClicked = true;
+                	    setCookies();
+						$.cookie("ord.form", "update");
+						clearUpdateResult();
+    	                window.location = "saveorderdlg.csp";
+        	        }
+                }
+            });
+
+
+            $("#cancel")
+            .button()
+            .click(function () {
+                if (!btnClicked) {
+                    btnClicked = true;
+                    window.location = "showalerttype.csp";
+                }
+            });
+
+            fillForm();
+
+			if ($.cookie("fromPage") == "saveOrdDlg") {
+				showUpdateResult();
+			} else {
+				clearUpdateResult();
+			}
+			
+	        $("#txtName").focus();
+
+			function showUpdateResult() {
+				var updateResult = $.cookie("updateResult") ;
+				$("#txtAreaResult").val(updateResult);
+				$("#txtAreaResult").show();
+				$("#lblAreaResult").show();
+				
+				var todo = $.cookie("ord.todo");
+				if (todo == "add") {
+					var record = $.cookie("dlg.record");
+					var recAry = record.split("^");
+	            
+        	        $("#txtName").val(recAry[0]);
+            	    $("#selOrdDlgPkg").val(recAry[6]);
+                	$("#txtComment").val(recAry[7]);
+	                $("#txtDesired").val(recAry[8]);
+                
+		            var itemReq = recAry[9];
+	    	        if (itemReq == "1") {
+		    	        $("#chkOrdItemReq").prop("checked", true);
+		            } else {
+			            $("#chkOrdItemReq").prop("checked", false);
+		           }
+
+				}
+				
+
+			}
+
+			function clearUpdateResult() {
+				$.cookie("fromPage", "orderdlg");
+            	$("#txtAreaResult").val("");
+				$("#txtAreaResult").hide();
+				$("#lblAreaResult").hide();
+			}
+
+            function setCookies() {
+	            var itemReq = $("#chkOrdItemReq").prop("checked") ? "1" : "0";
+                var record = $("#txtName").val() + "^" +
+                $("#txtOrdItemDispGrp").val() + "^" +
+                $("#txtOrdItemName").val() + "^" +
+                $("#txtOrdDlgDispGrp").val() + "^" +
+                $("#txtOrdDlg").val() + "^" +
+                $("#txtAddFind").val() + "^" +
+                $("#selOrdDlgPkg").val() + "^" +
+                $("#txtComment").val() + "^" +
+                $("#txtDesired").val() + "^" +
+                itemReq;
+                $.cookie("dlg.record", record)
+            }
+
+			function searchReminderDlg() {
+    			var features = "dialogwidth: 550px; dialogheight: 700px; resizable: yes";
+				var searchval = $("#txtDesired").val();
+
+				if (searchval == "") {
+					var record = $.cookie("type.record");
+					var arr = record.split("^");
+	                var searchval = "AW" + arr[6] + " " + arr[5];
+				}
+
+                $.cookie("search.filenumber", "801.41");
+                $.cookie("search.filename", "Reminder Dialog");
+                $.cookie("search.value", searchval);
+                $.cookie('search.screen', 'I $P(^(0),U,4)="E"');
+
+   				var remDlg = window.showModalDialog("searchfile.csp", null, "dialogHeight:700px;dialogWidth:500px");
+				if (typeof remDlg === "undefined") {
+				} else {
+					$("#txtDesired").val(remDlg);
+				}
+
+				//window.open("searchfile.csp", "_blank", "height=700,width=550,status=yes,toolbar=no,menubar=no,location=no");
+            }
+            
+
+        });
+
+		function valLength() {
+			var fld = "#txtName";
+			var val = valFieldLength(fld, "Order Dialog Box Text", 1, 240);
+			if (!val) {
+				$(fld).focus();
+			}
+			return val;
+		}
+		
+		function valFieldLength(fld, caption, low, high) {
+			if (($(fld).val().length > high) || ($(fld).val().length < low)) {
+				alert(caption + " must be " + low + "-" + high + " characters in length");
+				return false;
+			} else {
+				return true;
+			}
+		}
+
+
+    </script>
+
+</head>
+<body>
+
+ <center>
+
+<FORM id="form1" name="form1" class="ui-widget ui-state-default ui-corner-all" style="width:900px">
+
+<div id="header" name="header" style="background-color:#001A4C; color:#FFFFFF; " >
+    <table>
+		<td align="left">
+            <img border="0" src="va.png" alt="U.S. Department of Veterans Affairs" width="125" height="125"/>
+		</td>
+		<td align="left">
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+        	&nbsp; &nbsp;
+		</td>
+        <td align="right">
+			<h1 style="margin-bottom:0;">VistA AWARE KB Editor<br/>Order Dialog</h1>
+        </td>
+    </table>
+</div>
+
+</br>
+
+<div>
+        <table class="ui-widget ui-state-default ui-corner-all" style="width: 100%;">
+        
+		<tr>
+        <td align="right" >
+            Alert Type</td>
+        <td align="left">
+			<label id="txtReminderDlg" for="form1" style="color:#654D00">AlertType</label>
+        </td>
+      	</tr>
+
+        <tr>
+        <td align="right" >
+            <label for="txtName">Order Dialog Box Text</label></td>
+        <td align="left">
+            <input id="txtName" name="txtName" class="ui-widget ui-corner-all TxtBoxWidth" type="text" 
+            tabindex="1" /></td>
+        </tr>
+
+       <tr>
+        <td align="right" >
+            <label for="txtDesired">Desired Reminder Element</label></td>
+        <td align="left">
+            <input id="txtDesired" name="txtDesired" class="ui-widget ui-corner-all TxtBoxWidth" type="text" />
+		    <input id="btnSearch" type="button" align="left" value="Search" /></td>
+        </tr>
+
+        <tr>
+        <td align="left">
+            <input id="txtComment" class="ui-widget ui-corner-all TxtBoxWidth" type="hidden" 
+                name="txtComment" /></td>
+        </tr>
+
+        <tr>
+        <td align="right" >
+            <label for="selOrdDlgPkg">Desired Order Dialog Package</label></td>
+        <td align="left">
+            <select id="selOrdDlgPkg" name="selOrdDlgPkg" class="ui-widget ui-corner-all TxtBoxWidth" >
+                <option></option>
+            </select></td>
+        </tr>
+
+        <tr>
+        <td align="right" >
+            &nbsp;</td>
+        <td align="left">
+            &nbsp;<input id="chkOrdItemReq" type="checkbox" 
+                name="chkOrdItemReq" class="ui-widget ui-corner-all" /><label for="chkOrdItemReq">Orderable Item Required</label></td>
+        </tr>
+        
+        <tr>
+        <td align="right" >
+            <label for="txtOrdItemDispGrp">Orderable Item Display Group</label></td>
+        <td align="left">
+            <input id="txtOrdItemDispGrp" class="ui-widget ui-corner-all TxtBoxWidth" type="text" 
+                name="txtOrdItemDispGrp" disabled="disabled"/></td>
+        </tr>
+        
+        <tr>
+        <td align="right" >
+            <label for="txtOrdItemName">Orderable Item Name</label></td>
+        <td align="left">
+            <input id="txtOrdItemName" name="txtOrdItemName" align="left" type="text" 
+                class="ui-widget ui-corner-all TxtBoxWidth" disabled="disabled"/>&nbsp;
+        </td>
+        </tr>
+        
+        <tr>
+        <td align="right" >
+            <label for="txtOrdDlgDispGrp">Order Dialog Display Group</label></td>
+        <td align="left">
+            <input id="txtOrdDlgDispGrp" class="ui-widget ui-corner-all TxtBoxWidth" type="text" 
+                name="txtOrdDlgDispGrp" disabled="disabled"/></td>
+        </td>
+        </tr>
+
+        <tr>
+        <td align="right" >
+            <label for="txtOrgOrdDlgPkg">Order Dialog Package</label></td>
+        <td align="left">
+            <input id="txtOrgOrdDlgPkg" class="ui-widget ui-corner-all TxtBoxWidth" type="text" 
+                name="txtOrgOrdDlgPkg" disabled="disabled"/></td>
+        </td>
+        </tr>
+
+        <tr>
+        <td align="right" >
+            <label for="txtOrdDlg">Order Dialog</label></td>
+        <td align="left">
+            <input id="txtOrdDlg" name="txtOrdDlg" type="text" align="left" class="ui-widget ui-corner-all TxtBoxWidth" 
+                disabled="disabled" />&nbsp;
+        </td>
+        </tr>
+        
+        <tr>
+        <td align="right" >
+            <label for="txtAddFind">Additional Finding</label></td>
+        <td align="left">
+            <input id="txtAddFind" name="txtAddFind" type="text" 
+                class="ui-widget ui-corner-all TxtBoxWidth" disabled="disabled" />
+        </td>
+        </tr>
+
+        <tr>
+        <td align="right" >
+            <label for="txtAreaNote">Progress Note</label></td>
+        <td align="left">
+            <textarea id="txtAreaNote" name="txtAreaNote" rows="5" cols="50" 
+                class="ui-widget ui-corner-all TxtBoxWidth" disabled="disabled" 
+            ></textarea>
+        </td>
+        </tr>
+
+        </table>
+</div>
+
+</br>
+
+<div style="width: 731px">
+    <table style="width: 400px">
+    <tr>
+        <td align="left" class="style2">
+            &nbsp; <!-- <p style="font-size:70%; color:#4682B4; text-align:left;">Alt+S to switch between Tabs</p> -->
+        </td>
+    
+        <td align="left" class="button">
+            &nbsp;<input id="ok" name="ok" type="button" value="Update and Close" />
+        </td>
+
+        <td align="left" class="button">
+            &nbsp;<input id="update" type="button" name="update" value="Update" />
+        </td>
+    
+        <td align="left" class="button">
+            &nbsp;<input value="Close" type="button" id="cancel" name="cancel" >
+         </td>
+         
+         
+    </tr>
+
+    </table>
+</div>
+
+    <script language="Cache" runat="server" >
+       	d ##class(VEFA.OrderDialog).FillOrderDlg()
+   </script>
+
+<br />
+
+
+
+</FORM>
+
+
+<p>
+	<label id="lblAreaResult" name="lblAreaResult" for="txtAreaResult" style="font-size:100%; color:#001A4C;">Validation Result</label></br>
+    <textarea id="txtAreaResult" name="txtAreaResult" disabled="disabled"></textarea>
+</p>
+
+
+
+</center>
+</body>
+</html>
+]]></CSP>
+</Export>
