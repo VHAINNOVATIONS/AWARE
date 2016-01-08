@@ -1,0 +1,181 @@
+C:\XXX\BDK32_P50\Source\Loginfrm.dfm
+26329/761566268
+0
+2
+C:\XXX\BDK32_P50\Source\Rpcberr.dfm
+1629/761558549
+2
+2
+C:\XXX\BDK32_P50\Source\Rpcconf1.dfm
+8022/953252042
+4
+2
+C:\XXX\BDK32_P50\Source\RpcNet.dfm
+358/758339991
+6
+2
+C:\XXX\BDK32_P50\Source\seldiv.dfm
+6203/758340024
+8
+2
+C:\XXX\BDK32_P50\Source\Sgnoncnf.dfm
+6444/761563452
+10
+2
+C:\XXX\BDK32_P50\Source\Splvista.dfm
+534916/761630273
+12
+2
+C:\XXX\BDK32_P50\Source\VCEdit.dfm
+5818/760704608
+14
+2
+C:\XXX\BDK32_P50\Source\frmSignonMessage.dfm
+5831/758339411
+16
+2
+C:\XXX\BDK32_P50\Source\AddServer.dfm
+1586/758339183
+18
+2
+C:\XXX\BDK32_P50\Source\fRPCBErrMsg.dfm
+879/760704608
+20
+2
+C:\XXX\BDK32_P50\Source\fDebugInfo.dfm
+684/760704608
+22
+2
+C:\XXX\BDK32_P50\Source\fSgnonDlg.dfm
+6193/761563529
+24
+2
+C:\XXX\BDK32_P50\Source\fSSHUsername.dfm
+967/957973137
+26
+2
+C:\XXX\BDK32_P50\Source\fPlinkpw.dfm
+982/957973133
+28
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\Loginfrm.dfm
+26329/761566268
+30
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\Rpcberr.dfm
+1629/761558549
+32
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\Rpcconf1.dfm
+8022/953252042
+34
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\RpcNet.dfm
+358/758339991
+36
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\seldiv.dfm
+6203/758340024
+38
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\Sgnoncnf.dfm
+6444/761563452
+40
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\Splvista.dfm
+534916/761630273
+42
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\VCEdit.dfm
+5818/760704608
+44
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\frmSignonMessage.dfm
+5831/758339411
+46
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\AddServer.dfm
+1586/758339183
+48
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\fRPCBErrMsg.dfm
+879/760704608
+50
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\fDebugInfo.dfm
+684/760704608
+52
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\fSgnonDlg.dfm
+6193/761563529
+54
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\fSSHUsername.dfm
+967/957973137
+56
+2
+C:\Program Files\Vista\BDK32_P50T4\Source\fPlinkpw.dfm
+982/957973133
+58
+2
+|EOINDEX|
+616
+object frmSignon: TfrmSignon
+89
+object frmRpcbError: TfrmRpcbError
+233
+object rpcConfig: TrpcConfig
+17
+object RPCFRM1: TRPCFRM1
+156
+object SelDivForm: TSelDivForm
+210
+object frmSignonConfig: TfrmSignonConfig
+7288
+object frmVistaSplash: TfrmVistaSplash
+152
+object frmVCEdit: TfrmVCEdit
+134
+object frmSignonMsg: TfrmSignonMsg
+74
+object frmAddServer: TfrmAddServer
+42
+object frmErrMsg: TfrmErrMsg
+34
+object frmDebugInfo: TfrmDebugInfo
+126
+object frmSignonDialog: TfrmSignonDialog
+47
+object SSHUsername: TSSHUsername
+48
+object fPlinkPassword: TfPlinkPassword
+616
+object frmSignon: TfrmSignon
+89
+object frmRpcbError: TfrmRpcbError
+233
+object rpcConfig: TrpcConfig
+17
+object RPCFRM1: TRPCFRM1
+156
+object SelDivForm: TSelDivForm
+210
+object frmSignonConfig: TfrmSignonConfig
+7288
+object frmVistaSplash: TfrmVistaSplash
+152
+object frmVCEdit: TfrmVCEdit
+134
+object frmSignonMsg: TfrmSignonMsg
+74
+object frmAddServer: TfrmAddServer
+42
+object frmErrMsg: TfrmErrMsg
+34
+object frmDebugInfo: TfrmDebugInfo
+126
+object frmSignonDialog: TfrmSignonDialog
+47
+object SSHUsername: TSSHUsername
+48
+object fPlinkPassword: TfPlinkPassword

@@ -1,0 +1,19 @@
+S:\i082 - AWARE\src\CPRS29\OR_30_306_SRC_scrubbed\CPRS-Lib\ORDtTm.dfm
+5780/1094210570
+0
+2
+S:\i082 - AWARE\src\CPRS29\OR_30_306_SRC_scrubbed\CPRS-Lib\ORDtTmRng.dfm
+1172/1094210570
+2
+2
+S:\i082 - AWARE\src\CPRS29\OR_30_306_SRC_scrubbed\CPRS-Lib\OR2006Compatibility.dfm
+408/1094210568
+4
+2
+|EOINDEX|
+242
+object ORfrmDtTm: TORfrmDtTm
+60
+object ORfrmDateRange: TORfrmDateRange
+18
+object frm2006Compatibility: Tfrm2006Compatibility

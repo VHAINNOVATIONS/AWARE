@@ -1,0 +1,79 @@
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\Loginfrm.dfm
+26329/761564220
+0
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\Rpcberr.dfm
+1629/761556501
+2
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\Rpcconf1.dfm
+8022/953249994
+4
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\RpcNet.dfm
+358/758337943
+6
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\seldiv.dfm
+6203/758337976
+8
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\Sgnoncnf.dfm
+6444/761561404
+10
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\Splvista.dfm
+534916/761628225
+12
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\VCEdit.dfm
+5818/760702560
+14
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\frmSignonMessage.dfm
+5831/758337363
+16
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\AddServer.dfm
+1586/758337135
+18
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\fRPCBErrMsg.dfm
+879/760702560
+20
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\fDebugInfo.dfm
+684/760702560
+22
+2
+S:\i082 - AWARE\src\CPRS30A\OR_30_385V12_SRC\XWB1_1P50T1\BDK32_P50\Source\fSgnonDlg.dfm
+6193/761561481
+24
+2
+|EOINDEX|
+616
+object frmSignon: TfrmSignon
+89
+object frmRpcbError: TfrmRpcbError
+233
+object rpcConfig: TrpcConfig
+17
+object RPCFRM1: TRPCFRM1
+156
+object SelDivForm: TSelDivForm
+210
+object frmSignonConfig: TfrmSignonConfig
+7288
+object frmVistaSplash: TfrmVistaSplash
+152
+object frmVCEdit: TfrmVCEdit
+134
+object frmSignonMsg: TfrmSignonMsg
+74
+object frmAddServer: TfrmAddServer
+42
+object frmErrMsg: TfrmErrMsg
+34
+object frmDebugInfo: TfrmDebugInfo
+126
+object frmSignonDialog: TfrmSignonDialog
