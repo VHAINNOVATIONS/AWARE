@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="AwareQIManager.Properties.Settings.AWARE_DB_ConnectionString-Web.config Connection String" description="AwareQIManager.Properties.Settings.AWARE_DB_ConnectionString Connection String used in web.config by the application to access the database." defaultvalue="Data Source=localhost;Initial Catalog=Aware;Persist Security Info=False;Integrated Security=SSPI;Pooling=true;Min Pool Size=0;Max Pool Size=100;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\AppDev\\AwareQIManager\\AwareQIManager\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AwareQIManager.Properties.Settings.AWARE_DB_ConnectionString']/@connectionString" />
-  </parameter>
-  <parameter name="AwareQIManager.Properties.Settings.Consults_DB_ConnectionString-Web.config Connection String" description="AwareQIManager.Properties.Settings.Consults_DB_ConnectionString Connection String used in web.config by the application to access the database." defaultvalue="Data Source=localhost;Initial Catalog=Consults;Persist Security Info=False;Integrated Security=SSPI;Pooling=true;Min Pool Size=0;Max Pool Size=100;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\AppDev\\AwareQIManager\\AwareQIManager\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AwareQIManager.Properties.Settings.Consults_DB_ConnectionString']/@connectionString" />
-  </parameter>
-</parameters>

@@ -1,9 +1,0 @@
-C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\bin\Release\AwareSecHelpers.dll
-C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\bin\Release\AwareSecHelpers.pdb
-C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\obj\Release\AwareSecHelpers.dll
-C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\obj\Release\AwareSecHelpers.pdb
-C:\AppDev\VA_AWARE_RPTS\AwareSecHelpers\obj\Release\AwareSecHelpers.csprojResolveAssemblyReference.cache
-C:\AppDev\AwareQIManager\AwareSecHelpers\bin\Release\AwareSecHelpers.dll
-C:\AppDev\AwareQIManager\AwareSecHelpers\bin\Release\AwareSecHelpers.pdb
-C:\AppDev\AwareQIManager\AwareSecHelpers\obj\Release\AwareSecHelpers.dll
-C:\AppDev\AwareQIManager\AwareSecHelpers\obj\Release\AwareSecHelpers.pdb
