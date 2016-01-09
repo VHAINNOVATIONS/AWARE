@@ -1,0 +1,15 @@
+C:\AppDev\AwareQIManager\AwareHelpersLib\bin\Debug\AwareHelpersLib.dll
+C:\AppDev\AwareQIManager\AwareHelpersLib\bin\Debug\AwareHelpersLib.pdb
+C:\AppDev\AwareQIManager\AwareHelpersLib\obj\Debug\AwareHelpersLib.dll
+C:\AppDev\AwareQIManager\AwareHelpersLib\obj\Debug\AwareHelpersLib.pdb
+C:\AppDev\AwareQIManager\AwareHelpersLib\obj\Debug\AwareHelpersLib.csprojResolveAssemblyReference.cache
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\bin\Debug\AwareHelpersLib.dll
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\bin\Debug\AwareHelpersLib.pdb
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\obj\Debug\AwareHelpersLib.csprojResolveAssemblyReference.cache
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\obj\Debug\AwareHelpersLib.dll
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\obj\Debug\AwareHelpersLib.pdb
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\bin\Debug\AwareHelpersLib.dll
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\bin\Debug\AwareHelpersLib.pdb
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\obj\Debug\AwareHelpersLib.dll
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\obj\Debug\AwareHelpersLib.pdb
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareHelpersLib\obj\Debug\AwareHelpersLib.csprojResolveAssemblyReference.cache

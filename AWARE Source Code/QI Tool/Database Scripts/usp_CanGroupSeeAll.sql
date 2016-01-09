@@ -1,0 +1,6 @@
+
+ALTER PROCEDURE [dbo].[usp_CanGroupSeeAll]
+       @VistaGrpId VARCHAR(50)
+AS     
+       SET NOCOUNT ON;
+       SELECT COUNT(*) FROM SECURITY_RIGHTS WHERE OBJECT_TYPE_ID = 2 AND OBJECT_ID= @VistaGrpId

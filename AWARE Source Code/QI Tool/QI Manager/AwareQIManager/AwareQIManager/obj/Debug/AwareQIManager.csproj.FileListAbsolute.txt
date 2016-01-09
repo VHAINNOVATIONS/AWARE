@@ -1,0 +1,27 @@
+C:\AppDev\AwareQIManager\AwareQIManager\bin\AwareQIManager.dll
+C:\AppDev\AwareQIManager\AwareQIManager\bin\AwareQIManager.pdb
+C:\AppDev\AwareQIManager\AwareQIManager\bin\AwareHelpersLib.dll
+C:\AppDev\AwareQIManager\AwareQIManager\bin\AwareSecHelpers.dll
+C:\AppDev\AwareQIManager\AwareQIManager\bin\AwareHelpersLib.pdb
+C:\AppDev\AwareQIManager\AwareQIManager\bin\AwareSecHelpers.pdb
+C:\AppDev\AwareQIManager\AwareQIManager\obj\Debug\AwareQIManager.csprojResolveAssemblyReference.cache
+C:\AppDev\AwareQIManager\AwareQIManager\obj\Debug\AwareQIManager.dll
+C:\AppDev\AwareQIManager\AwareQIManager\obj\Debug\AwareQIManager.pdb
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareQIManager.dll
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareQIManager.pdb
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareHelpersLib.dll
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareSecHelpers.dll
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareHelpersLib.pdb
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareSecHelpers.pdb
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareQIManager\obj\Debug\AwareQIManager.csprojResolveAssemblyReference.cache
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareQIManager\obj\Debug\AwareQIManager.dll
+C:\AppDev\Harris\Healthcare\aware\Trunk\QI Tool\QI Manager\AwareQIManager\AwareQIManager\obj\Debug\AwareQIManager.pdb
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareQIManager.dll
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareQIManager.pdb
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareHelpersLib.dll
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareSecHelpers.dll
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareHelpersLib.pdb
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareQIManager\bin\AwareSecHelpers.pdb
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareQIManager\obj\Debug\AwareQIManager.csprojResolveAssemblyReference.cache
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareQIManager\obj\Debug\AwareQIManager.dll
+C:\AppDev\Aware\QI Tool\QI Manager\AwareQIManager\AwareQIManager\obj\Debug\AwareQIManager.pdb
