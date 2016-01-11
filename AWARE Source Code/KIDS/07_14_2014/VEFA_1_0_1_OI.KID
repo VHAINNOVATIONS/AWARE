@@ -1,0 +1,1980 @@
+KIDS Distribution saved on Jun 04, 2014@22:22:28
+AWARE data orderable items 1.0
+**KIDS**:AWARE ORDERITEM 1.0^
+
+**INSTALL NAME**
+AWARE ORDERITEM 1.0
+"BLD",8866,0)
+AWARE ORDERITEM 1.0^^0^3140604^n
+"BLD",8866,4,0)
+^9.64PA^101.43^1
+"BLD",8866,4,101.43,0)
+101.43
+"BLD",8866,4,101.43,222)
+n^y^f^^y^^y^o^n
+"BLD",8866,4,101.43,224)
+I $E($P($G(^ORD(101.43,+Y,0)),"^",1),1,4)="VEFA"
+"BLD",8866,4,"B",101.43,101.43)
+
+"BLD",8866,6.3)
+3
+"BLD",8866,"KRN",0)
+^9.67PA^779.2^20
+"BLD",8866,"KRN",.4,0)
+.4
+"BLD",8866,"KRN",.401,0)
+.401
+"BLD",8866,"KRN",.402,0)
+.402
+"BLD",8866,"KRN",.403,0)
+.403
+"BLD",8866,"KRN",.5,0)
+.5
+"BLD",8866,"KRN",.84,0)
+.84
+"BLD",8866,"KRN",3.6,0)
+3.6
+"BLD",8866,"KRN",3.8,0)
+3.8
+"BLD",8866,"KRN",9.2,0)
+9.2
+"BLD",8866,"KRN",9.8,0)
+9.8
+"BLD",8866,"KRN",19,0)
+19
+"BLD",8866,"KRN",19.1,0)
+19.1
+"BLD",8866,"KRN",101,0)
+101
+"BLD",8866,"KRN",409.61,0)
+409.61
+"BLD",8866,"KRN",771,0)
+771
+"BLD",8866,"KRN",779.2,0)
+779.2
+"BLD",8866,"KRN",870,0)
+870
+"BLD",8866,"KRN",8989.51,0)
+8989.51
+"BLD",8866,"KRN",8989.52,0)
+8989.52
+"BLD",8866,"KRN",8994,0)
+8994
+"BLD",8866,"KRN","B",.4,.4)
+
+"BLD",8866,"KRN","B",.401,.401)
+
+"BLD",8866,"KRN","B",.402,.402)
+
+"BLD",8866,"KRN","B",.403,.403)
+
+"BLD",8866,"KRN","B",.5,.5)
+
+"BLD",8866,"KRN","B",.84,.84)
+
+"BLD",8866,"KRN","B",3.6,3.6)
+
+"BLD",8866,"KRN","B",3.8,3.8)
+
+"BLD",8866,"KRN","B",9.2,9.2)
+
+"BLD",8866,"KRN","B",9.8,9.8)
+
+"BLD",8866,"KRN","B",19,19)
+
+"BLD",8866,"KRN","B",19.1,19.1)
+
+"BLD",8866,"KRN","B",101,101)
+
+"BLD",8866,"KRN","B",409.61,409.61)
+
+"BLD",8866,"KRN","B",771,771)
+
+"BLD",8866,"KRN","B",779.2,779.2)
+
+"BLD",8866,"KRN","B",870,870)
+
+"BLD",8866,"KRN","B",8989.51,8989.51)
+
+"BLD",8866,"KRN","B",8989.52,8989.52)
+
+"BLD",8866,"KRN","B",8994,8994)
+
+"DATA",101.43,5053,0)
+VEFA OCCULT BLOOD^1359;99LRT^^^5^^^VEFA OCCULT BLOOD
+"DATA",101.43,5053,9,0)
+^101.439A^5^5
+"DATA",101.43,5053,9,1,0)
+LAB
+"DATA",101.43,5053,9,2,0)
+CH
+"DATA",101.43,5053,9,3,0)
+LAB
+"DATA",101.43,5053,9,4,0)
+LAB
+"DATA",101.43,5053,9,5,0)
+CH
+"DATA",101.43,5053,"LR")
+^^^^^CH^B
+"DATA",101.43,5054,0)
+VEFA CARDIOLOGY^4;99CON^^^11^^^VEFA CARDIOLOGY
+"DATA",101.43,5054,2,0)
+^101.432A^1^1
+"DATA",101.43,5054,2,1,0)
+CARD
+"DATA",101.43,5054,9,0)
+^101.439A^3^3
+"DATA",101.43,5054,9,1,0)
+CSLT
+"DATA",101.43,5054,9,2,0)
+CSLT
+"DATA",101.43,5054,9,3,0)
+CSLT
+"DATA",101.43,5055,0)
+VEFA GASTROENTEROLOGY^5;99CON^^^11^^^VEFA GASTROENTEROLOGY
+"DATA",101.43,5055,2,0)
+^101.432A^1^1
+"DATA",101.43,5055,2,1,0)
+GI
+"DATA",101.43,5055,9,0)
+^101.439A^3^3
+"DATA",101.43,5055,9,1,0)
+CSLT
+"DATA",101.43,5055,9,2,0)
+CSLT
+"DATA",101.43,5055,9,3,0)
+CSLT
+"DATA",101.43,5056,0)
+VEFA PULMONARY^7;99CON^^^11^^^VEFA PULMONARY
+"DATA",101.43,5056,2,0)
+^101.432A^1^1
+"DATA",101.43,5056,2,1,0)
+PU
+"DATA",101.43,5056,9,0)
+^101.439A^3^3
+"DATA",101.43,5056,9,1,0)
+CSLT
+"DATA",101.43,5056,9,2,0)
+CSLT
+"DATA",101.43,5056,9,3,0)
+CSLT
+"DATA",101.43,5056,"CS")
+2
+"DATA",101.43,5057,0)
+VEFA SURGERY^67;99CON^^^11^^^VEFA SURGERY
+"DATA",101.43,5057,2,0)
+^101.432A^1^1
+"DATA",101.43,5057,2,1,0)
+SURG
+"DATA",101.43,5057,9,0)
+^101.439A^3^2
+"DATA",101.43,5057,9,2,0)
+CSLT
+"DATA",101.43,5057,9,3,0)
+CSLT
+"DATA",101.43,5058,0)
+VEFA URINALYSIS^271;99LRT^81000.0000^NLT^5^^^VEFA URINALYSIS
+"DATA",101.43,5058,2,0)
+^101.432A^1^1
+"DATA",101.43,5058,2,1,0)
+UA
+"DATA",101.43,5058,9,0)
+^101.439A^8^6
+"DATA",101.43,5058,9,3,0)
+LAB
+"DATA",101.43,5058,9,4,0)
+CH
+"DATA",101.43,5058,9,5,0)
+LAB
+"DATA",101.43,5058,9,6,0)
+CH
+"DATA",101.43,5058,9,7,0)
+LAB
+"DATA",101.43,5058,9,8,0)
+CH
+"DATA",101.43,5058,10,0)
+^101.431A^31^31
+"DATA",101.43,5058,10,1,0)
+URINE COLOR^141;99LRT
+"DATA",101.43,5058,10,2,0)
+APPEARANCE^489;99LRT
+"DATA",101.43,5058,10,3,0)
+SPECIFIC GRAVITY^143;99LRT
+"DATA",101.43,5058,10,4,0)
+UROBILINOGEN^1277;99LRT
+"DATA",101.43,5058,10,5,0)
+URINE BLOOD^1158;99LRT
+"DATA",101.43,5058,10,6,0)
+URINE BILIRUBIN^146;99LRT
+"DATA",101.43,5058,10,7,0)
+URINE KETONES^147;99LRT
+"DATA",101.43,5058,10,8,0)
+URINE GLUCOSE^148;99LRT
+"DATA",101.43,5058,10,9,0)
+URINE PROTEIN^149;99LRT
+"DATA",101.43,5058,10,10,0)
+URINE PH^150;99LRT
+"DATA",101.43,5058,10,11,0)
+URINE WBC/HPF^151;99LRT
+"DATA",101.43,5058,10,12,0)
+URINE RBC/HPF^272;99LRT
+"DATA",101.43,5058,10,13,0)
+URINE EPITH CELLS^152;99LRT
+"DATA",101.43,5058,10,14,0)
+EPITH CELLS^1276;99LRT
+"DATA",101.43,5058,10,15,0)
+RENAL EPITHELIAL CELLS^1135;99LRT
+"DATA",101.43,5058,10,16,0)
+URINE CRYSTALS^270;99LRT
+"DATA",101.43,5058,10,17,0)
+AM URATE CRYSTALS^165;99LRT
+"DATA",101.43,5058,10,18,0)
+AM PHOSPHATE CRYSTALS^166;99LRT
+"DATA",101.43,5058,10,19,0)
+TRI PHOSPHATE CRYSTALS^167;99LRT
+"DATA",101.43,5058,10,20,0)
+CA++ OXALATE CRYSTALS^168;99LRT
+"DATA",101.43,5058,10,21,0)
+URIC ACID CRYSTALS^169;99LRT
+"DATA",101.43,5058,10,22,0)
+URINE YEAST^161;99LRT
+"DATA",101.43,5058,10,23,0)
+URINE BACTERIA^153;99LRT
+"DATA",101.43,5058,10,24,0)
+URINE CASTS^269;99LRT
+"DATA",101.43,5058,10,25,0)
+HYALINE CASTS^157;99LRT
+"DATA",101.43,5058,10,26,0)
+URINE WBC CASTS^155;99LRT
+"DATA",101.43,5058,10,27,0)
+URINE RBC CASTS^156;99LRT^81001.0000^NLT
+"DATA",101.43,5058,10,28,0)
+GRANULAR CASTS^158;99LRT
+"DATA",101.43,5058,10,29,0)
+WAXY CASTS^159;99LRT
+"DATA",101.43,5058,10,30,0)
+FATTY CASTS^160;99LRT
+"DATA",101.43,5058,10,31,0)
+URINE MUCUS^154;99LRT
+"DATA",101.43,5058,"LR")
+^^^^^CH^B
+"DATA",101.43,5059,0)
+VEFA COLONOSCOPY^7;99PRC^^^43^^^VEFA COLONOSCOPY
+"DATA",101.43,5059,2,0)
+^101.432A^1^1
+"DATA",101.43,5059,2,1,0)
+COL
+"DATA",101.43,5059,9,0)
+^101.439A^3^3
+"DATA",101.43,5059,9,1,0)
+PROC
+"DATA",101.43,5059,9,2,0)
+PROC
+"DATA",101.43,5059,9,3,0)
+PROC
+"DATA",101.43,5060,0)
+VEFA CULTURE & SUSCEPTIBILITY^548;99LRT^87993.0000^NLT^5^^^VEFA CULTURE & SUSCEPTIBILITY
+"DATA",101.43,5060,2,0)
+^101.432A^2^2
+"DATA",101.43,5060,2,1,0)
+CULT
+"DATA",101.43,5060,2,2,0)
+C/S
+"DATA",101.43,5060,9,0)
+^101.439A^8^6
+"DATA",101.43,5060,9,3,0)
+LAB
+"DATA",101.43,5060,9,4,0)
+CH
+"DATA",101.43,5060,9,5,0)
+LAB
+"DATA",101.43,5060,9,6,0)
+CH
+"DATA",101.43,5060,9,7,0)
+LAB
+"DATA",101.43,5060,9,8,0)
+CH
+"DATA",101.43,5060,"LR")
+^^^^^MI^B
+"DATA",101.43,5061,0)
+VEFA CBC & DIFF (WITH MORPHOLOGY)^276;99LRT^85019.0000^NLT^5^^^VEFA CBC & DIFF (WITH MORPHOLOGY)
+"DATA",101.43,5061,2,0)
+^101.432A^1^1
+"DATA",101.43,5061,2,1,0)
+NEB-CBC
+"DATA",101.43,5061,9,0)
+^101.439A^6^6
+"DATA",101.43,5061,9,1,0)
+LAB
+"DATA",101.43,5061,9,2,0)
+CH
+"DATA",101.43,5061,9,3,0)
+LAB
+"DATA",101.43,5061,9,4,0)
+CH
+"DATA",101.43,5061,9,5,0)
+LAB
+"DATA",101.43,5061,9,6,0)
+CH
+"DATA",101.43,5061,10,0)
+^101.431A^2^2
+"DATA",101.43,5061,10,1,0)
+CBC^71;99LRT^85018.0000^NLT
+"DATA",101.43,5061,10,2,0)
+DIFFERENTIAL COUNT^1269;99LRT^85008.0000^NLT
+"DATA",101.43,5061,"LR")
+^^^^^CH^B
+"DATA",101.43,5062,0)
+VEFA SULFAMETHOXAZOLE/TRIMETHOPRIM TAB^595;99PSP^^^2^^^VEFA SULFAMETHOXAZOLE/TRIMETHOPRIM TAB 
+"DATA",101.43,5062,2,0)
+^101.432A^6^6
+"DATA",101.43,5062,2,1,0)
+BACTRIM
+"DATA",101.43,5062,2,2,0)
+SEPTRA
+"DATA",101.43,5062,2,3,0)
+COTRIMOXAZOLE
+"DATA",101.43,5062,2,4,0)
+BACTRIM DS
+"DATA",101.43,5062,2,5,0)
+SEPTRA DS
+"DATA",101.43,5062,2,6,0)
+CDS
+"DATA",101.43,5062,9,0)
+^101.439A^16^12
+"DATA",101.43,5062,9,5,0)
+RX
+"DATA",101.43,5062,9,6,0)
+UD RX
+"DATA",101.43,5062,9,7,0)
+O RX
+"DATA",101.43,5062,9,8,0)
+NV RX
+"DATA",101.43,5062,9,9,0)
+RX
+"DATA",101.43,5062,9,10,0)
+UD RX
+"DATA",101.43,5062,9,11,0)
+O RX
+"DATA",101.43,5062,9,12,0)
+NV RX
+"DATA",101.43,5062,9,13,0)
+RX
+"DATA",101.43,5062,9,14,0)
+UD RX
+"DATA",101.43,5062,9,15,0)
+O RX
+"DATA",101.43,5062,9,16,0)
+NV RX
+"DATA",101.43,5062,"PS")
+1^1^0^0^0^0^1
+"DATA",101.43,5063,0)
+VEFA CHEST 2 VIEWS PA&LAT^58;99RAP^71020^CPT4^34^^1^VEFA CHEST 2 VIEWS PA&LAT
+"DATA",101.43,5063,2,0)
+^101.432A^2^2
+"DATA",101.43,5063,2,1,0)
+CTV
+"DATA",101.43,5063,2,2,0)
+BAY PINES
+"DATA",101.43,5063,9,0)
+^101.439A^6^6
+"DATA",101.43,5063,9,1,0)
+XRAY
+"DATA",101.43,5063,9,2,0)
+RAD
+"DATA",101.43,5063,9,3,0)
+XRAY
+"DATA",101.43,5063,9,4,0)
+RAD
+"DATA",101.43,5063,9,5,0)
+XRAY
+"DATA",101.43,5063,9,6,0)
+RAD
+"DATA",101.43,5063,"RA")
+^D^RAD^1
+"DATA",101.43,5064,0)
+VEFA BIOPSY CHEST FLUORO NEEDLE^64;99RAP^71036^CPT4^34^^1^VEFA BIOPSY CHEST FLUORO NEEDLE
+"DATA",101.43,5064,9,0)
+^101.439A^6^6
+"DATA",101.43,5064,9,1,0)
+XRAY
+"DATA",101.43,5064,9,2,0)
+RAD
+"DATA",101.43,5064,9,3,0)
+XRAY
+"DATA",101.43,5064,9,4,0)
+RAD
+"DATA",101.43,5064,9,5,0)
+XRAY
+"DATA",101.43,5064,9,6,0)
+RAD
+"DATA",101.43,5064,"RA")
+^D^RAD^0
+"DATA",101.43,5065,0)
+VEFA CT THORAX W/O CONT^77;99RAP^71250^CPT4^34^^1^VEFA CT THORAX W/O CONT
+"DATA",101.43,5065,9,0)
+^101.439A^6^6
+"DATA",101.43,5065,9,1,0)
+XRAY
+"DATA",101.43,5065,9,2,0)
+CT
+"DATA",101.43,5065,9,3,0)
+XRAY
+"DATA",101.43,5065,9,4,0)
+CT
+"DATA",101.43,5065,9,5,0)
+XRAY
+"DATA",101.43,5065,9,6,0)
+CT
+"DATA",101.43,5065,"RA")
+^D^CT^0
+"DATA",101.43,5066,0)
+VEFA MAMMOGRAM UNILAT^435;99RAP^76090^CPT4^34^^1^VEFA MAMMOGRAM UNILAT
+"DATA",101.43,5066,9,0)
+^101.439A^6^6
+"DATA",101.43,5066,9,1,0)
+XRAY
+"DATA",101.43,5066,9,2,0)
+MAM
+"DATA",101.43,5066,9,3,0)
+XRAY
+"DATA",101.43,5066,9,4,0)
+MAM
+"DATA",101.43,5066,9,5,0)
+XRAY
+"DATA",101.43,5066,9,6,0)
+MAM
+"DATA",101.43,5066,"RA")
+^D^MAM^0
+"DATA",101.43,5067,0)
+VEFA MAMMOGRAM BILAT^436;99RAP^76091^CPT4^34^^1^VEFA MAMMOGRAM BILAT
+"DATA",101.43,5067,9,0)
+^101.439A^6^6
+"DATA",101.43,5067,9,1,0)
+XRAY
+"DATA",101.43,5067,9,2,0)
+MAM
+"DATA",101.43,5067,9,3,0)
+XRAY
+"DATA",101.43,5067,9,4,0)
+MAM
+"DATA",101.43,5067,9,5,0)
+XRAY
+"DATA",101.43,5067,9,6,0)
+MAM
+"DATA",101.43,5067,"RA")
+^D^MAM^0
+"DATA",101.43,5068,0)
+VEFA CIPROFLOXACIN TAB^1269;99PSP^^^2^^^VEFA CIPROFLOXACIN TAB
+"DATA",101.43,5068,9,0)
+^101.439A^16^12
+"DATA",101.43,5068,9,5,0)
+RX
+"DATA",101.43,5068,9,6,0)
+UD RX
+"DATA",101.43,5068,9,7,0)
+O RX
+"DATA",101.43,5068,9,8,0)
+NV RX
+"DATA",101.43,5068,9,9,0)
+RX
+"DATA",101.43,5068,9,10,0)
+UD RX
+"DATA",101.43,5068,9,11,0)
+O RX
+"DATA",101.43,5068,9,12,0)
+NV RX
+"DATA",101.43,5068,9,13,0)
+RX
+"DATA",101.43,5068,9,14,0)
+UD RX
+"DATA",101.43,5068,9,15,0)
+O RX
+"DATA",101.43,5068,9,16,0)
+NV RX
+"DATA",101.43,5068,"PS")
+1^1^0^0^0^0^1
+"DATA",101.43,5070,0)
+VEFA RADIOLOGY ONCOLOGY^50;99CON^^^11^^^VEFA RADIOLOGY ONCOLOGY
+"DATA",101.43,5070,9,0)
+^101.439A^4^3
+"DATA",101.43,5070,9,2,0)
+CSLT
+"DATA",101.43,5070,9,3,0)
+CSLT
+"DATA",101.43,5070,9,4,0)
+CSLT
+"DATA",101.43,5071,0)
+VEFA HEMATOLOGY CONSULT^27;99CON^^^11^^^VEFA HEMATOLOGY CONSULT
+"DATA",101.43,5071,9,0)
+^101.439A^3^3
+"DATA",101.43,5071,9,1,0)
+CSLT
+"DATA",101.43,5071,9,2,0)
+CSLT
+"DATA",101.43,5071,9,3,0)
+CSLT
+"DATA",101.43,5072,0)
+VEFA Urology Consult^5052;99ORD^^^16^^^VEFA Urology Consult
+"DATA",101.43,5072,9,0)
+^101.439A^4^3
+"DATA",101.43,5072,9,2,0)
+OTHER
+"DATA",101.43,5072,9,3,0)
+OTHER
+"DATA",101.43,5072,9,4,0)
+OTHER
+"DATA",101.43,5073,0)
+VEFA SURGICAL ONCOLOGY MAMMOGRAM^653;99CON^^^11^^^VEFA SURGICAL ONCOLOGY MAMMOGRAM
+"DATA",101.43,5073,.1)
+3140210
+"DATA",101.43,5073,9,0)
+^101.439A^6^6
+"DATA",101.43,5073,9,1,0)
+CSLT
+"DATA",101.43,5073,9,2,0)
+MAM
+"DATA",101.43,5073,9,3,0)
+CSLT
+"DATA",101.43,5073,9,4,0)
+MAM
+"DATA",101.43,5073,9,5,0)
+CSLT
+"DATA",101.43,5073,9,6,0)
+MAM
+"DATA",101.43,5073,"RA")
+^^MAM
+"DATA",101.43,5074,0)
+VEFA BREAST ULTRASOUND^805;99RAP^76645^CPT4^34^^^VEFA BREAST ULTRASOUND
+"DATA",101.43,5074,.1)
+3140210
+"DATA",101.43,5074,9,0)
+^101.439A^7^7
+"DATA",101.43,5074,9,1,0)
+XRAY
+"DATA",101.43,5074,9,2,0)
+MAMM
+"DATA",101.43,5074,9,3,0)
+US
+"DATA",101.43,5074,9,4,0)
+XRAY
+"DATA",101.43,5074,9,5,0)
+US
+"DATA",101.43,5074,9,6,0)
+XRAY
+"DATA",101.43,5074,9,7,0)
+US
+"DATA",101.43,5074,"RA")
+^D^US^0
+"DATA",101.43,5075,0)
+VEFA CARDIO-THORACIC SURG CSLT^27;99CON^^^11^^^VEFA HEMATOLOGY CONSULT
+"DATA",101.43,5075,9,0)
+^101.439A^4^4
+"DATA",101.43,5075,9,1,0)
+CSLT
+"DATA",101.43,5075,9,2,0)
+CSLT
+"DATA",101.43,5075,9,3,0)
+CSLT
+"DATA",101.43,5075,9,4,0)
+CSLT
+"DATA",101.43,5076,0)
+VEFA PROSTATE SPECIFIC ANTIGEN^5102;99LRT^89760.0000^NLT^5^^^PROSTATE SPECIFIC ANTIGEN
+"DATA",101.43,5076,2,0)
+^101.432A^2^2
+"DATA",101.43,5076,2,1,0)
+PSA
+"DATA",101.43,5076,2,2,0)
+LEDIPSA
+"DATA",101.43,5076,9,0)
+^101.439A^4^4
+"DATA",101.43,5076,9,1,0)
+LAB
+"DATA",101.43,5076,9,2,0)
+CH
+"DATA",101.43,5076,9,3,0)
+LAB
+"DATA",101.43,5076,9,4,0)
+CH
+"DATA",101.43,5076,"LR")
+^^^^^CH^B
+"FIA",101.43)
+ORDERABLE ITEMS
+"FIA",101.43,0)
+^ORD(101.43,
+"FIA",101.43,0,0)
+101.43
+"FIA",101.43,0,1)
+n^y^f^^y^^y^o^n
+"FIA",101.43,0,10)
+
+"FIA",101.43,0,11)
+I $E($P($G(^ORD(101.43,+Y,0)),"^",1),1,4)="VEFA"
+"FIA",101.43,0,"RLRO")
+
+"FIA",101.43,101.43)
+0
+"FIA",101.43,101.431)
+0
+"FIA",101.43,101.432)
+0
+"FIA",101.43,101.438)
+0
+"FIA",101.43,101.439)
+0
+"FRV1",101.43,"5053,0",5)
+LABORATORY
+"FRV1",101.43,"5053,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5054,0",5)
+CONSULTS
+"FRV1",101.43,"5054,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5055,0",5)
+CONSULTS
+"FRV1",101.43,"5055,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5056,0",5)
+CONSULTS
+"FRV1",101.43,"5056,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5057,0",5)
+CONSULTS
+"FRV1",101.43,"5057,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5058,0",5)
+LABORATORY
+"FRV1",101.43,"5058,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5059,0",5)
+PROCEDURES
+"FRV1",101.43,"5059,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5060,0",5)
+LABORATORY
+"FRV1",101.43,"5060,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5061,0",5)
+LABORATORY
+"FRV1",101.43,"5061,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5062,0",5)
+PHARMACY
+"FRV1",101.43,"5062,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5063,0",5)
+IMAGING
+"FRV1",101.43,"5063,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5064,0",5)
+IMAGING
+"FRV1",101.43,"5064,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5065,0",5)
+IMAGING
+"FRV1",101.43,"5065,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5066,0",5)
+IMAGING
+"FRV1",101.43,"5066,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5067,0",5)
+IMAGING
+"FRV1",101.43,"5067,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5068,0",5)
+PHARMACY
+"FRV1",101.43,"5068,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5070,0",5)
+CONSULTS
+"FRV1",101.43,"5070,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5071,0",5)
+CONSULTS
+"FRV1",101.43,"5071,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5072,0",5)
+OTHER HOSPITAL SERVICES
+"FRV1",101.43,"5072,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5073,0",5)
+CONSULTS
+"FRV1",101.43,"5073,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5074,0",5)
+IMAGING
+"FRV1",101.43,"5074,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5075,0",5)
+CONSULTS
+"FRV1",101.43,"5075,0",5,"F")
+;ORD(100.98,
+"FRV1",101.43,"5076,0",5)
+LABORATORY
+"FRV1",101.43,"5076,0",5,"F")
+;ORD(100.98,
+"MBREQ")
+0
+"PGL",101.43,0,5,5)
+DISPLAY GROUP^P100.98'^ORD(100.98,^0;5^Q
+"QUES","XPF1",0)
+Y
+"QUES","XPF1","??")
+^D REP^XPDH
+"QUES","XPF1","A")
+Shall I write over your |FLAG| File
+"QUES","XPF1","B")
+YES
+"QUES","XPF1","M")
+D XPF1^XPDIQ
+"QUES","XPF2",0)
+Y
+"QUES","XPF2","??")
+^D DTA^XPDH
+"QUES","XPF2","A")
+Want my data |FLAG| yours
+"QUES","XPF2","B")
+YES
+"QUES","XPF2","M")
+D XPF2^XPDIQ
+"QUES","XPI1",0)
+YO
+"QUES","XPI1","??")
+^D INHIBIT^XPDH
+"QUES","XPI1","A")
+Want KIDS to INHIBIT LOGONs during the install
+"QUES","XPI1","B")
+NO
+"QUES","XPI1","M")
+D XPI1^XPDIQ
+"QUES","XPM1",0)
+PO^VA(200,:EM
+"QUES","XPM1","??")
+^D MG^XPDH
+"QUES","XPM1","A")
+Enter the Coordinator for Mail Group '|FLAG|'
+"QUES","XPM1","B")
+
+"QUES","XPM1","M")
+D XPM1^XPDIQ
+"QUES","XPO1",0)
+Y
+"QUES","XPO1","??")
+^D MENU^XPDH
+"QUES","XPO1","A")
+Want KIDS to Rebuild Menu Trees Upon Completion of Install
+"QUES","XPO1","B")
+NO
+"QUES","XPO1","M")
+D XPO1^XPDIQ
+"QUES","XPZ1",0)
+Y
+"QUES","XPZ1","??")
+^D OPT^XPDH
+"QUES","XPZ1","A")
+Want to DISABLE Scheduled Options, Menu Options, and Protocols
+"QUES","XPZ1","B")
+NO
+"QUES","XPZ1","M")
+D XPZ1^XPDIQ
+"QUES","XPZ2",0)
+Y
+"QUES","XPZ2","??")
+^D RTN^XPDH
+"QUES","XPZ2","A")
+Want to MOVE routines to other CPUs
+"QUES","XPZ2","B")
+NO
+"QUES","XPZ2","M")
+D XPZ2^XPDIQ
+"SEC","^DIC",101.43,101.43,0,"DD")
+@
+"SEC","^DIC",101.43,101.43,0,"DEL")
+#
+"SEC","^DIC",101.43,101.43,0,"LAYGO")
+#
+"SEC","^DIC",101.43,101.43,0,"WR")
+#
+"VER")
+8.0^22.0
+"^DD",101.43,101.43,0)
+FIELD^^50.7^39
+"^DD",101.43,101.43,0,"DDA")
+N
+"^DD",101.43,101.43,0,"DT")
+3061122
+"^DD",101.43,101.43,0,"IX","AQO",101.439,2)
+
+"^DD",101.43,101.43,0,"IX","B",101.43,.01)
+
+"^DD",101.43,101.43,0,"IX","B",101.432,.01)
+
+"^DD",101.43,101.43,0,"IX","C",101.43,3)
+
+"^DD",101.43,101.43,0,"IX","C1",101.439,.01)
+
+"^DD",101.43,101.43,0,"IX","C2",101.43,.01)
+
+"^DD",101.43,101.43,0,"IX","CD",101.43,.1)
+
+"^DD",101.43,101.43,0,"IX","COMMON",101.43,71.4)
+
+"^DD",101.43,101.43,0,"IX","COMMON1",101.43,71.3)
+
+"^DD",101.43,101.43,0,"IX","COMMON2",101.43,.01)
+
+"^DD",101.43,101.43,0,"IX","ID",101.43,2)
+
+"^DD",101.43,101.43,0,"IX","S",101.439,.01)
+
+"^DD",101.43,101.43,0,"IX","S0",101.43,.01)
+
+"^DD",101.43,101.43,0,"IX","S1",101.43,111.1)
+
+"^DD",101.43,101.43,0,"IX","S10",101.43,50.7)
+
+"^DD",101.43,101.43,0,"IX","S10",101.43,6001)
+
+"^DD",101.43,101.43,0,"IX","S11",101.43,6002)
+
+"^DD",101.43,101.43,0,"IX","S2",101.43,71.3)
+
+"^DD",101.43,101.43,0,"IX","S3",101.43,60.6)
+
+"^DD",101.43,101.43,0,"IX","S4",101.43,50.1)
+
+"^DD",101.43,101.43,0,"IX","S5",101.43,50.2)
+
+"^DD",101.43,101.43,0,"IX","S6",101.43,50.3)
+
+"^DD",101.43,101.43,0,"IX","S7",101.43,5)
+
+"^DD",101.43,101.43,0,"IX","S8",101.43,50.4)
+
+"^DD",101.43,101.43,0,"IX","S9",101.43,50.5)
+
+"^DD",101.43,101.43,0,"IX","SD",101.43,.1)
+
+"^DD",101.43,101.43,0,"IX","SS",101.432,.01)
+
+"^DD",101.43,101.43,0,"IX","SS1",101.439,.01)
+
+"^DD",101.43,101.43,0,"IX","SS2",101.43,.01)
+
+"^DD",101.43,101.43,0,"IX","SSD",101.43,.1)
+
+"^DD",101.43,101.43,0,"IX","SST",101.43,60.7)
+
+"^DD",101.43,101.43,0,"IX","ST",101.43,60.7)
+
+"^DD",101.43,101.43,0,"NM","ORDERABLE ITEMS")
+
+"^DD",101.43,101.43,0,"PT",100,7)
+
+"^DD",101.43,101.43,0,"PT",100.001,.01)
+
+"^DD",101.43,101.43,0,"PT",100.68,.01)
+
+"^DD",101.43,101.43,0,"PT",101.442,.01)
+
+"^DD",101.43,101.43,0,"PT",104.05,.01)
+
+"^DD",101.43,101.43,0,"PT",234,4)
+
+"^DD",101.43,101.43,0,"PT",801.02,.01)
+
+"^DD",101.43,101.43,0,"PT",801.41,17)
+
+"^DD",101.43,101.43,0,"PT",801.43,.02)
+
+"^DD",101.43,101.43,0,"PT",810.31,.04)
+
+"^DD",101.43,101.43,0,"PT",810.32,.01)
+
+"^DD",101.43,101.43,0,"PT",811.52,.01)
+
+"^DD",101.43,101.43,0,"PT",811.902,.01)
+
+"^DD",101.43,101.43,0,"VRPK")
+OR
+"^DD",101.43,101.43,0,"VRRV")
+1^3061122
+"^DD",101.43,101.43,.01,0)
+NAME^RFX^^0;1^K:$L(X)>63!($L(X)<2)!($$CHKNAM^ORUTL(X,";")) X
+"^DD",101.43,101.43,.01,1,0)
+^.1^^-1
+"^DD",101.43,101.43,.01,1,1,0)
+101.43^B
+"^DD",101.43,101.43,.01,1,1,1)
+S ^ORD(101.43,"B",$E(X,1,30),DA)=""
+"^DD",101.43,101.43,.01,1,1,2)
+K ^ORD(101.43,"B",$E(X,1,30),DA)
+"^DD",101.43,101.43,.01,1,2,0)
+101.43^C2^MUMPS
+"^DD",101.43,101.43,.01,1,2,1)
+N CD,IN S CD=$P(^ORD(101.43,DA,0),U,3),IN=$G(^(.1)) D CS^ORDD43(X,CD,IN)
+"^DD",101.43,101.43,.01,1,2,2)
+N CD S CD=$P(^ORD(101.43,DA,0),U,3) D CK^ORDD43(X,CD)
+"^DD",101.43,101.43,.01,1,2,"%D",0)
+^^1^1^2990316^^^
+"^DD",101.43,101.43,.01,1,2,"%D",1,0)
+Allows retrieval of items by code within Sets.
+"^DD",101.43,101.43,.01,1,2,"DT")
+2950713
+"^DD",101.43,101.43,.01,1,3,0)
+101.43^S0^MUMPS
+"^DD",101.43,101.43,.01,1,3,1)
+N IN,TYP S IN=$G(^ORD(101.43,DA,.1)),TYP=$P($G(^("LR")),U,7) D SS^ORDD43(X,IN,TYP)
+"^DD",101.43,101.43,.01,1,3,2)
+D SK^ORDD43(X)
+"^DD",101.43,101.43,.01,1,3,"%D",0)
+^^2^2^2990316^^^^
+"^DD",101.43,101.43,.01,1,3,"%D",1,0)
+Allows retrieval of orderable items via the Set "S" xrefs:
+"^DD",101.43,101.43,.01,1,3,"%D",2,0)
+^ORD(101.43,"S.<set>",NAME,DA)
+"^DD",101.43,101.43,.01,1,3,"DT")
+2950810
+"^DD",101.43,101.43,.01,1,4,0)
+101.43^COMMON2^MUMPS
+"^DD",101.43,101.43,.01,1,4,1)
+N IT,CP S IT=$P($G(^ORD(101.43,DA,"RA")),U,3),CP=$P($G(^("RA")),U,4) D SETRA^ORDD43(X,IT,CP)
+"^DD",101.43,101.43,.01,1,4,2)
+N IT,CP S IT=$P($G(^ORD(101.43,DA,"RA")),U,3),CP=$P($G(^("RA")),U,4) D KILLRA^ORDD43(X,IT,CP)
+"^DD",101.43,101.43,.01,1,4,"%D",0)
+^^2^2^2990316^^^
+"^DD",101.43,101.43,.01,1,4,"%D",1,0)
+Allows retrieval of Radiology common procedures alphabetically within
+"^DD",101.43,101.43,.01,1,4,"%D",2,0)
+imaging types.
+"^DD",101.43,101.43,.01,1,4,"DT")
+2950725
+"^DD",101.43,101.43,.01,1,5,0)
+101.43^SS2^MUMPS
+"^DD",101.43,101.43,.01,1,5,1)
+N IN,TYP S IN=$G(^ORD(101.43,DA,.1)),TYP=$P($G(^("LR")),U,7) D SS1^ORDD43(X,IN,TYP)
+"^DD",101.43,101.43,.01,1,5,2)
+D SK1^ORDD43(X)
+"^DD",101.43,101.43,.01,1,5,"%D",0)
+^^2^2^2990316^^^
+"^DD",101.43,101.43,.01,1,5,"%D",1,0)
+Allows retrieval of items by synonym via the Set "S" xrefs:
+"^DD",101.43,101.43,.01,1,5,"%D",2,0)
+^ORD(101.43,"S.<set>",SYNONYM,DA)
+"^DD",101.43,101.43,.01,1,5,"DT")
+2950810
+"^DD",101.43,101.43,.01,3)
+Answer must be 2-63 characters in length and cannot contain a semicolon (;).
+"^DD",101.43,101.43,.01,21,0)
+2^.001^1^1^3100520^^^^
+"^DD",101.43,101.43,.01,21,1,0)
+This is the name of this item that will be used for displaying and searching.
+"^DD",101.43,101.43,.01,"DT")
+3100521
+"^DD",101.43,101.43,.01,"V",0)
+^.12P^1^1
+"^DD",101.43,101.43,.01,"V",1,0)
+60^LABORATORY TEST^1^LAB^^n
+"^DD",101.43,101.43,.1,0)
+INACTIVATED^D^^.1;1^S %DT="ESTX" D ^%DT S X=Y K:Y<1 X
+"^DD",101.43,101.43,.1,1,0)
+^.1
+"^DD",101.43,101.43,.1,1,1,0)
+101.43^SD^MUMPS
+"^DD",101.43,101.43,.1,1,1,1)
+N NM,TYP S NM=$P(^ORD(101.43,DA,0),U),TYP=$P($G(^("LR")),U,7) D SS^ORDD43(NM,X,TYP)
+"^DD",101.43,101.43,.1,1,1,2)
+N NM,TYP S NM=$P(^ORD(101.43,DA,0),U),TYP=$P($G(^("LR")),U,7) D SS^ORDD43(NM,,TYP)
+"^DD",101.43,101.43,.1,1,1,"%D",0)
+^^1^1^2960814^
+"^DD",101.43,101.43,.1,1,1,"%D",1,0)
+Allows retrieval of orderable items by set.
+"^DD",101.43,101.43,.1,1,1,"DT")
+2960814
+"^DD",101.43,101.43,.1,1,2,0)
+101.43^SSD^MUMPS
+"^DD",101.43,101.43,.1,1,2,1)
+N NM,TYP S NM=$P(^ORD(101.43,DA,0),U),TYP=$P($G(^("LR")),U,7) D SS1^ORDD43(NM,X,TYP)
+"^DD",101.43,101.43,.1,1,2,2)
+N NM,TYP S NM=$P(^ORD(101.43,DA,0),U),TYP=$P($G(^("LR")),U,7) D SS1^ORDD43(NM,,TYP)
+"^DD",101.43,101.43,.1,1,2,"%D",0)
+^^1^1^2960814^
+"^DD",101.43,101.43,.1,1,2,"%D",1,0)
+Allows retrieval of items by synonym via the Set "S" xrefs.
+"^DD",101.43,101.43,.1,1,2,"DT")
+2960814
+"^DD",101.43,101.43,.1,1,3,0)
+101.43^CD^MUMPS
+"^DD",101.43,101.43,.1,1,3,1)
+N NM,CD S NM=$P(^ORD(101.43,DA,0),U),CD=$P(^(0),U,3) D CS^ORDD43(NM,CD,X)
+"^DD",101.43,101.43,.1,1,3,2)
+N NM,CD S NM=$P(^ORD(101.43,DA,0),U),CD=$P(^(0),U,3) D CS^ORDD43(NM,CD)
+"^DD",101.43,101.43,.1,1,3,"%D",0)
+^^1^1^2960814^
+"^DD",101.43,101.43,.1,1,3,"%D",1,0)
+Allows retrieval of items by code within Sets.
+"^DD",101.43,101.43,.1,1,3,"DT")
+2960814
+"^DD",101.43,101.43,.1,3)
+Enter the date and time after which this item may no longer be ordered.
+"^DD",101.43,101.43,.1,21,0)
+^^3^3^2950303^
+"^DD",101.43,101.43,.1,21,1,0)
+This is a date and time for inactivating this item.  If this field has a
+"^DD",101.43,101.43,.1,21,2,0)
+value, this item will not ba available to select for ordering after this
+"^DD",101.43,101.43,.1,21,3,0)
+date.
+"^DD",101.43,101.43,.1,"DT")
+2960814
+"^DD",101.43,101.43,.91,0)
+NOTIFY ON ORDER^S^1:YES;0:NO;^.9;1^Q
+"^DD",101.43,101.43,.91,3)
+Enter YES if a notification should be generated whenever this item is ordered.
+"^DD",101.43,101.43,.91,21,0)
+^^2^2^2950523^
+"^DD",101.43,101.43,.91,21,1,0)
+This field is a flag to determine if a notification should be generated
+"^DD",101.43,101.43,.91,21,2,0)
+whenever an order for this item is placed.
+"^DD",101.43,101.43,.91,"DT")
+2950523
+"^DD",101.43,101.43,.92,0)
+NOTIFY WHEN RESULTED^S^1:YES;0:NO;^.9;2^Q
+"^DD",101.43,101.43,.92,3)
+Enter YES if a notification should be generated when an order for this item is resulted.
+"^DD",101.43,101.43,.92,21,0)
+^^2^2^2950523^
+"^DD",101.43,101.43,.92,21,1,0)
+This field is a flag to determine if a notification should be sent when
+"^DD",101.43,101.43,.92,21,2,0)
+results are posted for an order for this item.
+"^DD",101.43,101.43,.92,"DT")
+2950523
+"^DD",101.43,101.43,1,0)
+SYNONYMS^101.432A^^2;0
+"^DD",101.43,101.43,1,21,0)
+^^2^2^2990223^^
+"^DD",101.43,101.43,1,21,1,0)
+This multiple contains synonyms for this orderable item, used when
+"^DD",101.43,101.43,1,21,2,0)
+searching the file.
+"^DD",101.43,101.43,1.1,0)
+PACKAGE NAME^RF^^0;8^K:$L(X)>63!($L(X)<3) X
+"^DD",101.43,101.43,1.1,1,0)
+^.1^^0
+"^DD",101.43,101.43,1.1,3)
+Answer must be 3-63 characters in length.
+"^DD",101.43,101.43,1.1,21,0)
+^^1^1^2960910^^^^
+"^DD",101.43,101.43,1.1,21,1,0)
+This is the name of this item as defined by the filling service.
+"^DD",101.43,101.43,1.1,"DT")
+2960920
+"^DD",101.43,101.43,2,0)
+ID^RF^^0;2^K:$L(X)>30!($L(X)<3) X
+"^DD",101.43,101.43,2,1,0)
+^.1
+"^DD",101.43,101.43,2,1,1,0)
+101.43^ID
+"^DD",101.43,101.43,2,1,1,1)
+S ^ORD(101.43,"ID",$E(X,1,30),DA)=""
+"^DD",101.43,101.43,2,1,1,2)
+K ^ORD(101.43,"ID",$E(X,1,30),DA)
+"^DD",101.43,101.43,2,1,1,"DT")
+2950303
+"^DD",101.43,101.43,2,3)
+Answer must be 3-30 characters in length.
+"^DD",101.43,101.43,2,21,0)
+^^4^4^2950303^^
+"^DD",101.43,101.43,2,21,1,0)
+This is a unique identifier for this item, created from the primary key
+"^DD",101.43,101.43,2,21,2,0)
+passed in the Orderable Items update message from each package; it will
+"^DD",101.43,101.43,2,21,3,0)
+be in the form of "package code;99XXX" where XXX indicates the package
+"^DD",101.43,101.43,2,21,4,0)
+table originating this item (i.e. RAP, LRT, etc).
+"^DD",101.43,101.43,2,"DT")
+2950303
+"^DD",101.43,101.43,3,0)
+CODE^F^^0;3^K:$L(X)>10!($L(X)<1) X
+"^DD",101.43,101.43,3,1,0)
+^.1
+"^DD",101.43,101.43,3,1,1,0)
+101.43^C^MUMPS
+"^DD",101.43,101.43,3,1,1,1)
+N NM,IN S NM=$P(^ORD(101.43,DA,0),U),IN=$G(^(.1)) D CS^ORDD43(NM,X,IN)
+"^DD",101.43,101.43,3,1,1,2)
+N NM S NM=$P(^ORD(101.43,DA,0),U) D CK^ORDD43(NM,X)
+"^DD",101.43,101.43,3,1,1,"%D",0)
+^^1^1^2950713^^^^
+"^DD",101.43,101.43,3,1,1,"%D",1,0)
+Allows retrieval of items by code within Sets.
+"^DD",101.43,101.43,3,1,1,"DT")
+2950713
+"^DD",101.43,101.43,3,3)
+Answer must be 1-10 characters in length.
+"^DD",101.43,101.43,3,21,0)
+^^2^2^2950303^
+"^DD",101.43,101.43,3,21,1,0)
+This is the code assigned to this item by the authoritative package,
+"^DD",101.43,101.43,3,21,2,0)
+from a national standard coding system such as CPT or SNOMED.
+"^DD",101.43,101.43,3,"DT")
+2950713
+"^DD",101.43,101.43,4,0)
+CODING SYSTEM^S^NDF:NATIONAL DRUG FILE;CPT4:CPT4;NLT:NATIONAL LAB TEST FILE;^0;4^Q
+"^DD",101.43,101.43,4,3)
+Enter the coding system in which this item has been coded.
+"^DD",101.43,101.43,4,21,0)
+^^1^1^2960213^^
+"^DD",101.43,101.43,4,21,1,0)
+This is the system used to generate the code assigned in field 3.
+"^DD",101.43,101.43,4,"DT")
+2960213
+"^DD",101.43,101.43,5,0)
+DISPLAY GROUP^P100.98'^ORD(100.98,^0;5^Q
+"^DD",101.43,101.43,5,1,0)
+^.1
+"^DD",101.43,101.43,5,1,1,0)
+101.43^S7^MUMPS
+"^DD",101.43,101.43,5,1,1,1)
+N ORX S ORX=$P(^ORD(100.98,X,0),U,3) D:$L(ORX) SET^ORDD43(ORX,DA)
+"^DD",101.43,101.43,5,1,1,2)
+N ORX S ORX=$P(^ORD(100.98,X,0),U,3) D:$L(ORX) KILL^ORDD43(ORX,DA)
+"^DD",101.43,101.43,5,1,1,"%D",0)
+^^1^1^2950303^
+"^DD",101.43,101.43,5,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,5,1,1,"DT")
+2950303
+"^DD",101.43,101.43,5,3)
+Enter the display group this orderable item belongs to.
+"^DD",101.43,101.43,5,21,0)
+^^4^4^2950303^
+"^DD",101.43,101.43,5,21,1,0)
+This is the display group that this item is a menber of; this field is
+"^DD",101.43,101.43,5,21,2,0)
+used for a variety of purposes such as narrowing a search for an item,
+"^DD",101.43,101.43,5,21,3,0)
+sorting and grouping orders, and passing the order to the service
+"^DD",101.43,101.43,5,21,4,0)
+for filling.
+"^DD",101.43,101.43,5,"DT")
+2950303
+"^DD",101.43,101.43,6,0)
+COST^NJ10,2^^0;6^S:X["$" X=$P(X,"$",2) K:X'?.N.1".".2N!(X>9999999.99)!(X<0) X
+"^DD",101.43,101.43,6,3)
+Type a Dollar Amount between 0 and 9999999.99, 2 Decimal Digits
+"^DD",101.43,101.43,6,21,0)
+^^1^1^2950303^
+"^DD",101.43,101.43,6,21,1,0)
+This is the [approximate] cost of filling an order for this item.
+"^DD",101.43,101.43,6,"DT")
+2950303
+"^DD",101.43,101.43,7,0)
+AUTHORIZATION^S^0:NO SIGNATURE REQUIRED;1:PHYSICIAN;2:SPECIALIST;3:SERVICE CHIEF;4:COSIGNATURE;^0;7^Q
+"^DD",101.43,101.43,7,3)
+Enter the level of authorization required to release an order for this item.
+"^DD",101.43,101.43,7,21,0)
+^^3^3^2950303^
+"^DD",101.43,101.43,7,21,1,0)
+This field is used to identify the level of authentication necessary to
+"^DD",101.43,101.43,7,21,2,0)
+release an order for this item; it will be replaced by the Clinical
+"^DD",101.43,101.43,7,21,3,0)
+Authorization and Subscription Utility (CASU) when it becomes available.
+"^DD",101.43,101.43,7,"DT")
+2950303
+"^DD",101.43,101.43,8,0)
+ORDER MESSAGE^101.438^^8;0
+"^DD",101.43,101.43,8,21,0)
+^.001^2^2^3040407^^
+"^DD",101.43,101.43,8,21,1,0)
+This field contains text that is to be displayed to the user whenever
+"^DD",101.43,101.43,8,21,2,0)
+this item is selected to be ordered.
+"^DD",101.43,101.43,9,0)
+SET MEMBERSHIP^101.439A^^9;0
+"^DD",101.43,101.43,9,21,0)
+^^3^3^2941117^
+"^DD",101.43,101.43,9,21,1,0)
+This field contains the names of sets to which this orderable item belongs.
+"^DD",101.43,101.43,9,21,2,0)
+When a set name is entered here, a cross-reference of the format "S.name"
+"^DD",101.43,101.43,9,21,3,0)
+is created, allowing rapid lookups on this file.
+"^DD",101.43,101.43,10,0)
+COMPONENTS^101.431A^^10;0
+"^DD",101.43,101.43,10,21,0)
+^^2^2^2960411^^^
+"^DD",101.43,101.43,10,21,1,0)
+This multiple contains the components of this orderable item, i.e. drug
+"^DD",101.43,101.43,10,21,2,0)
+ingredients or tests in a lab panel.
+"^DD",101.43,101.43,50.1,0)
+INPATIENT MED^S^0:NO;1:YES;2:YES-IV;^PS;1^Q
+"^DD",101.43,101.43,50.1,1,0)
+^.1
+"^DD",101.43,101.43,50.1,1,1,0)
+101.43^S4^MUMPS
+"^DD",101.43,101.43,50.1,1,1,1)
+D SET^ORDD43("UD RX",DA):X,SET^ORDD43("IVM RX",DA):X=2
+"^DD",101.43,101.43,50.1,1,1,2)
+D KILL^ORDD43("UD RX",DA):X,KILL^ORDD43("IVM RX",DA):X=2
+"^DD",101.43,101.43,50.1,1,1,"%D",0)
+^^1^1^2950623^^^^
+"^DD",101.43,101.43,50.1,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,50.1,1,1,"DT")
+2950623
+"^DD",101.43,101.43,50.1,3)
+Enter YES if this drug is selectable for an inpatient med order.
+"^DD",101.43,101.43,50.1,21,0)
+^^1^1^2970624^^
+"^DD",101.43,101.43,50.1,21,1,0)
+This field indicates if this drug is selectable for an inpatient med order.
+"^DD",101.43,101.43,50.1,"DT")
+2970624
+"^DD",101.43,101.43,50.2,0)
+OUTPATIENT MED^S^1:YES;0:NO;^PS;2^Q
+"^DD",101.43,101.43,50.2,1,0)
+^.1
+"^DD",101.43,101.43,50.2,1,1,0)
+101.43^S5^MUMPS
+"^DD",101.43,101.43,50.2,1,1,1)
+D:X SET^ORDD43("O RX",DA)
+"^DD",101.43,101.43,50.2,1,1,2)
+D:X KILL^ORDD43("O RX",DA)
+"^DD",101.43,101.43,50.2,1,1,"%D",0)
+^^1^1^2950112^^
+"^DD",101.43,101.43,50.2,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,50.2,1,1,"DT")
+2950112
+"^DD",101.43,101.43,50.2,3)
+Enter YES if this drug is selectable for an outpatient med order.
+"^DD",101.43,101.43,50.2,21,0)
+^^1^1^2950112^
+"^DD",101.43,101.43,50.2,21,1,0)
+This field indicates if this drug is selectable for an outpatient med order.
+"^DD",101.43,101.43,50.2,"DT")
+2950112
+"^DD",101.43,101.43,50.3,0)
+IV BASE^S^1:YES;0:NO;^PS;3^Q
+"^DD",101.43,101.43,50.3,1,0)
+^.1
+"^DD",101.43,101.43,50.3,1,1,0)
+101.43^S6^MUMPS
+"^DD",101.43,101.43,50.3,1,1,1)
+D:X SET^ORDD43("IVB RX",DA)
+"^DD",101.43,101.43,50.3,1,1,2)
+D:X KILL^ORDD43("IVB RX",DA)
+"^DD",101.43,101.43,50.3,1,1,"%D",0)
+^^1^1^2950623^^^
+"^DD",101.43,101.43,50.3,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,50.3,1,1,"DT")
+2950623
+"^DD",101.43,101.43,50.3,3)
+Enter YES if this drug is selectable as a base for an IV Fluid order.
+"^DD",101.43,101.43,50.3,21,0)
+^^2^2^2950112^
+"^DD",101.43,101.43,50.3,21,1,0)
+This field indicates if this drug is selectable as a base for an IV Fluid
+"^DD",101.43,101.43,50.3,21,2,0)
+order.
+"^DD",101.43,101.43,50.3,"DT")
+2950623
+"^DD",101.43,101.43,50.4,0)
+IV ADDITIVE^S^1:YES;0:NO;^PS;4^Q
+"^DD",101.43,101.43,50.4,1,0)
+^.1
+"^DD",101.43,101.43,50.4,1,1,0)
+101.43^S8^MUMPS
+"^DD",101.43,101.43,50.4,1,1,1)
+D:X SET^ORDD43("IVA RX",DA)
+"^DD",101.43,101.43,50.4,1,1,2)
+D:X KILL^ORDD43("IVA RX",DA)
+"^DD",101.43,101.43,50.4,1,1,"%D",0)
+^^1^1^2950623^^^
+"^DD",101.43,101.43,50.4,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,50.4,1,1,"DT")
+2950623
+"^DD",101.43,101.43,50.4,3)
+Enter YES if this drug is selectable as an additive for an IV Fluid order.
+"^DD",101.43,101.43,50.4,21,0)
+^^2^2^2950112^
+"^DD",101.43,101.43,50.4,21,1,0)
+This field indicates if this drug is selectable as an additive for an IV
+"^DD",101.43,101.43,50.4,21,2,0)
+Fluid order.
+"^DD",101.43,101.43,50.4,"DT")
+2950623
+"^DD",101.43,101.43,50.5,0)
+SUPPLY^S^1:YES;0:NO;^PS;5^Q
+"^DD",101.43,101.43,50.5,1,0)
+^.1
+"^DD",101.43,101.43,50.5,1,1,0)
+101.43^S9^MUMPS
+"^DD",101.43,101.43,50.5,1,1,1)
+D:X SET^ORDD43("SPLY",DA)
+"^DD",101.43,101.43,50.5,1,1,2)
+D:X KILL^ORDD43("SPLY",DA)
+"^DD",101.43,101.43,50.5,1,1,"%D",0)
+^^1^1^2960402^
+"^DD",101.43,101.43,50.5,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,50.5,1,1,"DT")
+2960402
+"^DD",101.43,101.43,50.5,3)
+Enter YES if this item is selectable for a medication supply order.
+"^DD",101.43,101.43,50.5,21,0)
+^^2^2^2960402^
+"^DD",101.43,101.43,50.5,21,1,0)
+This field indicates if this item is selectable for a medication supply
+"^DD",101.43,101.43,50.5,21,2,0)
+order.
+"^DD",101.43,101.43,50.5,"DT")
+2960402
+"^DD",101.43,101.43,50.6,0)
+NON-FORMULARY^S^1:YES;0:NO;^PS;6^Q
+"^DD",101.43,101.43,50.6,3)
+Enter YES if this orderable item in not in the local formulary.
+"^DD",101.43,101.43,50.6,21,0)
+^^1^1^3000828^
+"^DD",101.43,101.43,50.6,21,1,0)
+This field indicates if this item is available in the local formulary.
+"^DD",101.43,101.43,50.6,"DT")
+3000828
+"^DD",101.43,101.43,50.7,0)
+NON-VA MEDS^S^1:YES;0:NO;^PS;7^Q
+"^DD",101.43,101.43,50.7,1,0)
+^.1
+"^DD",101.43,101.43,50.7,1,10,0)
+101.43^S10^MUMPS
+"^DD",101.43,101.43,50.7,1,10,1)
+D:X SET^ORDD43("NV RX",DA)
+"^DD",101.43,101.43,50.7,1,10,2)
+D:X KILL^ORDD43("NV RX",DA)
+"^DD",101.43,101.43,50.7,1,10,"%D",0)
+^.101^1^1^3030214^^
+"^DD",101.43,101.43,50.7,1,10,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,50.7,1,10,"DT")
+3030214
+"^DD",101.43,101.43,50.7,3)
+Enter YES if this drug is selectable for a non-VA med order.
+"^DD",101.43,101.43,50.7,21,0)
+^.001^1^1^3030305^^^^
+"^DD",101.43,101.43,50.7,21,1,0)
+This field indicates if this drug is selectable for a non-VA med order.
+"^DD",101.43,101.43,50.7,"DT")
+3030214
+"^DD",101.43,101.43,60.1,0)
+SPECIMEN^F^^LR;1^K:$L(X)>100!($L(X)<1) X
+"^DD",101.43,101.43,60.1,3)
+Answer must be 1-100 characters in length.
+"^DD",101.43,101.43,60.1,21,0)
+^^4^4^2950509^^
+"^DD",101.43,101.43,60.1,21,1,0)
+This is the specimen to be collected for this test; it is in the 6-piece
+"^DD",101.43,101.43,60.1,21,2,0)
+HL7 format, where the first 3 pieces are the code, name, and system of
+"^DD",101.43,101.43,60.1,21,3,0)
+the SNOMED code for this specimen, and the last 3 pieces are similarly
+"^DD",101.43,101.43,60.1,21,4,0)
+from the local Site/Specimen file.
+"^DD",101.43,101.43,60.1,"DT")
+2950509
+"^DD",101.43,101.43,60.2,0)
+CAN LAB COLLECT^S^1:YES;0:NO;^LR;2^Q
+"^DD",101.43,101.43,60.2,3)
+Enter YES if the phlebotomy team can collect this specimen.
+"^DD",101.43,101.43,60.2,21,0)
+^^1^1^2950208^
+"^DD",101.43,101.43,60.2,21,1,0)
+This identifies which specimens the lab phlebotomy team can collect.
+"^DD",101.43,101.43,60.2,"DT")
+2950208
+"^DD",101.43,101.43,60.3,0)
+SEQUENCE^NJ2,0^^LR;3^K:+X'=X!(X>99)!(X<1)!(X?.E1"."1N.N) X
+"^DD",101.43,101.43,60.3,3)
+Type a Number between 1 and 99, 0 Decimal Digits
+"^DD",101.43,101.43,60.3,21,0)
+^^2^2^2950208^
+"^DD",101.43,101.43,60.3,21,1,0)
+This field indicates the order in which specimens are presented for
+"^DD",101.43,101.43,60.3,21,2,0)
+selection, the first being the most often selected and the default.
+"^DD",101.43,101.43,60.3,"DT")
+2950208
+"^DD",101.43,101.43,60.4,0)
+MAX ORDER FREQUENCY^NJ3,0^^LR;4^K:+X'=X!(X>120)!(X<1)!(X?.E1"."1N.N) X
+"^DD",101.43,101.43,60.4,3)
+Type a Number between 1 and 120, 0 Decimal Digits
+"^DD",101.43,101.43,60.4,21,0)
+^^3^3^2950208^
+"^DD",101.43,101.43,60.4,21,1,0)
+This is used to control how often this item may be ordered within a given
+"^DD",101.43,101.43,60.4,21,2,0)
+time period.  This item may be ordered only once within the number of days
+"^DD",101.43,101.43,60.4,21,3,0)
+specified in this field.
+"^DD",101.43,101.43,60.4,"DT")
+2950208
+"^DD",101.43,101.43,60.5,0)
+DAILY ORDER MAX^NJ2,0^^LR;5^K:+X'=X!(X>50)!(X<1)!(X?.E1"."1N.N) X
+"^DD",101.43,101.43,60.5,3)
+Type a Number between 1 and 50, 0 Decimal Digits
+"^DD",101.43,101.43,60.5,21,0)
+^^2^2^2950208^
+"^DD",101.43,101.43,60.5,21,1,0)
+This is the number of times within a given day that this item may be
+"^DD",101.43,101.43,60.5,21,2,0)
+ordered.
+"^DD",101.43,101.43,60.5,"DT")
+2950208
+"^DD",101.43,101.43,60.6,0)
+LAB SECTION^S^CH:CHEMISTRY;MI:MICROBIOLOGY;BB:BLOOD BANK;EM:ELECTRON MICROSCOPY;SP:SURGICAL PATHOLOGY;AU:AUTOPSY;CY:CYTOLOGY;^LR;6^Q
+"^DD",101.43,101.43,60.6,1,0)
+^.1
+"^DD",101.43,101.43,60.6,1,1,0)
+101.43^S3^MUMPS
+"^DD",101.43,101.43,60.6,1,1,1)
+N ORX S ORX=$S(X="BB":"BB",X="CH":"CH",X="MI":"CH",1:"AP") D SET^ORDD43(ORX,DA)
+"^DD",101.43,101.43,60.6,1,1,2)
+N ORX S ORX=$S(X="BB":"BB",X="CH":"CH",X="MI":"CH",1:"AP") D KILL^ORDD43(ORX,DA)
+"^DD",101.43,101.43,60.6,1,1,"%D",0)
+^^1^1^2950208^
+"^DD",101.43,101.43,60.6,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,60.6,1,1,"DT")
+2950208
+"^DD",101.43,101.43,60.6,3)
+Enter the lab section for this test.
+"^DD",101.43,101.43,60.6,21,0)
+^^2^2^2960529^^
+"^DD",101.43,101.43,60.6,21,1,0)
+This is the lab section to which orders for this test and sample will be
+"^DD",101.43,101.43,60.6,21,2,0)
+sent.
+"^DD",101.43,101.43,60.6,"DT")
+2960529
+"^DD",101.43,101.43,60.7,0)
+TYPE^S^I:input;O:output;B:both;N:neither;^LR;7^Q
+"^DD",101.43,101.43,60.7,1,0)
+^.1
+"^DD",101.43,101.43,60.7,1,1,0)
+101.43^ST^MUMPS
+"^DD",101.43,101.43,60.7,1,1,1)
+N NM,IN S NM=$P(^ORD(101.43,DA,0),U),IN=$G(^(.1)) D SS^ORDD43(NM,IN,X)
+"^DD",101.43,101.43,60.7,1,1,2)
+N NM S NM=$P(^ORD(101.43,DA,0),U) D SK^ORDD43(NM)
+"^DD",101.43,101.43,60.7,1,1,"%D",0)
+^^1^1^2960911^
+"^DD",101.43,101.43,60.7,1,1,"%D",1,0)
+Allows retrieval of orderable items by set.
+"^DD",101.43,101.43,60.7,1,1,"DT")
+2960911
+"^DD",101.43,101.43,60.7,1,2,0)
+101.43^SST^MUMPS
+"^DD",101.43,101.43,60.7,1,2,1)
+N NM,IN S NM=$P(^ORD(101.43,DA,0),U),IN=$G(^(.1)) D SS1^ORDD43(NM,IN,X)
+"^DD",101.43,101.43,60.7,1,2,2)
+N NM S NM=$P(^ORD(101.43,DA,0),U) D SK1^ORDD43(NM)
+"^DD",101.43,101.43,60.7,1,2,"%D",0)
+^^1^1^2960911^
+"^DD",101.43,101.43,60.7,1,2,"%D",1,0)
+Allows retrieval of items by synonym via the Set "S" xrefs.
+"^DD",101.43,101.43,60.7,1,2,"DT")
+2960911
+"^DD",101.43,101.43,60.7,3)
+Enter I if this test is orderable, O if it is only for results reporting, B if it may be used for both purposes, or N for neither.
+"^DD",101.43,101.43,60.7,21,0)
+^^2^2^2970703^^
+"^DD",101.43,101.43,60.7,21,1,0)
+This field indicates if this item may be selected when ordering a lab
+"^DD",101.43,101.43,60.7,21,2,0)
+test, and/or if it is included in this file for results reporting only.
+"^DD",101.43,101.43,60.7,"DT")
+2970703
+"^DD",101.43,101.43,71.1,0)
+CONTRAST MEDIA^F^^RA;1^K:$L(X)>7!($L(X)<1) X
+"^DD",101.43,101.43,71.1,3)
+Answer must be 1-7 characters in length
+"^DD",101.43,101.43,71.1,21,0)
+^^14^14^3050106^
+"^DD",101.43,101.43,71.1,21,1,0)
+This field indicates what contrast media, if any, is used by this
+"^DD",101.43,101.43,71.1,21,2,0)
+radiologic procedure where:
+"^DD",101.43,101.43,71.1,21,3,0)
+ 
+"^DD",101.43,101.43,71.1,21,4,0)
+      I = Ionic Iodinated
+"^DD",101.43,101.43,71.1,21,5,0)
+      N = Non-ionic Iodinated
+"^DD",101.43,101.43,71.1,21,6,0)
+      L = Gadolinium
+"^DD",101.43,101.43,71.1,21,7,0)
+      C = Cholecystographic
+"^DD",101.43,101.43,71.1,21,8,0)
+      G = Gastrografin
+"^DD",101.43,101.43,71.1,21,9,0)
+      B = Barium
+"^DD",101.43,101.43,71.1,21,10,0)
+      M = Unspecified contrast media
+"^DD",101.43,101.43,71.1,21,11,0)
+ 
+"^DD",101.43,101.43,71.1,21,12,0)
+This value may consist of as many of these flags as are appropriate for
+"^DD",101.43,101.43,71.1,21,13,0)
+this procedure; if empty, no contrast media is assumed.  This field is 
+"^DD",101.43,101.43,71.1,21,14,0)
+used primarily for Order Checking.
+"^DD",101.43,101.43,71.1,"DT")
+3050915
+"^DD",101.43,101.43,71.2,0)
+PROCEDURE TYPE^S^B:BROAD;D:DETAILED;S:SERIES;P:PARENT;^RA;2^Q
+"^DD",101.43,101.43,71.2,3)
+Enter the type of radiologic procedure for this item.
+"^DD",101.43,101.43,71.2,21,0)
+^^2^2^2941116^
+"^DD",101.43,101.43,71.2,21,1,0)
+This field identifies the procedure type for this orderable item whether
+"^DD",101.43,101.43,71.2,21,2,0)
+broad or detailed, a series or parent exam.
+"^DD",101.43,101.43,71.2,"DT")
+2941116
+"^DD",101.43,101.43,71.3,0)
+IMAGING TYPE^S^RAD:RADIOLOGY;CT:CT SCAN;MRI:MAGNETIC RESONANCE IMAGING;ANI:ANGIO/NEURO/INTERVENTIONAL;CARD:CARDIOLOGY STUDIES;NM:NUCLEAR MEDICINE;US:ULTRASOUND;VAS:VASCULAR LAB;MAM:MAMMOGRAPHY;^RA;3^Q
+"^DD",101.43,101.43,71.3,1,0)
+^.1
+"^DD",101.43,101.43,71.3,1,1,0)
+101.43^S2^MUMPS
+"^DD",101.43,101.43,71.3,1,1,1)
+D SET^ORDD43(X,DA)
+"^DD",101.43,101.43,71.3,1,1,2)
+D KILL^ORDD43(X,DA)
+"^DD",101.43,101.43,71.3,1,1,"%D",0)
+^^1^1^2950112^^
+"^DD",101.43,101.43,71.3,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,71.3,1,1,"DT")
+2950112
+"^DD",101.43,101.43,71.3,1,2,0)
+101.43^COMMON1^MUMPS
+"^DD",101.43,101.43,71.3,1,2,1)
+N CP,NM S NM=$P(^ORD(101.43,DA,0),U),CP=$P($G(^("RA")),U,4) D SETRA^ORDD43(NM,X,CP)
+"^DD",101.43,101.43,71.3,1,2,2)
+N CP,NM S NM=$P(^ORD(101.43,DA,0),U),CP=$P($G(^("RA")),U,4) D KILLRA^ORDD43(NM,X,CP)
+"^DD",101.43,101.43,71.3,1,2,"%D",0)
+^^2^2^2950725^^^
+"^DD",101.43,101.43,71.3,1,2,"%D",1,0)
+Allows retrieval of Radiology common procedures alphabetically within
+"^DD",101.43,101.43,71.3,1,2,"%D",2,0)
+imaging types.
+"^DD",101.43,101.43,71.3,1,2,"DT")
+2950711
+"^DD",101.43,101.43,71.3,3)
+Enter the type of imaging for this procedure.
+"^DD",101.43,101.43,71.3,21,0)
+^^1^1^2971216^^
+"^DD",101.43,101.43,71.3,21,1,0)
+This is the imaging type of this radiology procedure.
+"^DD",101.43,101.43,71.3,"DT")
+2971216
+"^DD",101.43,101.43,71.4,0)
+COMMON PROCEDURE^S^1:YES;0:NO;^RA;4^Q
+"^DD",101.43,101.43,71.4,1,0)
+^.1
+"^DD",101.43,101.43,71.4,1,1,0)
+101.43^COMMON^MUMPS
+"^DD",101.43,101.43,71.4,1,1,1)
+N IT,NM S NM=$P(^ORD(101.43,DA,0),U),IT=$P($G(^("RA")),U,3) D SETRA^ORDD43(NM,IT,X)
+"^DD",101.43,101.43,71.4,1,1,2)
+N IT,NM S NM=$P(^ORD(101.43,DA,0),U),IT=$P($G(^("RA")),U,3) D KILLRA^ORDD43(NM,IT,X)
+"^DD",101.43,101.43,71.4,1,1,"%D",0)
+^^2^2^2960910^^^^
+"^DD",101.43,101.43,71.4,1,1,"%D",1,0)
+Allows retrieval of Radiology common procedures alphabetically within
+"^DD",101.43,101.43,71.4,1,1,"%D",2,0)
+imaging types.
+"^DD",101.43,101.43,71.4,1,1,"DT")
+2960910
+"^DD",101.43,101.43,71.4,3)
+Enter YES if this is a commonly ordered procedure.
+"^DD",101.43,101.43,71.4,21,0)
+^^3^3^2950711^^
+"^DD",101.43,101.43,71.4,21,1,0)
+This field indicates that this procedure is commonly ordered from
+"^DD",101.43,101.43,71.4,21,2,0)
+Radiology, and is an entry in the Radiology Common Procedures file;
+"^DD",101.43,101.43,71.4,21,3,0)
+the number stored here is the sequence number for display.
+"^DD",101.43,101.43,71.4,"DT")
+2960910
+"^DD",101.43,101.43,111.1,0)
+DIET TYPE^S^D:DIET;T:TUBEFEEDING PRODUCT;^FH;1^Q
+"^DD",101.43,101.43,111.1,1,0)
+^.1
+"^DD",101.43,101.43,111.1,1,1,0)
+101.43^S1^MUMPS
+"^DD",101.43,101.43,111.1,1,1,1)
+N ORX S ORX=$S(X="T":"TF",1:"DO") D SET^ORDD43(ORX,DA)
+"^DD",101.43,101.43,111.1,1,1,2)
+N ORX S ORX=$S(X="T":"TF",1:"DO") D KILL^ORDD43(ORX,DA)
+"^DD",101.43,101.43,111.1,1,1,"%D",0)
+^^1^1^2950502^^^
+"^DD",101.43,101.43,111.1,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,111.1,1,1,"DT")
+2950502
+"^DD",101.43,101.43,111.1,3)
+Enter the diet type for this orderable item.
+"^DD",101.43,101.43,111.1,21,0)
+^^2^2^2941116^
+"^DD",101.43,101.43,111.1,21,1,0)
+This field identifies the diet type associated with this orderable item,
+"^DD",101.43,101.43,111.1,21,2,0)
+if the order is for a diet modification or a tubefeeding product.
+"^DD",101.43,101.43,111.1,"DT")
+2950502
+"^DD",101.43,101.43,111.2,0)
+PRECEDENCE^NJ2,0^^FH;2^K:+X'=X!(X>99)!(X<1)!(X?.E1"."1N.N) X
+"^DD",101.43,101.43,111.2,3)
+Type a Number between 1 and 99, 0 Decimal Digits
+"^DD",101.43,101.43,111.2,21,0)
+^^2^2^2971219^^
+"^DD",101.43,101.43,111.2,21,1,0)
+This field is used to avoid conflicting diet modifications; items with
+"^DD",101.43,101.43,111.2,21,2,0)
+the same precedence number may not be selected together.
+"^DD",101.43,101.43,111.2,"DT")
+2941116
+"^DD",101.43,101.43,111.3,0)
+ASK EXPIRATION DATE?^S^Y:YES;N:NO;^FH;3^Q
+"^DD",101.43,101.43,111.3,3)
+Enter YES if the user should be asked for an expiration date when this diet is ordered
+"^DD",101.43,101.43,111.3,21,0)
+^^2^2^2971219^
+"^DD",101.43,101.43,111.3,21,1,0)
+This is a flag that determines if a stop date should be prompted for
+"^DD",101.43,101.43,111.3,21,2,0)
+when placing an order for this diet.
+"^DD",101.43,101.43,111.3,"DT")
+2961101
+"^DD",101.43,101.43,123.1,0)
+SERVICE USAGE^S^1:GROUPER ONLY;2:TRACKING ONLY;^CS;1^Q
+"^DD",101.43,101.43,123.1,3)
+Enter the usage of this service if it may NOT be selectable for ordering, 1 for grouping only or 2 for tracking only.
+"^DD",101.43,101.43,123.1,21,0)
+^^4^4^2971023^
+"^DD",101.43,101.43,123.1,21,1,0)
+This field contains the usage of this consult service; a value here
+"^DD",101.43,101.43,123.1,21,2,0)
+indicates that this service may NOT be selectable for ordering.  Services
+"^DD",101.43,101.43,123.1,21,3,0)
+with a 1 are used for grouping purposes only, and a 2 indicates that
+"^DD",101.43,101.43,123.1,21,4,0)
+only service personnel may order or forward consults to this service.
+"^DD",101.43,101.43,123.1,"DT")
+2971023
+"^DD",101.43,101.43,6001,0)
+BLOOD COMPONENT^S^1:YES;0:NO;^VB;1^Q
+"^DD",101.43,101.43,6001,1,0)
+^.1
+"^DD",101.43,101.43,6001,1,1,0)
+101.43^S10^MUMPS
+"^DD",101.43,101.43,6001,1,1,1)
+D:X SET^ORDD43("VBC",DA)
+"^DD",101.43,101.43,6001,1,1,2)
+D:X KILL^ORDD43("VBC",DA)
+"^DD",101.43,101.43,6001,1,1,"%D",0)
+^^1^1^3031125^
+"^DD",101.43,101.43,6001,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,6001,1,1,"DT")
+3031125
+"^DD",101.43,101.43,6001,3)
+Enter YES if this orderable item is a blood component.
+"^DD",101.43,101.43,6001,"DT")
+3031125
+"^DD",101.43,101.43,6002,0)
+DIAGNOSTIC TEST^S^0:NO;1:YES;2:TAS;^VB;2^Q
+"^DD",101.43,101.43,6002,1,0)
+^.1
+"^DD",101.43,101.43,6002,1,1,0)
+101.43^S11^MUMPS
+"^DD",101.43,101.43,6002,1,1,1)
+D:X SET^ORDD43("VBT",DA)
+"^DD",101.43,101.43,6002,1,1,2)
+D:X KILL^ORDD43("VBT",DA)
+"^DD",101.43,101.43,6002,1,1,"%D",0)
+^^1^1^3031125^
+"^DD",101.43,101.43,6002,1,1,"%D",1,0)
+Creates an entry in SET multiple.
+"^DD",101.43,101.43,6002,1,1,"DT")
+3031125
+"^DD",101.43,101.43,6002,3)
+Enter YES if this item is a diagnostic test, TAS if the test is a Type & Screen.
+"^DD",101.43,101.43,6002,"DT")
+3031125
+"^DD",101.43,101.431,0)
+COMPONENTS SUB-FIELD^^4^4
+"^DD",101.43,101.431,0,"DT")
+2960411
+"^DD",101.43,101.431,0,"IX","AID",101.431,2)
+
+"^DD",101.43,101.431,0,"IX","B",101.431,.01)
+
+"^DD",101.43,101.431,0,"NM","COMPONENTS")
+
+"^DD",101.43,101.431,0,"UP")
+101.43
+"^DD",101.43,101.431,.01,0)
+NAME^MF^^0;1^K:$L(X)>60!($L(X)<1) X
+"^DD",101.43,101.431,.01,1,0)
+^.1
+"^DD",101.43,101.431,.01,1,1,0)
+101.431^B
+"^DD",101.43,101.431,.01,1,1,1)
+S ^ORD(101.43,DA(1),10,"B",$E(X,1,30),DA)=""
+"^DD",101.43,101.431,.01,1,1,2)
+K ^ORD(101.43,DA(1),10,"B",$E(X,1,30),DA)
+"^DD",101.43,101.431,.01,3)
+Answer must be 1-60 characters in length.
+"^DD",101.43,101.431,.01,21,0)
+^^1^1^2960411^
+"^DD",101.43,101.431,.01,21,1,0)
+This is the name of a component of this orderable item.
+"^DD",101.43,101.431,.01,"DT")
+2960411
+"^DD",101.43,101.431,2,0)
+ID^F^^0;2^K:$L(X)>20!($L(X)<1) X
+"^DD",101.43,101.431,2,1,0)
+^.1
+"^DD",101.43,101.431,2,1,1,0)
+101.431^AID
+"^DD",101.43,101.431,2,1,1,1)
+S ^ORD(101.43,DA(1),10,"AID",$E(X,1,30),DA)=""
+"^DD",101.43,101.431,2,1,1,2)
+K ^ORD(101.43,DA(1),10,"AID",$E(X,1,30),DA)
+"^DD",101.43,101.431,2,1,1,"DT")
+2960411
+"^DD",101.43,101.431,2,3)
+Answer must be 1-20 characters in length.
+"^DD",101.43,101.431,2,21,0)
+^^4^4^2960411^
+"^DD",101.43,101.431,2,21,1,0)
+This is an identifier for this component, created from the 6-piece coded
+"^DD",101.43,101.431,2,21,2,0)
+format passed in the Orderable Items update message from each package.
+"^DD",101.43,101.431,2,21,3,0)
+It should be stored in the form of "package code;99XXX" where XXX 
+"^DD",101.43,101.431,2,21,4,0)
+indicates the package table originating this item (i.e. RAP, LRT, etc.).
+"^DD",101.43,101.431,2,"DT")
+2960411
+"^DD",101.43,101.431,3,0)
+CODE^F^^0;3^K:$L(X)>10!($L(X)<1) X
+"^DD",101.43,101.431,3,3)
+Answer must be 1-10 characters in length.
+"^DD",101.43,101.431,3,21,0)
+^^2^2^2960411^
+"^DD",101.43,101.431,3,21,1,0)
+This is the code assigned to this item by the authoritative package from a
+"^DD",101.43,101.431,3,21,2,0)
+national standard coding system such as CPT or SNOMED.
+"^DD",101.43,101.431,3,"DT")
+2960411
+"^DD",101.43,101.431,4,0)
+CODING SYSTEM^S^NDF:NATIONAL DRUG FILE;CPT4:CPT4;NLT:NATIONAL LAB TEST FILE;^0;4^Q
+"^DD",101.43,101.431,4,3)
+Enter the coding system in which this item has been coded.
+"^DD",101.43,101.431,4,21,0)
+^^1^1^2960411^
+"^DD",101.43,101.431,4,21,1,0)
+This is the system used to generate the code assigned in field 3.
+"^DD",101.43,101.431,4,"DT")
+2960411
+"^DD",101.43,101.432,0)
+SYNONYMS SUB-FIELD^^.01^1
+"^DD",101.43,101.432,0,"DT")
+2950303
+"^DD",101.43,101.432,0,"IX","B",101.432,.01)
+
+"^DD",101.43,101.432,0,"NM","SYNONYMS")
+
+"^DD",101.43,101.432,0,"UP")
+101.43
+"^DD",101.43,101.432,.01,0)
+SYNONYM^MF^^0;1^K:$L(X)>63!($L(X)<1) X
+"^DD",101.43,101.432,.01,1,0)
+^.1
+"^DD",101.43,101.432,.01,1,1,0)
+101.432^B
+"^DD",101.43,101.432,.01,1,1,1)
+S ^ORD(101.43,DA(1),2,"B",$E(X,1,30),DA)=""
+"^DD",101.43,101.432,.01,1,1,2)
+K ^ORD(101.43,DA(1),2,"B",$E(X,1,30),DA)
+"^DD",101.43,101.432,.01,1,2,0)
+101.43^B^MNEMONIC
+"^DD",101.43,101.432,.01,1,2,1)
+S:'$D(^ORD(101.43,"B",$E(X,1,30),DA(1),DA)) ^(DA)=1
+"^DD",101.43,101.432,.01,1,2,2)
+I $D(^ORD(101.43,"B",$E(X,1,30),DA(1),DA)),^(DA) K ^(DA)
+"^DD",101.43,101.432,.01,1,2,"DT")
+2950303
+"^DD",101.43,101.432,.01,1,3,0)
+101.43^SS^MUMPS
+"^DD",101.43,101.432,.01,1,3,1)
+D SS3^ORDD43
+"^DD",101.43,101.432,.01,1,3,2)
+D SK3^ORDD43
+"^DD",101.43,101.432,.01,1,3,"%D",0)
+^^2^2^2990316^^^^
+"^DD",101.43,101.432,.01,1,3,"%D",1,0)
+Allows retrieval of items by synonym via the Set "S" xrefs:
+"^DD",101.43,101.432,.01,1,3,"%D",2,0)
+^ORD(101.43,"S.<set>",SYNONYM,DA)
+"^DD",101.43,101.432,.01,1,3,"DT")
+2950810
+"^DD",101.43,101.432,.01,3)
+Answer must be 1-63 characters in length.
+"^DD",101.43,101.432,.01,21,0)
+^^1^1^2990223^^
+"^DD",101.43,101.432,.01,21,1,0)
+This is a synonym for this orderable item.
+"^DD",101.43,101.432,.01,"DT")
+2990223
+"^DD",101.43,101.438,0)
+ORDER MESSAGE SUB-FIELD^^.01^1
+"^DD",101.43,101.438,0,"DT")
+2941205
+"^DD",101.43,101.438,0,"NM","ORDER MESSAGE")
+
+"^DD",101.43,101.438,0,"UP")
+101.43
+"^DD",101.43,101.438,.01,0)
+ORDER MESSAGE^WL^^0;1^Q
+"^DD",101.43,101.438,.01,3)
+Enter a message to be displayed whenever this item is ordered.
+"^DD",101.43,101.438,.01,21,0)
+^.001^2^2^3040407^^^^
+"^DD",101.43,101.438,.01,21,1,0)
+This field contains text that is to be displayed to the user whenever
+"^DD",101.43,101.438,.01,21,2,0)
+this item is selected to be ordered.
+"^DD",101.43,101.438,.01,"DT")
+2941205
+"^DD",101.43,101.439,0)
+SET MEMBERSHIP SUB-FIELD^^2^2
+"^DD",101.43,101.439,0,"DT")
+2941117
+"^DD",101.43,101.439,0,"IX","B",101.439,.01)
+
+"^DD",101.43,101.439,0,"NM","SET MEMBERSHIP")
+
+"^DD",101.43,101.439,0,"UP")
+101.43
+"^DD",101.43,101.439,.01,0)
+SET^MF^^0;1^K:$L(X)>8!($L(X)<2) X
+"^DD",101.43,101.439,.01,1,0)
+^.1
+"^DD",101.43,101.439,.01,1,1,0)
+101.439^B
+"^DD",101.43,101.439,.01,1,1,1)
+S ^ORD(101.43,DA(1),9,"B",$E(X,1,30),DA)=""
+"^DD",101.43,101.439,.01,1,1,2)
+K ^ORD(101.43,DA(1),9,"B",$E(X,1,30),DA)
+"^DD",101.43,101.439,.01,1,2,0)
+101.43^S^MUMPS
+"^DD",101.43,101.439,.01,1,2,1)
+Q:$P($G(^ORD(101.43,DA(1),"LR")),U,7)="O"  N NM,IN S NM=$P(^(0),U),IN=$G(^(.1)) S:$L(NM) ^ORD(101.43,"S."_X,$$UP^XLFSTR(NM),DA(1))=U_NM_U_IN
+"^DD",101.43,101.439,.01,1,2,2)
+N NM S NM=$P(^ORD(101.43,DA(1),0),U) K:$L(NM) ^ORD(101.43,"S."_X,$$UP^XLFSTR(NM),DA(1))
+"^DD",101.43,101.439,.01,1,2,"%D",0)
+^^1^1^2960806^^^^
+"^DD",101.43,101.439,.01,1,2,"%D",1,0)
+Allows retrieval of orderable items by set.
+"^DD",101.43,101.439,.01,1,2,"DT")
+2960806
+"^DD",101.43,101.439,.01,1,3,0)
+101.43^SS1^MUMPS
+"^DD",101.43,101.439,.01,1,3,1)
+D SS2^ORDD43
+"^DD",101.43,101.439,.01,1,3,2)
+D SK2^ORDD43
+"^DD",101.43,101.439,.01,1,3,"%D",0)
+^^1^1^2960806^^^^
+"^DD",101.43,101.439,.01,1,3,"%D",1,0)
+Allows retrieval of items by synonym via the Set "S" xrefs.
+"^DD",101.43,101.439,.01,1,3,"DT")
+2960806
+"^DD",101.43,101.439,.01,1,4,0)
+101.43^C1^MUMPS
+"^DD",101.43,101.439,.01,1,4,1)
+N CD,NM,IN S NM=$P(^ORD(101.43,DA(1),0),U),CD=$P(^(0),U,3),IN=$G(^(.1)) S:$L(CD) ^ORD(101.43,"C."_X,$$UP^XLFSTR(CD_" "_NM),DA(1))=U_(CD_" "_NM)_U_IN
+"^DD",101.43,101.439,.01,1,4,2)
+N CD,NM S NM=$P(^ORD(101.43,DA(1),0),U),CD=$P(^(0),U,3) K:$L(CD) ^ORD(101.43,"C."_X,$$UP^XLFSTR(CD_" "_NM),DA(1))
+"^DD",101.43,101.439,.01,1,4,"%D",0)
+^^1^1^2960806^^^^
+"^DD",101.43,101.439,.01,1,4,"%D",1,0)
+Allows retrieval of items by code within Sets.
+"^DD",101.43,101.439,.01,1,4,"DT")
+2950713
+"^DD",101.43,101.439,.01,3)
+Answer must be 2-8 characters in length.
+"^DD",101.43,101.439,.01,21,0)
+^^1^1^2941117^^^^
+"^DD",101.43,101.439,.01,21,1,0)
+This is the name of a set to which this orderable item belongs.
+"^DD",101.43,101.439,.01,"DT")
+2960806
+"^DD",101.43,101.439,2,0)
+QO ONLY^S^1:YES;^0;2^Q
+"^DD",101.43,101.439,2,1,0)
+^.1
+"^DD",101.43,101.439,2,1,1,0)
+101.43^AQO^MUMPS
+"^DD",101.43,101.439,2,1,1,1)
+D QO^ORDD43(X)
+"^DD",101.43,101.439,2,1,1,2)
+D QO^ORDD43("")
+"^DD",101.43,101.439,2,1,1,"%D",0)
+^^3^3^3021106^
+"^DD",101.43,101.439,2,1,1,"%D",1,0)
+This index adds data to the 5th piece of the "S.xxx" xrefs to tell CPRS
+"^DD",101.43,101.439,2,1,1,"%D",2,0)
+GUI whether or not to allow this item to be selectable in the regular
+"^DD",101.43,101.439,2,1,1,"%D",3,0)
+order dialog for the set, or if it should be orderable via quick orders.
+"^DD",101.43,101.439,2,1,1,"DT")
+3021106
+"^DD",101.43,101.439,2,3)
+Enter YES if this item should only be orderable via quick orders.
+"^DD",101.43,101.439,2,21,0)
+^^2^2^3021106^
+"^DD",101.43,101.439,2,21,1,0)
+This field determines if the item may be ordered via the regular order
+"^DD",101.43,101.439,2,21,2,0)
+dialog for this Set, or only via predefined quick orders.
+"^DD",101.43,101.439,2,"DT")
+3021106
+"^DIC",101.43,101.43,0)
+ORDERABLE ITEMS^101.43
+"^DIC",101.43,101.43,0,"GL")
+^ORD(101.43,
+"^DIC",101.43,101.43,"%D",0)
+^^1^1^2941116^^^^
+"^DIC",101.43,101.43,"%D",1,0)
+This file contains the orderable items for use within OE/RR.
+"^DIC",101.43,"B","ORDERABLE ITEMS",101.43)
+
+**END**
+**END**
