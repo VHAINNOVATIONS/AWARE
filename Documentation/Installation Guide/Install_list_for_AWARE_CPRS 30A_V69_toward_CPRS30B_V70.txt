@@ -1,0 +1,451 @@
+INSTALL LIST                                   DEC 17,2015  13:35    PAGE 1
+NAME
+--------------------------------------------------------------------------------
+ 
+           INSTALL START TIME: NOV 28,2015  17:31
+AWARE 1.2
+           INSTALL START TIME: NOV 28,2015  17:33
+AWARE 1.3
+           INSTALL START TIME: NOV 28,2015  21:49
+AWARE KB 1.3
+           INSTALL START TIME: NOV 28,2015  17:36
+AWARE ORDERDIALOG 1.0
+           INSTALL START TIME: NOV 28,2015  17:36
+AWARE ORDERITEM 1.0
+           INSTALL START TIME: NOV 28,2015  17:36
+AWARE TESTDATA 1.0
+           INSTALL START TIME: SEP 24,2015  23:31
+CLINICAL REMINDERS ICD-10 UPDATE 1.0
+           INSTALL START TIME: SEP 24,2015  23:31
+DG*5.3*862
+ 
+ 
+ 
+Install in this order
+
+OR*3.0*388
+OR*3.0*392
+OR*3.0*374
+OR*3.0*344
+OR*3.0*404
+OR*3.0*312
+SPECIAL_BUILD.KIDS (OR*3.0*389 and XU*8.0*642)
+OR*3.0*389
+  requires OR*3.0*296
+           OR*3.0*313
+           or*3.0*306
+TIU*1.0*268v26
+ 								  required re-install of CLINICAL REMINDERS ICD-10 UPDATE 1.0 Multi-Build
+                                                                  to get routine PXRMDIEV (from a later same name build in May, 2014)
+								  	(Included packages DG*5.3*862, GMPL*2.0*44, and PXRM*2.0*26)
+									
+                                                         GMPL*2.0*46
+                                                         LEX*2.0*86
+                                    LEX*2.0*86 (FB*3.5*157 & LEX*2.0*86 & ICD*18.0*67) . FB*3.5*157 requires FB*3.5*123 requiring FB*3.5*(144,143,& 139)
+                                                requires
+                                                         LEX*2.0*97 (ICPT*6.0*69 & ICD*18.0*76)
+                                                                    requires
+									      LEX_2_0_97.GBL
+                                    				    and
+								    requires
+									      LEX*2.0*96
+                                                                                      requires  LEX*2.0*95  
+                                                                                                           requires LEX_2_0_95.GBL
+OR*3.0*418                                                                             LEX*2.0*87
+                                                                                      requires  LEX_2_0_87.GBL
+										      and
+										      requires
+												LEX*2.0*95
+                                                                                                ICD*18.0*64 
+                                                                                                            requires LEX*2.0*80
+                                                                                                                     ICD*18.0*57
+                                                                                                                     ICD*18.0*65
+                                                                                                                     ICD*18.0*72
+								              PXRM*2.0*26
+
+                          
+YS*5.01*116
+      requires
+GMRC*3.0*81
+      requires
+	     GMRC*3.0*73
+GMTS*2.7*112  
+      requires
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INSTALL LIST                                   DEC 17,2015  13:35    PAGE 2
+NAME
+--------------------------------------------------------------------------------
+ 
+           INSTALL START TIME: SEP 24,2015  17:44
+FB*3.5*123
+           INSTALL START TIME: SEP 24,2015  17:42
+FB*3.5*139
+           INSTALL START TIME: SEP 24,2015  17:40
+FB*3.5*143
+           INSTALL START TIME: SEP 24,2015  17:38
+FB*3.5*144
+           INSTALL START TIME: SEP 24,2015  17:45
+FB*3.5*157
+           INSTALL START TIME: SEP 24,2015  23:31
+GMPL*2.0*44
+           INSTALL START TIME: SEP 24,2015  23:36
+GMPL*2.0*45
+           INSTALL START TIME: SEP 23,2015  22:57
+GMPL*2.0*46
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INSTALL LIST                                   DEC 17,2015  13:35    PAGE 3
+NAME
+--------------------------------------------------------------------------------
+ 
+           INSTALL START TIME: SEP 23,2015  22:47
+GMPL*2.0*47
+           INSTALL START TIME: SEP 22,2015  16:27
+GMRA*4.0*47
+           INSTALL START TIME: SEP 25,2015  00:20
+GMRC*3.0*73
+           INSTALL START TIME: SEP 25,2015  00:21
+GMRC*3.0*81
+           INSTALL START TIME: SEP 25,2015  00:08
+GMRV*5.0*28
+           INSTALL START TIME: SEP 25,2015  00:23
+GMTS*2.7*112
+           INSTALL START TIME: SEP 24,2015  01:15
+ICD*18.0*64
+           INSTALL START TIME: SEP 24,2015  17:45
+ICD*18.0*67
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INSTALL LIST                                   DEC 17,2015  13:35    PAGE 4
+NAME
+--------------------------------------------------------------------------------
+ 
+           INSTALL START TIME: SEP 24,2015  17:45
+LEX*2.0*86
+           INSTALL START TIME: SEP 24,2015  13:20
+LEX*2.0*87
+           INSTALL START TIME: SEP 24,2015  00:32
+LEX*2.0*95
+           INSTALL START TIME: SEP 24,2015  10:30
+LEX*2.0*96
+           INSTALL START TIME: SEP 24,2015  15:05
+LEX*2.0*97
+           INSTALL START TIME: SEP 22,2015  16:27
+MOCHA 2.0 Combined Build 1.0
+           INSTALL START TIME: SEP 22,2015  16:28
+MOCHA 2.0 FAST TRACK BUILDS 1.0
+           INSTALL START TIME: SEP 22,2015  16:27
+MOCHA 2.0 FOLLOW UP Combined Build 1.0
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INSTALL LIST                                   DEC 17,2015  13:35    PAGE 5
+NAME
+--------------------------------------------------------------------------------
+ 
+           INSTALL START TIME: SEP 22,2015  16:52
+MOCHA 2.0 POST RELEASE FOLLOW UP 1.0
+           INSTALL START TIME: SEP 22,2015  16:44
+OR*3.0*111
+           INSTALL START TIME: SEP 22,2015  16:27
+OR*3.0*311
+           INSTALL START TIME: SEP  9,2015  09:03
+OR*3.0*312
+           INSTALL START TIME: SEP 14,2015  00:42
+OR*3.0*312
+           INSTALL START TIME: SEP 22,2015  16:27
+OR*3.0*345
+           INSTALL START TIME: SEP 24,2015  23:38
+OR*3.0*350
+           INSTALL START TIME: SEP 14,2015  00:32
+OR*3.0*374
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INSTALL LIST                                   DEC 17,2015  13:35    PAGE 6
+NAME
+--------------------------------------------------------------------------------
+ 
+           INSTALL START TIME: SEP 13,2015  23:58
+OR*3.0*385
+           INSTALL START TIME: SEP 14,2015  00:22
+OR*3.0*388
+           INSTALL START TIME: SEP 22,2015  13:30
+OR*3.0*389
+           INSTALL START TIME: SEP 14,2015  00:25
+OR*3.0*392
+           INSTALL START TIME: SEP 14,2015  00:36
+OR*3.0*394
+           INSTALL START TIME: SEP 13,2015  23:51
+OR*3.0*404
+           INSTALL START TIME: SEP 13,2015  23:53
+OR*3.0*404
+           INSTALL START TIME: SEP 14,2015  00:39
+OR*3.0*404
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INSTALL LIST                                   DEC 17,2015  13:35    PAGE 7
+NAME
+--------------------------------------------------------------------------------
+ 
+           INSTALL START TIME: NOV 25,2015  03:11
+OR*3.0*418
+           INSTALL START TIME: SEP 22,2015  16:27
+PSJ*5.0*252
+           INSTALL START TIME: SEP 22,2015  16:27
+PSJ*5.0*257
+           INSTALL START TIME: SEP 22,2015  16:28
+PSJ*5.0*299
+           INSTALL START TIME: SEP 22,2015  16:53
+PSJ*5.0*307
+           INSTALL START TIME: SEP 22,2015  16:52
+PSJ*5.0*311
+           INSTALL START TIME: SEP 22,2015  16:51
+PSO*7.0*313
+           INSTALL START TIME: SEP 22,2015  16:50
+PSO*7.0*362
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INSTALL LIST                                   DEC 17,2015  13:35    PAGE 8
+NAME
+--------------------------------------------------------------------------------
+ 
+           INSTALL START TIME: SEP 22,2015  16:27
+PSO*7.0*372
+           INSTALL START TIME: SEP 22,2015  16:52
+PSO*7.0*408
+           INSTALL START TIME: SEP 22,2015  16:27
+PSO*7.0*416
+           INSTALL START TIME: SEP 22,2015  16:28
+PSO*7.0*431
+           INSTALL START TIME: SEP 22,2015  16:52
+PSO*7.0*436
+           INSTALL START TIME: SEP 22,2015  16:25
+PSS*1.0*160
+           INSTALL START TIME: SEP 24,2015  23:31
+PXRM*2.0*26
+           INSTALL START TIME: SEP 22,2015  13:37
+TIU*1.0*268
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INSTALL LIST                                   DEC 17,2015  13:35    PAGE 9
+NAME
+--------------------------------------------------------------------------------
+ 
+           INSTALL START TIME: NOV 28,2015  17:36
+VEFA ZEVH 1.6
+           INSTALL START TIME: SEP 22,2015  13:30
+XU*8.0*642
+ 
+OR*3.0*418
+ 
+ 
+ 
+Select OPTION:
