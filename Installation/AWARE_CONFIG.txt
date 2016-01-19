@@ -1,5 +1,0 @@
-
-      <setting name="AwareQIManager_AwareWebSrv_WSAWARE" serializeAs="String">
-      <!-- The following value must point to the CSP Server/Gateway that is hosting the AWARE CSP Pages -->
-        <value>http://54.225.241.115/csp30a/aware/VEFA.AWARE.cls</value>
-      </setting>
